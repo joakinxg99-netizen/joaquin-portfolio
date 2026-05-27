@@ -762,7 +762,7 @@ export default function Home() {
               {t.projectsButton}
             </a>
             <a
-              href="https://open.spotify.com/track/134WSBaVh7ePxkY4j3c83B"
+              href="https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=97afc819229c46ec"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-center text-sm font-medium text-white shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-teal-200/30 hover:bg-white/10 hover:shadow-teal-500/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 active:scale-[0.98]"
@@ -1037,7 +1037,7 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={120} className="relative">
-            <div className="absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(45,212,191,0.2),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(236,72,153,0.14),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
+            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(45,212,191,0.2),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(236,72,153,0.14),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
             <div className="absolute -right-4 top-10 hidden h-48 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent lg:block" />
             <div className="mb-4 hidden items-center justify-end gap-1.5 pr-2 opacity-75 md:flex" aria-hidden="true">
               {[18, 30, 46, 26, 56, 34, 42, 24, 50, 32, 22, 38].map(
