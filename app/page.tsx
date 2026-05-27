@@ -7,9 +7,9 @@ import type { CSSProperties, MouseEvent as ReactMouseEvent, ReactNode } from "re
 type Lang = "pt" | "es" | "en";
 
 const spotifyUrl =
-  "https://open.spotify.com/intl-es/artist/25JUXI8MfGUhSKUdAatSzt";
+  "https://open.spotify.com/artist/2mN6Z2Dk4DPMm3FJj0sX0X";
 const spotifyTrackUrl =
-  "https://open.spotify.com/track/134WSBaVh7ePxkY4j3c83B";
+  "https://open.spotify.com/artist/2mN6Z2Dk4DPMm3FJj0sX0X";
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
 
@@ -901,7 +901,7 @@ export default function Home() {
           <Reveal delay={120}>
             <article
               onMouseMove={handleSpotlightMove}
-              className="spotlight-card group relative mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-2xl shadow-black/30 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_24px_80px_rgba(20,184,166,0.13)] sm:mt-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-center"
+              className="spotlight-card group relative mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-2xl shadow-black/30 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_24px_80px_rgba(20,184,166,0.13)] sm:mt-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center"
             >
               <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-200/70 to-transparent" />
@@ -909,31 +909,11 @@ export default function Home() {
                 <div className="absolute -right-24 top-16 h-56 w-56 rounded-full bg-pink-300/10 blur-3xl" />
               </div>
 
-              <div className="flex min-h-0 flex-col justify-center p-5 sm:p-8 lg:min-h-[420px] lg:p-10 xl:p-12">
-                <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
-                  {t.featuredProject}
-                </p>
-                <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
-                  {t.projectTitle}
-                </h3>
-                <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
-                  {t.projectDescription}
-                </p>
-                <a
-                  href={projectUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
-                >
-                  {t.projectButton}
-                </a>
-              </div>
-
               <a
                 href={projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative min-h-[270px] bg-gradient-to-br from-teal-300/30 via-indigo-400/18 to-pink-300/18 p-2 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6 lg:min-h-[420px] lg:p-8"
+                className="relative min-h-[270px] bg-gradient-to-br from-teal-300/30 via-indigo-400/18 to-pink-300/18 p-2 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6 lg:min-h-[380px] lg:p-7"
                 aria-label={t.projectPreviewTitle}
               >
                 <div className="pointer-events-none absolute inset-6 rounded-[2rem] bg-[radial-gradient(circle_at_58%_42%,rgba(45,212,191,0.16),transparent_46%)] blur-2xl transition duration-700 group-hover:opacity-100 lg:inset-8" />
@@ -983,6 +963,26 @@ export default function Home() {
                   </div>
                 </div>
               </a>
+
+              <div className="flex min-h-0 flex-col justify-center p-5 sm:p-8 lg:p-10 xl:p-12">
+                <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
+                  {t.featuredProject}
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
+                  {t.projectTitle}
+                </h3>
+                <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
+                  {t.projectDescription}
+                </p>
+                <a
+                  href={projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
+                >
+                  {t.projectButton}
+                </a>
+              </div>
             </article>
 
             <p className="mt-5 text-center text-sm text-zinc-500">
