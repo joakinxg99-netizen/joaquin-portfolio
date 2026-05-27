@@ -62,8 +62,11 @@ const content = {
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
-    musicTags: ["Melodic Techno", "Atmosfera escura", "Energia hipnótica"],
+    musicTags: ["Produtor de Techno", "Identidade cinematográfica", "Energia hipnótica"],
+    listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
+    openMenu: "Abrir menu",
+    closeMenu: "Fechar menu",
     contactTitle: "Contato",
     contactText:
       "Quer criar uma presença digital profissional ou conhecer meu trabalho musical? Entre em contato.",
@@ -117,8 +120,11 @@ const content = {
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
-    musicTags: ["Melodic Techno", "Atmósfera oscura", "Energía hipnótica"],
+    musicTags: ["Productor de Techno", "Identidad cinematográfica", "Energía hipnótica"],
+    listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
+    openMenu: "Abrir menú",
+    closeMenu: "Cerrar menú",
     contactTitle: "Contacto",
     contactText:
       "¿Querés crear una presencia digital profesional o conocer mi trabajo musical? Entrá en contacto.",
@@ -172,8 +178,11 @@ const content = {
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artist",
     trackArtist: "JØA BRAV",
-    musicTags: ["Melodic Techno", "Dark Atmosphere", "Hypnotic Energy"],
+    musicTags: ["Techno Producer", "Cinematic Identity", "Hypnotic Energy"],
+    listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
     contactTitle: "Contact",
     contactText:
       "Want to create a professional digital presence or explore my music work? Get in touch.",
@@ -243,6 +252,8 @@ export default function Home() {
   const [mouse, setMouse] = useState({ x: 50, y: 50 });
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [projectImageFailed, setProjectImageFailed] = useState(false);
   const t = content[lang];
 
   const navItems = [
@@ -476,59 +487,144 @@ export default function Home() {
         }`}
       >
         <div
-          className={`mx-auto flex max-w-6xl flex-col gap-4 px-5 transition-all duration-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between ${
+          className={`mx-auto max-w-6xl px-5 transition-all duration-500 sm:px-6 ${
             hasScrolled ? "py-3" : "py-4"
           }`}
         >
-          <a href="#home" className="text-sm font-semibold text-white transition hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200/50">
-            Joaquín G. Bravo
-          </a>
+          <div className="flex items-center justify-between gap-4">
+            <a href="#home" className="text-sm font-semibold text-white transition hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200/50">
+              Joaquín G. Bravo
+            </a>
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between lg:gap-8">
-            <nav className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-zinc-400">
+            <div className="hidden items-center gap-8 lg:flex">
+              <nav className="flex gap-x-5 text-sm text-zinc-400">
+                {navItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className={`group relative rounded-md px-1 py-1 transition duration-300 hover:-translate-y-0.5 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
+                      activeSection === item.href.slice(1)
+                        ? "text-white shadow-[0_8px_24px_rgba(255,255,255,0.08)]"
+                        : ""
+                    }`}
+                  >
+                    <span>{item.label}</span>
+                    <span
+                      className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-teal-200 via-white to-pink-200 transition-all duration-500 ${
+                        activeSection === item.href.slice(1)
+                          ? "w-full -translate-x-1/2 opacity-100"
+                          : "w-0 -translate-x-1/2 opacity-0 group-hover:w-full group-hover:opacity-60"
+                      }`}
+                    />
+                  </a>
+                ))}
+              </nav>
+
+              <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
+                {(["en", "pt", "es"] as Lang[]).map((item) => (
+                  <button
+                    key={item}
+                    type="button"
+                    onClick={() => setLang(item)}
+                    className={`rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-200/50 active:scale-95 ${
+                      lang === item
+                        ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
+                        : "text-zinc-400 hover:bg-white/10 hover:text-white"
+                    }`}
+                  >
+                    {item.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 lg:hidden">
+              <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
+                {(["en", "pt", "es"] as Lang[]).map((item) => (
+                  <button
+                    key={item}
+                    type="button"
+                    onClick={() => {
+                      setLang(item);
+                      setIsMenuOpen(false);
+                    }}
+                    className={`rounded-md px-2.5 py-1.5 text-[0.68rem] font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-200/50 active:scale-95 ${
+                      lang === item
+                        ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
+                        : "text-zinc-400 hover:bg-white/10 hover:text-white"
+                    }`}
+                  >
+                    {item.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setIsMenuOpen((open) => !open)}
+                aria-label={isMenuOpen ? t.closeMenu : t.openMenu}
+                aria-expanded={isMenuOpen}
+                className="group relative flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 active:scale-95"
+              >
+                <span className="sr-only">{isMenuOpen ? t.closeMenu : t.openMenu}</span>
+                <span className="relative h-3.5 w-4">
+                  <span
+                    className={`absolute left-0 top-0 h-px w-4 rounded-full bg-white transition duration-300 ${
+                      isMenuOpen ? "translate-y-[6px] rotate-45" : ""
+                    }`}
+                  />
+                  <span
+                    className={`absolute left-0 top-[6px] h-px w-4 rounded-full bg-white transition duration-300 ${
+                      isMenuOpen ? "opacity-0" : "opacity-100"
+                    }`}
+                  />
+                  <span
+                    className={`absolute left-0 top-3 h-px w-4 rounded-full bg-white transition duration-300 ${
+                      isMenuOpen ? "-translate-y-[6px] -rotate-45" : ""
+                    }`}
+                  />
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            className={`grid transition-all duration-500 lg:hidden ${
+              isMenuOpen
+                ? "grid-rows-[1fr] opacity-100"
+                : "grid-rows-[0fr] opacity-0"
+            }`}
+          >
+            <div className="overflow-hidden">
+              <nav className="mt-4 rounded-2xl border border-white/10 bg-[#08090d]/92 p-2 shadow-2xl shadow-black/40 backdrop-blur-2xl">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`group relative rounded-md px-1 py-1 transition duration-300 hover:-translate-y-0.5 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`group relative flex items-center justify-between rounded-xl px-4 py-3 text-sm transition duration-300 hover:bg-white/[0.055] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
                     activeSection === item.href.slice(1)
                       ? "text-white shadow-[0_8px_24px_rgba(255,255,255,0.08)]"
-                      : ""
+                        : "text-zinc-400"
                   }`}
                 >
                   <span>{item.label}</span>
                   <span
-                    className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-teal-200 via-white to-pink-200 transition-all duration-500 ${
+                      className={`h-px rounded-full bg-gradient-to-r from-teal-200 via-white to-pink-200 transition-all duration-500 ${
                       activeSection === item.href.slice(1)
-                        ? "w-full -translate-x-1/2 opacity-100"
-                        : "w-0 -translate-x-1/2 opacity-0 group-hover:w-full group-hover:opacity-60"
+                          ? "w-10 opacity-100"
+                          : "w-0 opacity-0 group-hover:w-8 group-hover:opacity-60"
                     }`}
                   />
                 </a>
               ))}
             </nav>
-
-            <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
-              {(["en", "pt", "es"] as Lang[]).map((item) => (
-                <button
-                  key={item}
-                  type="button"
-                  onClick={() => setLang(item)}
-                  className={`rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-200/50 active:scale-95 ${
-                    lang === item
-                      ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
-                      : "text-zinc-400 hover:bg-white/10 hover:text-white"
-                  }`}
-                >
-                  {item.toUpperCase()}
-                </button>
-              ))}
             </div>
           </div>
         </div>
       </header>
 
-      <section id="home" className="relative z-10 mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pb-28 lg:pt-24">
+      <section id="home" className="relative z-10 mx-auto grid max-w-6xl gap-9 px-5 pb-14 pt-11 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:pb-28 lg:pt-24">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 hidden overflow-hidden lg:block"
@@ -598,30 +694,30 @@ export default function Home() {
         </div>
         <Reveal>
         <div>
-          <p className="mb-4 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs font-medium uppercase tracking-[0.22em] text-zinc-400 shadow-lg shadow-black/20 backdrop-blur">
+          <p className="mb-3 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-400 shadow-lg shadow-black/20 backdrop-blur sm:mb-4 sm:text-xs sm:tracking-[0.22em]">
             {t.heroEyebrow}
           </p>
           <h1
-            className="cinematic-line max-w-4xl bg-[linear-gradient(180deg,#ffffff_0%,#d8dee9_58%,#8b93a7_100%)] bg-clip-text text-5xl font-semibold leading-[0.98] text-transparent sm:text-7xl"
+            className="cinematic-line max-w-4xl bg-[linear-gradient(180deg,#ffffff_0%,#d8dee9_58%,#8b93a7_100%)] bg-clip-text text-[3rem] font-semibold leading-[0.98] text-transparent sm:text-7xl"
             style={{ "--line-delay": "160ms" } as CSSProperties}
           >
             Joaquín G. Bravo
           </h1>
           <p
-            className="cinematic-line mt-4 text-xl font-medium text-zinc-200 sm:text-2xl"
+            className="cinematic-line mt-3 text-lg font-medium text-zinc-200 sm:mt-4 sm:text-2xl"
             style={{ "--line-delay": "280ms" } as CSSProperties}
           >
             {t.heroSubtitle}
           </p>
           <p
-            className="cinematic-line mt-5 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg"
+            className="cinematic-line mt-4 max-w-2xl text-[0.98rem] leading-7 text-zinc-400 sm:mt-5 sm:text-lg sm:leading-8"
             style={{ "--line-delay": "400ms" } as CSSProperties}
           >
             {t.heroDescription}
           </p>
 
           <div
-            className="cinematic-line mt-8 flex flex-col gap-3 sm:flex-row"
+            className="cinematic-line mt-7 flex flex-col gap-2.5 sm:mt-8 sm:flex-row sm:gap-3"
             style={{ "--line-delay": "520ms" } as CSSProperties}
           >
             <a
@@ -650,7 +746,7 @@ export default function Home() {
         </div>
         </Reveal>
 
-        <Reveal delay={120} className="group relative mx-auto w-full max-w-sm lg:max-w-md">
+        <Reveal delay={120} className="group relative mx-auto w-full max-w-[20rem] sm:max-w-sm lg:max-w-md">
           <div
             className="absolute -inset-5 rounded-[2rem] bg-[radial-gradient(circle_at_35%_15%,rgba(255,255,255,0.2),transparent_34%),radial-gradient(circle_at_78%_70%,rgba(20,184,166,0.24),transparent_36%),radial-gradient(circle_at_18%_88%,rgba(99,102,241,0.24),transparent_34%)] opacity-70 blur-2xl transition duration-700 group-hover:opacity-100"
             style={{
@@ -668,7 +764,7 @@ export default function Home() {
             }}
           >
             <div className="relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0b0d12]">
-              <div className="relative aspect-[4/5] min-h-[390px] overflow-hidden sm:min-h-[480px]">
+              <div className="relative aspect-[4/5] min-h-[330px] overflow-hidden sm:min-h-[480px]">
                 <Image
                   src="/joaquin.jpg"
                   alt="Joaquín G. Bravo"
@@ -746,7 +842,7 @@ export default function Home() {
       </section>
 
       <section id="projects" className="relative z-10 border-y border-white/10 bg-white/[0.035]">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-6">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
           <Reveal>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">
               {t.projectsTitle}
@@ -756,7 +852,7 @@ export default function Home() {
           <Reveal delay={120}>
             <article
               onMouseMove={handleSpotlightMove}
-              className="spotlight-card group relative mt-10 grid overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-2xl shadow-black/30 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_24px_80px_rgba(20,184,166,0.13)] lg:grid-cols-[1.08fr_0.92fr]"
+                className="spotlight-card group relative mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-2xl shadow-black/30 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_24px_80px_rgba(20,184,166,0.13)] sm:mt-10 lg:grid-cols-[1.08fr_0.92fr]"
             >
               <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-200/70 to-transparent" />
@@ -766,10 +862,10 @@ export default function Home() {
                 href={projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-80 bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-4 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-6"
+                className="min-h-[250px] bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-3 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:min-h-80 sm:p-6"
                 aria-label={t.projectPreviewTitle}
               >
-                <div className="flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-4 shadow-inner shadow-white/5 backdrop-blur">
+                <div className="flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-2.5 shadow-inner shadow-white/5 backdrop-blur sm:p-4">
                   <div className="group/browser w-full max-w-2xl overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40 ring-1 ring-transparent transition duration-500 group-hover:-translate-y-1 group-hover:border-teal-100/30 group-hover:ring-teal-200/20">
                     <div className="flex items-center gap-3 border-b border-white/10 bg-white/[0.045] px-4 py-3">
                       <div className="flex gap-1.5">
@@ -782,15 +878,29 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="relative aspect-[16/10] overflow-hidden bg-[radial-gradient(circle_at_25%_20%,rgba(45,212,191,0.24),transparent_34%),radial-gradient(circle_at_82%_80%,rgba(244,114,182,0.18),transparent_32%),linear-gradient(135deg,#151720,#08090d)]">
-                      <Image
-                        src="/victoria-preview.jpg"
-                        alt={t.projectPreviewTitle}
-                        fill
-                        sizes="(max-width: 768px) 86vw, 620px"
-                        className="object-cover object-top transition duration-700 group-hover/browser:scale-[1.035]"
-                      />
+                      {!projectImageFailed ? (
+                        <Image
+                          src="/victoria-preview.jpg"
+                          alt={t.projectPreviewTitle}
+                          fill
+                          sizes="(max-width: 768px) 86vw, 620px"
+                          className="object-cover object-top transition duration-700 group-hover/browser:scale-[1.035]"
+                          onError={() => setProjectImageFailed(true)}
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(45,212,191,0.26),transparent_34%),radial-gradient(circle_at_76%_78%,rgba(244,114,182,0.2),transparent_34%),linear-gradient(135deg,#171a22,#07080b)] px-6 text-center">
+                          <div>
+                            <p className="text-xs uppercase tracking-[0.18em] text-teal-100/55">
+                              victoria-psicologia.vercel.app
+                            </p>
+                            <p className="mt-3 text-lg font-medium text-white">
+                              {t.projectPreviewTitle}
+                            </p>
+                          </div>
+                        </div>
+                      )}
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_62%,rgba(0,0,0,0.32)_100%)]" />
-                      <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-lg border border-white/10 bg-black/35 px-4 py-3 shadow-xl shadow-black/25 backdrop-blur">
+                      <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-lg border border-white/10 bg-black/35 px-3 py-2.5 shadow-xl shadow-black/25 backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:px-4 sm:py-3">
                         <div className="min-w-0">
                           <p className="truncate text-xs text-zinc-400">
                             victoria-psicologia.vercel.app
@@ -806,14 +916,14 @@ export default function Home() {
                 </div>
               </a>
 
-              <div className="flex min-h-[340px] flex-col justify-center p-6 sm:p-8 lg:p-10">
+              <div className="flex min-h-0 flex-col justify-center p-5 sm:min-h-[340px] sm:p-8 lg:p-10">
                 <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
                   {t.featuredProject}
                 </p>
-                <h3 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">
+                <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
                   {t.projectTitle}
                 </h3>
-                <p className="mt-5 max-w-2xl leading-8 text-zinc-400">
+                <p className="mt-4 max-w-2xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
                   {t.projectDescription}
                 </p>
                 <a
@@ -898,7 +1008,7 @@ export default function Home() {
           <Reveal delay={120} className="relative">
             <div className="absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(45,212,191,0.2),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(236,72,153,0.14),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
             <div className="absolute -right-4 top-10 hidden h-48 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent lg:block" />
-            <div className="mb-4 flex items-center justify-end gap-1.5 pr-2 opacity-75" aria-hidden="true">
+            <div className="mb-4 hidden items-center justify-end gap-1.5 pr-2 opacity-75 md:flex" aria-hidden="true">
               {[18, 30, 46, 26, 56, 34, 42, 24, 50, 32, 22, 38].map(
                 (height, index) => (
                   <span
@@ -917,7 +1027,7 @@ export default function Home() {
             </div>
             <div
               onMouseMove={handleSpotlightMove}
-              className="spotlight-card group relative overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-3 shadow-2xl shadow-black/35 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/25 hover:shadow-[0_24px_80px_rgba(20,184,166,0.14)]"
+              className="spotlight-card group relative hidden overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-3 shadow-2xl shadow-black/35 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/25 hover:shadow-[0_24px_80px_rgba(20,184,166,0.14)] md:block"
             >
               <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-100/50 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
               <iframe
@@ -930,6 +1040,14 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
+            <a
+              href={spotifyTrackUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] md:hidden"
+            >
+              {t.listenOnSpotify} ↗
+            </a>
             <a
               href={spotifyUrl}
               target="_blank"
