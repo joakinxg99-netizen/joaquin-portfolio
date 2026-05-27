@@ -869,7 +869,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.055),transparent_36%)] opacity-0 transition duration-500 group-hover:opacity-100" />
                 <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-teal-200 via-white to-pink-200 transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
                 <div className="mb-8 flex items-center justify-between sm:mb-10">
-                  <span className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 bg-black/25 text-sm font-medium text-zinc-400 shadow-inner shadow-white/5 transition duration-300 group-hover:border-teal-200/30 group-hover:text-teal-100 group-hover:shadow-[0_0_26px_rgba(45,212,191,0.13)]">
+                  <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-black/25 px-2 text-[0.8125rem] font-medium leading-none text-zinc-400 shadow-inner shadow-white/5 transition duration-300 group-hover:border-teal-200/30 group-hover:text-teal-100 group-hover:shadow-[0_0_26px_rgba(45,212,191,0.13)] sm:text-sm">
                     0{index + 1}
                   </span>
                   <span className="h-px w-16 origin-right scale-x-50 bg-gradient-to-r from-transparent via-white/25 to-teal-200/60 transition duration-500 group-hover:scale-x-100" />
