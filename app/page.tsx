@@ -11,7 +11,7 @@ const spotifyUrl =
 const spotifyTrackUrl =
   "https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=05ba775bb97d4068";
 const instagramUrl = "https://instagram.com/joa.brv";
-const projectUrl = "https://dravictoriagomez.com";
+const projectUrl = "https://dravictoriagomez.com.br";
 
 const content = {
   pt: {
@@ -873,7 +873,7 @@ export default function Home() {
                         <span className="h-2 w-2 rounded-full bg-teal-200/75 md:h-2.5 md:w-2.5" />
                       </div>
                       <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-400 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
-                        dravictoriagomez.com
+                        dravictoriagomez.com.br
                       </div>
                     </div>
                     <div className="relative aspect-[5/4] overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-2.5 sm:p-4 md:aspect-[16/10] md:p-6">
@@ -888,14 +888,14 @@ export default function Home() {
                             <div className="absolute bottom-3 left-3 flex items-center gap-1.5 md:bottom-5 md:left-5 md:gap-2">
                               <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
                               <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
-                                dravictoriagomez.com
+                                dravictoriagomez.com.br
                               </span>
                             </div>
                           </div>
 
                           <div className="p-3 md:p-5">
                             <p className="truncate text-[0.68rem] text-zinc-400 md:text-xs">
-                              dravictoriagomez.com
+                              dravictoriagomez.com.br
                             </p>
                             <h4 className="mt-1.5 text-sm font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
                               {t.projectPreviewTitle}
