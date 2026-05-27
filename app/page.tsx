@@ -11,7 +11,7 @@ const spotifyUrl =
 const spotifyTrackUrl =
   "https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=05ba775bb97d4068";
 const instagramUrl = "https://instagram.com/joa.brv";
-const projectUrl = "https://victoria-psicologia.vercel.app";
+const projectUrl = "https://dravictoriagomez.com";
 
 const content = {
   pt: {
@@ -874,7 +874,7 @@ export default function Home() {
                         <span className="h-2.5 w-2.5 rounded-full bg-teal-200/75" />
                       </div>
                       <div className="min-w-0 flex-1 rounded-md border border-white/10 bg-black/25 px-3 py-1.5 text-center text-xs text-zinc-400 shadow-inner shadow-black/20">
-                        victoria-psicologia.vercel.app
+                        dravictoriagomez.com
                       </div>
                     </div>
                     <div className="relative aspect-[16/10] overflow-hidden bg-[radial-gradient(circle_at_25%_20%,rgba(45,212,191,0.24),transparent_34%),radial-gradient(circle_at_82%_80%,rgba(244,114,182,0.18),transparent_32%),linear-gradient(135deg,#151720,#08090d)]">
@@ -891,7 +891,7 @@ export default function Home() {
                         <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(45,212,191,0.26),transparent_34%),radial-gradient(circle_at_76%_78%,rgba(244,114,182,0.2),transparent_34%),linear-gradient(135deg,#171a22,#07080b)] px-6 text-center">
                           <div>
                             <p className="text-xs uppercase tracking-[0.18em] text-teal-100/55">
-                              victoria-psicologia.vercel.app
+                              dravictoriagomez.com
                             </p>
                             <p className="mt-3 text-lg font-medium text-white">
                               {t.projectPreviewTitle}
@@ -903,7 +903,7 @@ export default function Home() {
                       <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-lg border border-white/10 bg-black/35 px-3 py-2.5 shadow-xl shadow-black/25 backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:px-4 sm:py-3">
                         <div className="min-w-0">
                           <p className="truncate text-xs text-zinc-400">
-                            victoria-psicologia.vercel.app
+                            dravictoriagomez.com
                           </p>
                           <p className="mt-1 truncate text-sm font-medium text-white">
                             {t.projectPreviewTitle}
