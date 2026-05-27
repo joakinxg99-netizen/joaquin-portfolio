@@ -54,7 +54,7 @@ const content = {
     projectButton: "Ver projeto",
     featuredProject: "Projeto em destaque",
     comingSoon: "Em breve",
-    moreProjectsComingSoon: "Mais projetos em breve.",
+    moreProjectsComingSoon: "Mais trabalhos selecionados em breve.",
     musicTitle: "Música",
     musicText:
       "Além do desenvolvimento web, crio música eletrônica com uma identidade cinematográfica e hipnótica — unindo tensão melódica, atmosferas escuras e energia de pista.",
@@ -112,7 +112,7 @@ const content = {
     projectButton: "Ver proyecto",
     featuredProject: "Proyecto destacado",
     comingSoon: "Próximamente",
-    moreProjectsComingSoon: "Más proyectos próximamente.",
+    moreProjectsComingSoon: "Más trabajos seleccionados próximamente.",
     musicTitle: "Música",
     musicText:
       "Además del desarrollo web, creo música electrónica con una identidad cinematográfica e hipnótica — combinando tensión melódica, atmósferas oscuras y energía de pista.",
@@ -170,7 +170,7 @@ const content = {
     projectButton: "View project",
     featuredProject: "Featured Project",
     comingSoon: "Coming soon",
-    moreProjectsComingSoon: "More projects coming soon.",
+    moreProjectsComingSoon: "More selected work coming soon.",
     musicTitle: "Music",
     musicText:
       "Beyond web development, I create electronic music with a cinematic and hypnotic identity — blending melodic tension, dark atmospheres and dancefloor energy.",
@@ -253,7 +253,6 @@ export default function Home() {
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [projectImageFailed, setProjectImageFailed] = useState(false);
   const t = content[lang];
 
   const navItems = [
@@ -878,39 +877,14 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="relative aspect-[16/10] overflow-hidden bg-[radial-gradient(circle_at_25%_20%,rgba(45,212,191,0.24),transparent_34%),radial-gradient(circle_at_82%_80%,rgba(244,114,182,0.18),transparent_32%),linear-gradient(135deg,#151720,#08090d)]">
-                      {!projectImageFailed ? (
-                        <Image
-                          src="/victoria-preview.jpg"
-                          alt={t.projectPreviewTitle}
-                          fill
-                          sizes="(max-width: 768px) 86vw, 620px"
-                          className="object-cover object-top transition duration-700 group-hover/browser:scale-[1.035]"
-                          onError={() => setProjectImageFailed(true)}
-                        />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(45,212,191,0.26),transparent_34%),radial-gradient(circle_at_76%_78%,rgba(244,114,182,0.2),transparent_34%),linear-gradient(135deg,#171a22,#07080b)] px-6 text-center">
-                          <div>
-                            <p className="text-xs uppercase tracking-[0.18em] text-teal-100/55">
-                              dravictoriagomez.com
-                            </p>
-                            <p className="mt-3 text-lg font-medium text-white">
-                              {t.projectPreviewTitle}
-                            </p>
-                          </div>
-                        </div>
-                      )}
+                      <Image
+                        src="/victoria-preview.jpg"
+                        alt={t.projectPreviewTitle}
+                        fill
+                        sizes="(max-width: 768px) 86vw, 620px"
+                        className="object-cover object-top transition duration-700 group-hover/browser:scale-[1.035]"
+                      />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_62%,rgba(0,0,0,0.32)_100%)]" />
-                      <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-lg border border-white/10 bg-black/35 px-3 py-2.5 shadow-xl shadow-black/25 backdrop-blur sm:bottom-4 sm:left-4 sm:right-4 sm:px-4 sm:py-3">
-                        <div className="min-w-0">
-                          <p className="truncate text-xs text-zinc-400">
-                            dravictoriagomez.com
-                          </p>
-                          <p className="mt-1 truncate text-sm font-medium text-white">
-                            {t.projectPreviewTitle}
-                          </p>
-                        </div>
-                        <span className="ml-4 h-2 w-2 rounded-full bg-teal-200 shadow-[0_0_16px_rgba(94,234,212,0.65)]" />
-                      </div>
                     </div>
                   </div>
                 </div>
