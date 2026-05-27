@@ -445,6 +445,26 @@ export default function Home() {
           }
         }
 
+        @keyframes glowDrift {
+          0%, 100% {
+            transform: translate3d(0, 0, 0) scale(1);
+          }
+
+          50% {
+            transform: translate3d(22px, -16px, 0) scale(1.04);
+          }
+        }
+
+        @keyframes floatSoft {
+          0%, 100% {
+            transform: translate3d(0, 0, 0);
+          }
+
+          50% {
+            transform: translate3d(0, -10px, 0);
+          }
+        }
+
         @keyframes waveformPulse {
           0%, 100% {
             transform: scaleY(0.36);
@@ -469,8 +489,8 @@ export default function Home() {
           }
         }
       `}</style>
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(79,70,229,0.24),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(20,184,166,0.14),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(244,114,182,0.1),transparent_34%),linear-gradient(180deg,#07080b_0%,#101116_46%,#07080b_100%)]" />
-      <div className="fixed inset-0 -z-10 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.04)_38%,transparent_58%)] opacity-70 [animation:pulse_8s_ease-in-out_infinite]" />
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(79,70,229,0.26),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(20,184,166,0.18),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(244,114,182,0.11),transparent_34%),linear-gradient(180deg,#07080b_0%,#101116_46%,#07080b_100%)]" />
+      <div className="fixed inset-0 -z-10 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.055)_38%,transparent_58%)] opacity-70 [animation:glowDrift_14s_ease-in-out_infinite]" />
       <div
         className="pointer-events-none fixed inset-0 z-0 hidden opacity-45 mix-blend-screen transition-opacity duration-500 lg:block"
         style={{
@@ -632,6 +652,10 @@ export default function Home() {
       <section id="home" className="relative z-10 mx-auto grid max-w-6xl gap-9 px-5 pb-14 pt-11 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:pb-28 lg:pt-24">
         <div
           aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-4 -z-10 h-[34rem] overflow-hidden rounded-[3rem] border border-white/[0.03] bg-[radial-gradient(circle_at_20%_18%,rgba(45,212,191,0.14),transparent_28%),radial-gradient(circle_at_78%_24%,rgba(99,102,241,0.18),transparent_32%),radial-gradient(circle_at_52%_82%,rgba(244,114,182,0.08),transparent_30%)] opacity-80 blur-0 lg:top-10"
+        />
+        <div
+          aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 hidden overflow-hidden lg:block"
         >
           <div
@@ -695,6 +719,14 @@ export default function Home() {
               <p>{"interface Presence { web: true; music: true }"}</p>
               <p>{"mix.visuals(signal, atmosphere);"}</p>
             </div>
+            <div className="absolute left-28 bottom-20 rounded-xl border border-white/10 bg-white/[0.055] px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7s_ease-in-out_infinite]">
+              <p className="text-teal-100/70">{"<Experience />"}</p>
+              <p className="mt-2 text-white/35">{"latency: 0.2s"}</p>
+            </div>
+            <div className="absolute right-0 top-48 rounded-xl border border-white/10 bg-black/25 px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8s_ease-in-out_infinite]">
+              <p className="text-pink-100/70">{"sound.design()"}</p>
+              <p className="mt-2 text-white/35">{"motion: subtle"}</p>
+            </div>
           </div>
         </div>
         <Reveal>
@@ -752,6 +784,13 @@ export default function Home() {
         </Reveal>
 
         <Reveal delay={120} className="group relative mx-auto w-full max-w-[20rem] sm:max-w-sm lg:max-w-md">
+          <div className="pointer-events-none absolute -left-8 top-10 z-20 hidden rounded-xl border border-white/10 bg-[#090b10]/75 px-4 py-3 font-mono text-[0.68rem] text-teal-100/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7.5s_ease-in-out_infinite] lg:block">
+            {"npm run build"}
+          </div>
+          <div className="pointer-events-none absolute -right-8 bottom-20 z-20 hidden rounded-xl border border-white/10 bg-[#090b10]/75 px-4 py-3 text-xs text-zinc-300/80 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8.5s_ease-in-out_infinite] lg:block">
+            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-teal-200 shadow-[0_0_16px_rgba(94,234,212,0.8)]" />
+            Premium UI
+          </div>
           <div
             className="absolute -inset-5 rounded-[2rem] bg-[radial-gradient(circle_at_35%_15%,rgba(255,255,255,0.2),transparent_34%),radial-gradient(circle_at_78%_70%,rgba(20,184,166,0.24),transparent_36%),radial-gradient(circle_at_18%_88%,rgba(99,102,241,0.24),transparent_34%)] opacity-70 blur-2xl transition duration-700 group-hover:opacity-100"
             style={{
@@ -816,30 +855,35 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-6xl px-5 py-20 sm:px-6">
+      <section className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
         <Reveal>
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.servicesTitle}
           </h2>
         </Reveal>
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-3 sm:mt-10">
           {t.services.map((service, index) => (
             <Reveal key={service.title} delay={index * 110}>
               <article
                 onMouseMove={handleSpotlightMove}
-                className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.085),rgba(255,255,255,0.024))] p-7 shadow-xl shadow-black/25 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-teal-200/40 hover:bg-white/[0.085] hover:shadow-[0_24px_70px_rgba(20,184,166,0.13)]"
+                className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.092),rgba(255,255,255,0.025)_52%,rgba(20,184,166,0.035))] p-6 shadow-xl shadow-black/25 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-teal-200/40 hover:bg-white/[0.09] hover:shadow-[0_28px_80px_rgba(20,184,166,0.14)] sm:p-7"
               >
-                <div className="absolute inset-x-7 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-teal-200 via-white to-pink-200 transition duration-500 group-hover:scale-x-100" />
-                <div className="mb-10 flex items-center justify-between text-sm font-medium text-zinc-500 transition duration-300 group-hover:text-teal-200">
-                  <span className="transition duration-300 group-hover:translate-x-1">
-                  0{index + 1}
+                <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.055),transparent_36%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-teal-200 via-white to-pink-200 transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
+                <div className="mb-8 flex items-center justify-between sm:mb-10">
+                  <span className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 bg-black/25 text-sm font-medium text-zinc-400 shadow-inner shadow-white/5 transition duration-300 group-hover:border-teal-200/30 group-hover:text-teal-100 group-hover:shadow-[0_0_26px_rgba(45,212,191,0.13)]">
+                    0{index + 1}
                   </span>
-                  <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-teal-200 group-hover:shadow-[0_0_18px_rgba(94,234,212,0.75)]" />
+                  <span className="h-px w-16 origin-right scale-x-50 bg-gradient-to-r from-transparent via-white/25 to-teal-200/60 transition duration-500 group-hover:scale-x-100" />
                 </div>
                 <h3 className="text-xl font-medium text-white">
                   {service.title}
                 </h3>
                 <p className="mt-5 leading-7 text-zinc-400">{service.text}</p>
+                <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-zinc-500 transition duration-300 group-hover:text-teal-100/70">
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-teal-200 group-hover:shadow-[0_0_18px_rgba(94,234,212,0.75)]" />
+                  <span>JØA BRAV</span>
+                </div>
               </article>
             </Reveal>
           ))}
