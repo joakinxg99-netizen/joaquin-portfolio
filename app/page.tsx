@@ -7,7 +7,7 @@ import type { CSSProperties, MouseEvent as ReactMouseEvent, ReactNode } from "re
 type Lang = "pt" | "es" | "en";
 
 const spotifyUrl =
-  "https://open.spotify.com/artist/2mN6Z2Dk4DPMm3FJj0sX0X";
+  "https://open.spotify.com/intl-es/artist/25JUXI8MfGUhSKUdAatSzt";
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
 
@@ -1071,8 +1071,19 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
+            <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-2 shadow-2xl shadow-black/30 backdrop-blur md:hidden">
+              <iframe
+                title="Compact Spotify track player - Into Space"
+                src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
+                width="100%"
+                height="152"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="block rounded-lg"
+              />
+            </div>
             <a
-              href="https://open.spotify.com/track/134WSBaVh7ePxkY4j3c83B"
+              href="https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=97afc819229c46ec"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex w-full cursor-pointer items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] md:hidden"
