@@ -861,46 +861,46 @@ export default function Home() {
                 href={projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[250px] bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-3 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:min-h-80 sm:p-6"
+                className="min-h-[300px] bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-2.5 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6"
                 aria-label={t.projectPreviewTitle}
               >
-                <div className="flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-2.5 shadow-inner shadow-white/5 backdrop-blur sm:p-4">
+                <div className="flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-2 shadow-inner shadow-white/5 backdrop-blur sm:p-3 md:p-4">
                   <div className="group/browser w-full max-w-2xl overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40 ring-1 ring-transparent transition duration-500 group-hover:-translate-y-1 group-hover:border-teal-100/30 group-hover:ring-teal-200/20">
-                    <div className="flex items-center gap-3 border-b border-white/10 bg-white/[0.045] px-4 py-3">
-                      <div className="flex gap-1.5">
-                        <span className="h-2.5 w-2.5 rounded-full bg-red-300/75" />
-                        <span className="h-2.5 w-2.5 rounded-full bg-yellow-200/75" />
-                        <span className="h-2.5 w-2.5 rounded-full bg-teal-200/75" />
+                    <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.045] px-3 py-2 md:gap-3 md:px-4 md:py-3">
+                      <div className="flex gap-1 md:gap-1.5">
+                        <span className="h-2 w-2 rounded-full bg-red-300/75 md:h-2.5 md:w-2.5" />
+                        <span className="h-2 w-2 rounded-full bg-yellow-200/75 md:h-2.5 md:w-2.5" />
+                        <span className="h-2 w-2 rounded-full bg-teal-200/75 md:h-2.5 md:w-2.5" />
                       </div>
-                      <div className="min-w-0 flex-1 rounded-md border border-white/10 bg-black/25 px-3 py-1.5 text-center text-xs text-zinc-400 shadow-inner shadow-black/20">
+                      <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-400 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
                         dravictoriagomez.com
                       </div>
                     </div>
-                    <div className="relative aspect-[16/10] overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-4 sm:p-6">
-                      <div className="absolute left-8 top-8 h-24 w-24 rounded-full bg-teal-200/12 blur-2xl transition duration-700 group-hover/browser:bg-teal-200/18" />
-                      <div className="absolute bottom-6 right-8 h-28 w-28 rounded-full bg-pink-200/10 blur-2xl transition duration-700 group-hover/browser:bg-pink-200/16" />
+                    <div className="relative aspect-[5/4] overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-2.5 sm:p-4 md:aspect-[16/10] md:p-6">
+                      <div className="absolute left-6 top-6 h-20 w-20 rounded-full bg-teal-200/12 blur-2xl transition duration-700 group-hover/browser:bg-teal-200/18 md:left-8 md:top-8 md:h-24 md:w-24" />
+                      <div className="absolute bottom-5 right-6 h-24 w-24 rounded-full bg-pink-200/10 blur-2xl transition duration-700 group-hover/browser:bg-pink-200/16 md:bottom-6 md:right-8 md:h-28 md:w-28" />
                       <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.055)_46%,transparent_68%)] opacity-70 transition duration-700 group-hover/browser:translate-x-6" />
 
                       <div className="relative flex h-full items-center justify-center">
-                        <div className="w-full max-w-md overflow-hidden rounded-2xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl transition duration-700 group-hover/browser:-translate-y-1 group-hover/browser:border-teal-100/30 group-hover/browser:bg-white/[0.095] group-hover/browser:shadow-[0_24px_70px_rgba(20,184,166,0.16)]">
-                          <div className="relative h-24 overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] sm:h-28">
-                            <div className="absolute inset-x-8 top-8 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent" />
-                            <div className="absolute bottom-5 left-5 flex items-center gap-2">
-                              <span className="h-2 w-2 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)]" />
-                              <span className="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-white/70">
+                        <div className="w-full max-w-[17rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl transition duration-700 group-hover/browser:-translate-y-1 group-hover/browser:border-teal-100/30 group-hover/browser:bg-white/[0.095] group-hover/browser:shadow-[0_24px_70px_rgba(20,184,166,0.16)] sm:max-w-sm md:max-w-md md:rounded-2xl">
+                          <div className="relative h-16 overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] sm:h-20 md:h-28">
+                            <div className="absolute inset-x-5 top-6 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent md:inset-x-8 md:top-8" />
+                            <div className="absolute bottom-3 left-3 flex items-center gap-1.5 md:bottom-5 md:left-5 md:gap-2">
+                              <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
+                              <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
                                 dravictoriagomez.com
                               </span>
                             </div>
                           </div>
 
-                          <div className="p-4 sm:p-5">
-                            <p className="text-xs text-zinc-400">
+                          <div className="p-3 md:p-5">
+                            <p className="truncate text-[0.68rem] text-zinc-400 md:text-xs">
                               dravictoriagomez.com
                             </p>
-                            <h4 className="mt-2 text-lg font-semibold leading-tight text-white sm:text-xl">
+                            <h4 className="mt-1.5 text-sm font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
                               {t.projectPreviewTitle}
                             </h4>
-                            <p className="mt-3 line-clamp-3 text-sm leading-6 text-zinc-300/85">
+                            <p className="mt-2 line-clamp-2 text-[0.7rem] leading-5 text-zinc-300/85 sm:text-xs md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
                               {t.projectPreviewDescription}
                             </p>
                           </div>
