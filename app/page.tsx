@@ -876,15 +876,36 @@ export default function Home() {
                         dravictoriagomez.com
                       </div>
                     </div>
-                    <div className="relative aspect-[16/10] overflow-hidden bg-[radial-gradient(circle_at_25%_20%,rgba(45,212,191,0.24),transparent_34%),radial-gradient(circle_at_82%_80%,rgba(244,114,182,0.18),transparent_32%),linear-gradient(135deg,#151720,#08090d)]">
-                      <Image
-                        src="/victoria-preview.jpg"
-                        alt={t.projectPreviewTitle}
-                        fill
-                        sizes="(max-width: 768px) 86vw, 620px"
-                        className="object-cover object-top transition duration-700 group-hover/browser:scale-[1.035]"
-                      />
-                      <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_62%,rgba(0,0,0,0.32)_100%)]" />
+                    <div className="relative aspect-[16/10] overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-4 sm:p-6">
+                      <div className="absolute left-8 top-8 h-24 w-24 rounded-full bg-teal-200/12 blur-2xl transition duration-700 group-hover/browser:bg-teal-200/18" />
+                      <div className="absolute bottom-6 right-8 h-28 w-28 rounded-full bg-pink-200/10 blur-2xl transition duration-700 group-hover/browser:bg-pink-200/16" />
+                      <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.055)_46%,transparent_68%)] opacity-70 transition duration-700 group-hover/browser:translate-x-6" />
+
+                      <div className="relative flex h-full items-center justify-center">
+                        <div className="w-full max-w-md overflow-hidden rounded-2xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl transition duration-700 group-hover/browser:-translate-y-1 group-hover/browser:border-teal-100/30 group-hover/browser:bg-white/[0.095] group-hover/browser:shadow-[0_24px_70px_rgba(20,184,166,0.16)]">
+                          <div className="relative h-24 overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] sm:h-28">
+                            <div className="absolute inset-x-8 top-8 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent" />
+                            <div className="absolute bottom-5 left-5 flex items-center gap-2">
+                              <span className="h-2 w-2 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)]" />
+                              <span className="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-white/70">
+                                dravictoriagomez.com
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="p-4 sm:p-5">
+                            <p className="text-xs text-zinc-400">
+                              dravictoriagomez.com
+                            </p>
+                            <h4 className="mt-2 text-lg font-semibold leading-tight text-white sm:text-xl">
+                              {t.projectPreviewTitle}
+                            </h4>
+                            <p className="mt-3 line-clamp-3 text-sm leading-6 text-zinc-300/85">
+                              {t.projectPreviewDescription}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
