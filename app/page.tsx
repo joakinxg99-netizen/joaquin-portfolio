@@ -63,6 +63,8 @@ const content = {
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
     musicTags: ["Produtor de Techno", "Identidade cinematográfica", "Energia hipnótica"],
+    trackMood:
+      "Uma viagem sonora escura e hipnótica, construída para tensão, atmosfera e movimento.",
     listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
     openMenu: "Abrir menu",
@@ -121,6 +123,8 @@ const content = {
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
     musicTags: ["Productor de Techno", "Identidad cinematográfica", "Energía hipnótica"],
+    trackMood:
+      "Un viaje sonoro oscuro e hipnótico, construido para tensión, atmósfera y movimiento.",
     listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
     openMenu: "Abrir menú",
@@ -179,6 +183,8 @@ const content = {
     trackArtistLabel: "Artist",
     trackArtist: "JØA BRAV",
     musicTags: ["Techno Producer", "Cinematic Identity", "Hypnotic Energy"],
+    trackMood:
+      "A dark, hypnotic sonic trip shaped for tension, atmosphere and movement.",
     listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
     openMenu: "Open menu",
@@ -786,7 +792,7 @@ export default function Home() {
               <p className="mb-4 text-xs font-medium uppercase tracking-[0.24em] text-teal-100/50">
                 Editorial
               </p>
-              <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+              <h2 className="text-2xl font-semibold text-white sm:text-4xl">
                 {t.aboutTitle}
               </h2>
             </div>
@@ -812,7 +818,7 @@ export default function Home() {
 
       <section className="relative z-10 mx-auto max-w-6xl px-5 py-20 sm:px-6">
         <Reveal>
-          <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+          <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.servicesTitle}
           </h2>
         </Reveal>
@@ -843,7 +849,7 @@ export default function Home() {
       <section id="projects" className="relative z-10 border-y border-white/10 bg-white/[0.035]">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
           <Reveal>
-            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+            <h2 className="text-2xl font-semibold text-white sm:text-4xl">
               {t.projectsTitle}
             </h2>
           </Reveal>
@@ -851,21 +857,44 @@ export default function Home() {
           <Reveal delay={120}>
             <article
               onMouseMove={handleSpotlightMove}
-                className="spotlight-card group relative mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-2xl shadow-black/30 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_24px_80px_rgba(20,184,166,0.13)] sm:mt-10 lg:grid-cols-[1.08fr_0.92fr]"
+              className="spotlight-card group relative mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] shadow-2xl shadow-black/30 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_24px_80px_rgba(20,184,166,0.13)] sm:mt-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-center"
             >
               <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-200/70 to-transparent" />
-                <div className="absolute -left-20 top-12 h-40 w-40 rounded-full bg-teal-300/10 blur-3xl" />
+                <div className="absolute -left-16 top-1/2 h-44 w-44 -translate-y-1/2 rounded-full bg-teal-300/10 blur-3xl" />
+                <div className="absolute -right-24 top-16 h-56 w-56 rounded-full bg-pink-300/10 blur-3xl" />
               </div>
+
+              <div className="flex min-h-0 flex-col justify-center p-5 sm:p-8 lg:min-h-[420px] lg:p-10 xl:p-12">
+                <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
+                  {t.featuredProject}
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
+                  {t.projectTitle}
+                </h3>
+                <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
+                  {t.projectDescription}
+                </p>
+                <a
+                  href={projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
+                >
+                  {t.projectButton}
+                </a>
+              </div>
+
               <a
                 href={projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[270px] bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-2 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6"
+                className="relative min-h-[270px] bg-gradient-to-br from-teal-300/30 via-indigo-400/18 to-pink-300/18 p-2 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6 lg:min-h-[420px] lg:p-8"
                 aria-label={t.projectPreviewTitle}
               >
-                <div className="flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-2 shadow-inner shadow-white/5 backdrop-blur sm:p-3 md:p-4">
-                  <div className="group/browser w-full max-w-2xl overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40 ring-1 ring-transparent transition duration-500 group-hover:-translate-y-1 group-hover:border-teal-100/30 group-hover:ring-teal-200/20">
+                <div className="pointer-events-none absolute inset-6 rounded-[2rem] bg-[radial-gradient(circle_at_58%_42%,rgba(45,212,191,0.16),transparent_46%)] blur-2xl transition duration-700 group-hover:opacity-100 lg:inset-8" />
+                <div className="relative flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-2 shadow-inner shadow-white/5 backdrop-blur sm:p-3 md:p-4 lg:p-5">
+                  <div className="group/browser w-full max-w-3xl overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40 ring-1 ring-transparent transition duration-500 group-hover:-translate-y-1 group-hover:scale-[1.01] group-hover:border-teal-100/30 group-hover:ring-teal-200/20">
                     <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.045] px-3 py-2 md:gap-3 md:px-4 md:py-3">
                       <div className="flex gap-1 md:gap-1.5">
                         <span className="h-2 w-2 rounded-full bg-red-300/75 md:h-2.5 md:w-2.5" />
@@ -910,26 +939,6 @@ export default function Home() {
                   </div>
                 </div>
               </a>
-
-              <div className="flex min-h-0 flex-col justify-center p-5 sm:min-h-[340px] sm:p-8 lg:p-10">
-                <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
-                  {t.featuredProject}
-                </p>
-                <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
-                  {t.projectTitle}
-                </h3>
-                <p className="mt-4 max-w-2xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
-                  {t.projectDescription}
-                </p>
-                <a
-                  href={projectUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 inline-flex w-fit rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
-                >
-                  {t.projectButton}
-                </a>
-              </div>
             </article>
 
             <p className="mt-5 text-center text-sm text-zinc-500">
@@ -959,7 +968,7 @@ export default function Home() {
                 />
               ))}
             </div>
-            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+            <h2 className="text-2xl font-semibold text-white sm:text-4xl">
               {t.musicTitle}
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-300">
@@ -975,7 +984,7 @@ export default function Home() {
                   <p className="text-xs font-medium uppercase tracking-[0.2em] text-teal-100/60">
                     {t.featuredTrack}
                   </p>
-                  <h3 className="mt-3 text-3xl font-semibold text-white">
+                  <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
                     {t.featuredTrackTitle}
                   </h3>
                   <p className="mt-2 text-sm uppercase tracking-[0.16em] text-zinc-500">
@@ -985,8 +994,11 @@ export default function Home() {
                 </div>
                 <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent sm:mb-3" />
               </div>
+              <p className="mt-5 text-sm leading-7 text-zinc-400">
+                {t.trackMood}
+              </p>
 
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap gap-2">
                 {t.musicTags.map((tag) => (
                   <span
                     key={tag}
@@ -995,17 +1007,6 @@ export default function Home() {
                     {tag}
                   </span>
                 ))}
-              </div>
-              <div className="mt-5 overflow-hidden rounded-lg border border-white/10 bg-black/25 p-1.5 shadow-inner shadow-white/5 transition duration-300 hover:border-teal-200/20 hover:shadow-[0_16px_42px_rgba(20,184,166,0.1)]">
-                <iframe
-                  title="Compact Spotify track player - Into Space"
-                  src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
-                  width="100%"
-                  height="80"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  className="block rounded-md"
-                />
               </div>
             </div>
           </div>
@@ -1040,7 +1041,7 @@ export default function Home() {
                 title="Spotify track player - Into Space"
                 src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
                 width="100%"
-                height="152"
+                height="352"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
                 className="rounded-lg"
@@ -1069,7 +1070,7 @@ export default function Home() {
       <section id="contact" className="relative z-10 border-t border-white/10 bg-white/[0.035]">
         <div className="mx-auto max-w-6xl px-5 py-16 text-center sm:px-6 sm:py-20">
           <Reveal>
-            <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+            <h2 className="text-2xl font-semibold text-white sm:text-4xl">
               {t.contactTitle}
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-8 text-zinc-400">
