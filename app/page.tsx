@@ -9,7 +9,7 @@ type Lang = "pt" | "es" | "en";
 const spotifyUrl =
   "https://open.spotify.com/intl-es/artist/25JUXI8MfGUhSKUdAatSzt";
 const spotifyTrackUrl =
-  "https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=05ba775bb97d4068";
+  "https://open.spotify.com/track/134WSBaVh7ePxkY4j3c83B";
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
 
@@ -361,7 +361,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen overflow-x-hidden scroll-smooth bg-[#07080b] text-zinc-100 antialiased">
+    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#07080b] text-zinc-100 antialiased">
       <style>{`
         .reveal {
           opacity: 0;
@@ -726,7 +726,7 @@ export default function Home() {
               {t.projectsButton}
             </a>
             <a
-              href={spotifyUrl}
+              href={spotifyTrackUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-center text-sm font-medium text-white shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-teal-200/30 hover:bg-white/10 hover:shadow-teal-500/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 active:scale-[0.98]"
@@ -861,7 +861,7 @@ export default function Home() {
                 href={projectUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[300px] bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-2.5 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6"
+                className="min-h-[270px] bg-gradient-to-br from-teal-300/35 via-indigo-400/20 to-pink-300/20 p-2 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4 md:min-h-80 md:p-6"
                 aria-label={t.projectPreviewTitle}
               >
                 <div className="flex h-full items-center justify-center rounded-lg border border-white/10 bg-black/25 p-2 shadow-inner shadow-white/5 backdrop-blur sm:p-3 md:p-4">
@@ -876,14 +876,14 @@ export default function Home() {
                         dravictoriagomez.com.br
                       </div>
                     </div>
-                    <div className="relative aspect-[5/4] overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-2.5 sm:p-4 md:aspect-[16/10] md:p-6">
+                    <div className="relative aspect-[1.16/1] overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-2 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
                       <div className="absolute left-6 top-6 h-20 w-20 rounded-full bg-teal-200/12 blur-2xl transition duration-700 group-hover/browser:bg-teal-200/18 md:left-8 md:top-8 md:h-24 md:w-24" />
                       <div className="absolute bottom-5 right-6 h-24 w-24 rounded-full bg-pink-200/10 blur-2xl transition duration-700 group-hover/browser:bg-pink-200/16 md:bottom-6 md:right-8 md:h-28 md:w-28" />
                       <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.055)_46%,transparent_68%)] opacity-70 transition duration-700 group-hover/browser:translate-x-6" />
 
                       <div className="relative flex h-full items-center justify-center">
-                        <div className="w-full max-w-[17rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl transition duration-700 group-hover/browser:-translate-y-1 group-hover/browser:border-teal-100/30 group-hover/browser:bg-white/[0.095] group-hover/browser:shadow-[0_24px_70px_rgba(20,184,166,0.16)] sm:max-w-sm md:max-w-md md:rounded-2xl">
-                          <div className="relative h-16 overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] sm:h-20 md:h-28">
+                        <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl transition duration-700 group-hover/browser:-translate-y-1 group-hover/browser:border-teal-100/30 group-hover/browser:bg-white/[0.095] group-hover/browser:shadow-[0_24px_70px_rgba(20,184,166,0.16)] sm:max-w-sm md:max-w-md md:rounded-2xl">
+                          <div className="relative h-14 overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] sm:h-20 md:h-28">
                             <div className="absolute inset-x-5 top-6 h-px bg-gradient-to-r from-transparent via-white/35 to-transparent md:inset-x-8 md:top-8" />
                             <div className="absolute bottom-3 left-3 flex items-center gap-1.5 md:bottom-5 md:left-5 md:gap-2">
                               <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
@@ -893,14 +893,14 @@ export default function Home() {
                             </div>
                           </div>
 
-                          <div className="p-3 md:p-5">
-                            <p className="truncate text-[0.68rem] text-zinc-400 md:text-xs">
+                          <div className="p-2.5 sm:p-3 md:p-5">
+                            <p className="truncate text-[0.64rem] text-zinc-400 md:text-xs">
                               dravictoriagomez.com.br
                             </p>
-                            <h4 className="mt-1.5 text-sm font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
+                            <h4 className="mt-1 text-[0.82rem] font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
                               {t.projectPreviewTitle}
                             </h4>
-                            <p className="mt-2 line-clamp-2 text-[0.7rem] leading-5 text-zinc-300/85 sm:text-xs md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
+                            <p className="mt-1.5 line-clamp-2 text-[0.66rem] leading-4 text-zinc-300/85 sm:text-xs sm:leading-5 md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
                               {t.projectPreviewDescription}
                             </p>
                           </div>
@@ -939,7 +939,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="music" className="relative z-10 mx-auto max-w-6xl px-5 py-20 sm:px-6">
+      <section id="music" className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
         <div className="pointer-events-none absolute inset-x-5 top-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
           <Reveal>
@@ -968,7 +968,7 @@ export default function Home() {
 
             <div
               onMouseMove={handleSpotlightMove}
-              className="spotlight-card relative mt-8 overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-5 shadow-2xl shadow-black/20 backdrop-blur"
+              className="spotlight-card relative mt-7 overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-4 shadow-2xl shadow-black/20 backdrop-blur sm:mt-8 sm:p-5"
             >
               <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
                 <div>
@@ -995,6 +995,17 @@ export default function Home() {
                     {tag}
                   </span>
                 ))}
+              </div>
+              <div className="mt-5 overflow-hidden rounded-lg border border-white/10 bg-black/25 p-1.5 shadow-inner shadow-white/5 transition duration-300 hover:border-teal-200/20 hover:shadow-[0_16px_42px_rgba(20,184,166,0.1)]">
+                <iframe
+                  title="Compact Spotify track player - Into Space"
+                  src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
+                  width="100%"
+                  height="80"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  className="block rounded-md"
+                />
               </div>
             </div>
           </div>
@@ -1029,7 +1040,7 @@ export default function Home() {
                 title="Spotify track player - Into Space"
                 src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
                 width="100%"
-                height="352"
+                height="152"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
                 className="rounded-lg"
@@ -1039,7 +1050,7 @@ export default function Home() {
               href={spotifyTrackUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] md:hidden"
+              className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] md:hidden"
             >
               {t.listenOnSpotify} ↗
             </a>
@@ -1056,7 +1067,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="relative z-10 border-t border-white/10 bg-white/[0.035]">
-        <div className="mx-auto max-w-6xl px-5 py-20 text-center sm:px-6">
+        <div className="mx-auto max-w-6xl px-5 py-16 text-center sm:px-6 sm:py-20">
           <Reveal>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">
               {t.contactTitle}
@@ -1073,7 +1084,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-pink-200/30 hover:bg-white/10 hover:shadow-pink-500/10 focus:outline-none focus:ring-2 focus:ring-pink-200/35 active:scale-[0.98]"
             >
-              Instagram: @joa.brv
+              Instagram
             </a>
             <a
               href="mailto:joakinxg100@gmail.com"
@@ -1085,7 +1096,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="relative z-10 border-t border-white/10 px-5 py-8 text-center text-sm text-zinc-500">
+      <footer className="relative z-10 border-t border-white/10 px-5 py-6 text-center text-sm text-zinc-500 sm:py-8">
         {t.footer}
       </footer>
     </main>
