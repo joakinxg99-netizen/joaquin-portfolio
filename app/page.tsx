@@ -16,9 +16,9 @@ const content = {
   pt: {
     nav: ["Início", "Sobre", "Projetos", "Música", "Contato"],
     heroEyebrow: "Creative Developer • Premium Digital Experiences",
-    heroSubtitle: "Desenvolvedor Web para marcas pessoais premium",
+    heroSubtitle: "Websites premium para profissionais e marcas pessoais",
     heroDescription:
-      "Crio websites elegantes, rápidos e estratégicos para profissionais e marcas pessoais que querem elevar sua presença online, transmitir confiança e atrair novos clientes.",
+      "Experiências digitais criadas para elevar sua presença online e transformar confiança em novos clientes.",
     projectsButton: "Ver projetos",
     spotifyButton: "Ouvir no Spotify",
     instagramButton: "Instagram",
@@ -29,6 +29,21 @@ const content = {
       "Minha identidade artística como JØA BRAV também influencia meu olhar criativo, trazendo atmosfera, ritmo e direção estética para cada projeto.",
     ],
     servicesTitle: "O que eu faço",
+    whyTitle: "Por que trabalhar comigo",
+    whyCards: [
+      {
+        title: "Design estratégico",
+        text: "Websites criados para comunicar confiança e profissionalismo.",
+      },
+      {
+        title: "Experiência premium",
+        text: "Interfaces modernas, responsivas e com identidade visual forte.",
+      },
+      {
+        title: "Direção criativa",
+        text: "Experiências digitais com precisão artística e técnica.",
+      },
+    ],
     services: [
       {
         title: "Websites premium",
@@ -46,14 +61,14 @@ const content = {
     projectsTitle: "Projetos",
     projectTitle: "Site para Psicologia Clínica",
     projectDescription:
-      "Solução digital premium para uma psicóloga clínica, criada para fortalecer sua marca profissional, facilitar a navegação e converter visitantes em contatos qualificados.",
+      "Presença digital premium para psicologia clínica, com branding elegante, UX responsiva e navegação clara.",
     projectPreviewTitle: "Site para Psicologia Clínica",
     projectPreviewDescription:
       "Website profissional com branding elegante, experiência responsiva e navegação orientada à confiança.",
     projectTags: ["Design responsivo", "SEO", "UX", "Branding"],
     eduardoProjectTitle: "Site para Clínica de Psicologia",
     eduardoProjectDescription:
-      "Website moderno e profissional para psicologia, focado em clareza, confiança, experiência responsiva e identidade visual premium.",
+      "Website profissional para psicologia, focado em clareza, confiança, UX responsiva e identidade premium.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
     eduardoProjectPreviewDescription:
       "Presença digital profissional para psicologia, com navegação clara, visual premium e foco em credibilidade.",
@@ -64,14 +79,14 @@ const content = {
     moreProjectsComingSoon: "Mais trabalhos selecionados em breve.",
     musicTitle: "Identidade sonora",
     musicText:
-      "Como extensão artística da minha direção criativa, o projeto musical JØA BRAV explora atmosferas eletrônicas cinematográficas, tensão e identidade sonora.",
+      "Uma extensão artística da minha direção criativa, explorando som, atmosfera e identidade.",
     featuredTrack: "Projeto artístico",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
     musicTags: ["Sound identity", "Atmosfera cinematográfica", "Projeto artístico"],
     trackMood:
-      "Uma camada criativa paralela ao meu trabalho digital, onde som, atmosfera e identidade visual se encontram.",
+      "Um projeto paralelo de identidade sonora e direção artística.",
     listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
     openMenu: "Abrir menu",
@@ -84,9 +99,9 @@ const content = {
   es: {
     nav: ["Inicio", "Sobre mí", "Proyectos", "Música", "Contacto"],
     heroEyebrow: "Creative Developer • Experiencias Digitales Premium",
-    heroSubtitle: "Desarrollador web para marcas personales premium",
+    heroSubtitle: "Sitios web premium para profesionales y marcas personales",
     heroDescription:
-      "Creo sitios web elegantes, rápidos y estratégicos para profesionales y marcas personales que quieren elevar su presencia online, transmitir confianza y atraer nuevos clientes.",
+      "Experiencias digitales creadas para elevar tu presencia online y convertir confianza en nuevos clientes.",
     projectsButton: "Ver proyectos",
     spotifyButton: "Escuchar en Spotify",
     instagramButton: "Instagram",
@@ -97,6 +112,21 @@ const content = {
       "Mi identidad artística como JØA BRAV también influencia mi mirada creativa, aportando atmósfera, ritmo y dirección estética a cada proyecto.",
     ],
     servicesTitle: "Qué hago",
+    whyTitle: "Por qué trabajar conmigo",
+    whyCards: [
+      {
+        title: "Diseño estratégico",
+        text: "Sitios creados para comunicar confianza y profesionalismo.",
+      },
+      {
+        title: "Experiencia premium",
+        text: "Interfaces modernas, responsivas y con fuerte identidad visual.",
+      },
+      {
+        title: "Dirección creativa",
+        text: "Experiencias digitales con precisión artística y técnica.",
+      },
+    ],
     services: [
       {
         title: "Sitios web premium",
@@ -114,14 +144,14 @@ const content = {
     projectsTitle: "Proyectos",
     projectTitle: "Sitio para Psicología Clínica",
     projectDescription:
-      "Solución digital premium para una psicóloga clínica, creada para fortalecer su marca profesional, facilitar la navegación y convertir visitantes en contactos calificados.",
+      "Presencia digital premium para psicología clínica, con branding elegante, UX responsiva y navegación clara.",
     projectPreviewTitle: "Sitio para Psicología Clínica",
     projectPreviewDescription:
       "Sitio profesional con branding elegante, experiencia responsiva y navegación orientada a la confianza.",
     projectTags: ["Diseño responsivo", "SEO", "UX", "Branding"],
     eduardoProjectTitle: "Sitio para Clínica de Psicología",
     eduardoProjectDescription:
-      "Sitio moderno y profesional de psicología enfocado en claridad, confianza, experiencia responsiva e identidad visual premium.",
+      "Sitio profesional para psicología, enfocado en claridad, confianza, UX responsiva e identidad premium.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
     eduardoProjectPreviewDescription:
       "Presencia digital profesional para psicología, con navegación clara, visual premium y foco en credibilidad.",
@@ -132,14 +162,14 @@ const content = {
     moreProjectsComingSoon: "Más trabajos seleccionados próximamente.",
     musicTitle: "Identidad sonora",
     musicText:
-      "Como extensión artística de mi dirección creativa, el proyecto musical JØA BRAV explora atmósferas electrónicas cinematográficas, tensión e identidad sonora.",
+      "Una extensión artística de mi dirección creativa, explorando sonido, atmósfera e identidad.",
     featuredTrack: "Proyecto artístico",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
     musicTags: ["Identidad sonora", "Atmósfera cinematográfica", "Proyecto artístico"],
     trackMood:
-      "Una capa creativa paralela a mi trabajo digital, donde sonido, atmósfera e identidad visual se encuentran.",
+      "Un proyecto paralelo de identidad sonora y dirección artística.",
     listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
     openMenu: "Abrir menú",
@@ -152,9 +182,9 @@ const content = {
   en: {
     nav: ["Home", "About", "Projects", "Music", "Contact"],
     heroEyebrow: "Creative Developer • Premium Digital Experiences",
-    heroSubtitle: "Web Developer for premium personal brands",
+    heroSubtitle: "Premium websites for professionals and personal brands",
     heroDescription:
-      "I create elegant, fast and strategic websites for professionals and personal brands who want to elevate their online presence, build trust and attract new clients.",
+      "Digital experiences designed to elevate your online presence and turn trust into new clients.",
     projectsButton: "View projects",
     spotifyButton: "Listen on Spotify",
     instagramButton: "Instagram",
@@ -165,6 +195,21 @@ const content = {
       "My artistic identity as JØA BRAV also shapes my creative eye, bringing atmosphere, rhythm and visual direction into each project.",
     ],
     servicesTitle: "What I do",
+    whyTitle: "Why work with me",
+    whyCards: [
+      {
+        title: "Strategic Design",
+        text: "Websites built to communicate trust and professionalism.",
+      },
+      {
+        title: "Premium Experience",
+        text: "Modern responsive interfaces with strong visual identity.",
+      },
+      {
+        title: "Creative Direction",
+        text: "Digital experiences with artistic and technical precision.",
+      },
+    ],
     services: [
       {
         title: "Premium websites",
@@ -182,14 +227,14 @@ const content = {
     projectsTitle: "Projects",
     projectTitle: "Clinical Psychology Website",
     projectDescription:
-      "A premium digital solution for a clinical psychologist, created to strengthen professional branding, simplify navigation and convert visitors into qualified contacts.",
+      "Premium digital presence for clinical psychology, with elegant branding, responsive UX and clear navigation.",
     projectPreviewTitle: "Clinical Psychology Website",
     projectPreviewDescription:
       "Professional website with elegant branding, responsive experience and trust-focused navigation.",
     projectTags: ["Responsive Design", "SEO", "UX", "Branding"],
     eduardoProjectTitle: "Psychology Clinic Website",
     eduardoProjectDescription:
-      "Modern and professional psychology website focused on clarity, trust, responsive experience and premium visual identity.",
+      "Professional psychology website focused on clarity, trust, responsive UX and premium identity.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
     eduardoProjectPreviewDescription:
       "Professional digital presence for psychology, with clear navigation, premium visuals and credibility-focused structure.",
@@ -200,14 +245,14 @@ const content = {
     moreProjectsComingSoon: "More selected work coming soon.",
     musicTitle: "Sound Identity",
     musicText:
-      "As an artistic extension of my creative direction, the JØA BRAV music project explores cinematic electronic atmospheres, tension and sound identity.",
+      "An artistic extension of my creative direction, exploring sound, atmosphere and identity.",
     featuredTrack: "Artistic Project",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artist",
     trackArtist: "JØA BRAV",
     musicTags: ["Sound Identity", "Cinematic Atmosphere", "Artistic Project"],
     trackMood:
-      "A parallel creative layer to my digital work, where sound, atmosphere and visual identity meet.",
+      "A parallel project in sound identity and artistic direction.",
     listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
     openMenu: "Open menu",
@@ -939,6 +984,31 @@ export default function Home() {
               </article>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      <section className="relative z-10 border-y border-white/10 bg-white/[0.025]">
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
+          <Reveal>
+            <h2 className="text-2xl font-semibold text-white sm:text-4xl">
+              {t.whyTitle}
+            </h2>
+          </Reveal>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {t.whyCards.map((card, index) => (
+              <Reveal key={card.title} delay={index * 90}>
+                <article
+                  onMouseMove={handleSpotlightMove}
+                  className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.07),rgba(255,255,255,0.022))] p-6 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_20px_58px_rgba(20,184,166,0.11)]"
+                >
+                  <h3 className="text-lg font-medium text-white">
+                    {card.title}
+                  </h3>
+                  <p className="mt-4 leading-7 text-zinc-400">{card.text}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
