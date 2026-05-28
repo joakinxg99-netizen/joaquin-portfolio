@@ -15,18 +15,18 @@ const eduardoProjectUrl = "https://www.eduardolealpsicologia.com.br/";
 const content = {
   pt: {
     nav: ["Início", "Sobre", "Projetos", "Música", "Contato"],
-    heroEyebrow: "Creative Developer • Premium Digital Experiences",
+    heroEyebrow: "Desenvolvedor Criativo • Experiências Digitais Premium",
     heroSubtitle: "Websites premium para profissionais e marcas pessoais",
     heroDescription:
-      "Experiências digitais criadas para elevar sua presença online e transformar confiança em novos clientes.",
+      "Experiências digitais criadas para elevar sua presença online e atrair mais clientes.",
     projectsButton: "Ver projetos",
     spotifyButton: "Ouvir no Spotify",
     instagramButton: "Instagram",
     aboutTitle: "Sobre mim",
     aboutText: [
-      "Olá, sou Joaquín G. Bravo, creative developer argentino vivendo no Brasil.",
+      "Olá, sou Joaquín G. Bravo, desenvolvedor criativo argentino vivendo no Brasil.",
       "Desenvolvo experiências digitais premium para profissionais, marcas pessoais e negócios que precisam de uma presença online clara, elegante e orientada a resultados.",
-      "Minha identidade artística como JØA BRAV também influencia meu olhar criativo, trazendo atmosfera, ritmo e direção estética para cada projeto.",
+      "JØA BRAV permanece como uma identidade artística paralela, trazendo sensibilidade sonora, atmosfera e direção criativa ao meu trabalho.",
     ],
     servicesTitle: "O que eu faço",
     whyTitle: "Por que trabalhar comigo",
@@ -79,14 +79,14 @@ const content = {
     moreProjectsComingSoon: "Mais trabalhos selecionados em breve.",
     musicTitle: "Identidade sonora",
     musicText:
-      "Uma extensão artística da minha direção criativa, explorando som, atmosfera e identidade.",
-    featuredTrack: "Projeto artístico",
+      "Projeto artístico paralelo de JØA BRAV, explorando identidade sonora, atmosfera e direção criativa.",
+    featuredTrack: "Identidade artística",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
-    musicTags: ["Sound identity", "Atmosfera cinematográfica", "Projeto artístico"],
+    musicTags: ["Identidade sonora", "Atmosfera cinematográfica", "Projeto artístico"],
     trackMood:
-      "Um projeto paralelo de identidade sonora e direção artística.",
+      "Uma peça sonora que conecta atmosfera, ritmo e identidade editorial.",
     listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
     openMenu: "Abrir menu",
@@ -98,18 +98,18 @@ const content = {
   },
   es: {
     nav: ["Inicio", "Sobre mí", "Proyectos", "Música", "Contacto"],
-    heroEyebrow: "Creative Developer • Experiencias Digitales Premium",
+    heroEyebrow: "Desarrollador Creativo • Experiencias Digitales Premium",
     heroSubtitle: "Sitios web premium para profesionales y marcas personales",
     heroDescription:
-      "Experiencias digitales creadas para elevar tu presencia online y convertir confianza en nuevos clientes.",
+      "Experiencias digitales creadas para elevar tu presencia online y atraer más clientes.",
     projectsButton: "Ver proyectos",
     spotifyButton: "Escuchar en Spotify",
     instagramButton: "Instagram",
     aboutTitle: "Sobre mí",
     aboutText: [
-      "Hola, soy Joaquín G. Bravo, creative developer argentino viviendo en Brasil.",
+      "Hola, soy Joaquín G. Bravo, desarrollador creativo argentino viviendo en Brasil.",
       "Desarrollo experiencias digitales premium para profesionales, marcas personales y negocios que necesitan una presencia online clara, elegante y orientada a resultados.",
-      "Mi identidad artística como JØA BRAV también influencia mi mirada creativa, aportando atmósfera, ritmo y dirección estética a cada proyecto.",
+      "JØA BRAV permanece como una identidad artística paralela, aportando sensibilidad sonora, atmósfera y dirección creativa a mi trabajo.",
     ],
     servicesTitle: "Qué hago",
     whyTitle: "Por qué trabajar conmigo",
@@ -162,14 +162,14 @@ const content = {
     moreProjectsComingSoon: "Más trabajos seleccionados próximamente.",
     musicTitle: "Identidad sonora",
     musicText:
-      "Una extensión artística de mi dirección creativa, explorando sonido, atmósfera e identidad.",
-    featuredTrack: "Proyecto artístico",
+      "Proyecto artístico paralelo de JØA BRAV, explorando identidad sonora, atmósfera y dirección creativa.",
+    featuredTrack: "Identidad artística",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
     musicTags: ["Identidad sonora", "Atmósfera cinematográfica", "Proyecto artístico"],
     trackMood:
-      "Un proyecto paralelo de identidad sonora y dirección artística.",
+      "Una pieza sonora que conecta atmósfera, ritmo e identidad editorial.",
     listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
     openMenu: "Abrir menú",
@@ -184,7 +184,7 @@ const content = {
     heroEyebrow: "Creative Developer • Premium Digital Experiences",
     heroSubtitle: "Premium websites for professionals and personal brands",
     heroDescription:
-      "Digital experiences designed to elevate your online presence and turn trust into new clients.",
+      "Digital experiences designed to elevate your online presence and attract more clients.",
     projectsButton: "View projects",
     spotifyButton: "Listen on Spotify",
     instagramButton: "Instagram",
@@ -192,7 +192,7 @@ const content = {
     aboutText: [
       "Hi, I’m Joaquín G. Bravo, a creative developer from Argentina living in Brazil.",
       "I build premium digital experiences for professionals, personal brands and businesses that need a clear, elegant and results-driven online presence.",
-      "My artistic identity as JØA BRAV also shapes my creative eye, bringing atmosphere, rhythm and visual direction into each project.",
+      "JØA BRAV remains a secondary artistic identity, bringing sound sensitivity, atmosphere and creative direction into my work.",
     ],
     servicesTitle: "What I do",
     whyTitle: "Why work with me",
@@ -245,14 +245,14 @@ const content = {
     moreProjectsComingSoon: "More selected work coming soon.",
     musicTitle: "Sound Identity",
     musicText:
-      "An artistic extension of my creative direction, exploring sound, atmosphere and identity.",
-    featuredTrack: "Artistic Project",
+      "A secondary artistic project by JØA BRAV, exploring sound identity, atmosphere and creative direction.",
+    featuredTrack: "Artistic Identity",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artist",
     trackArtist: "JØA BRAV",
     musicTags: ["Sound Identity", "Cinematic Atmosphere", "Artistic Project"],
     trackMood:
-      "A parallel project in sound identity and artistic direction.",
+      "A sonic piece connecting atmosphere, rhythm and editorial identity.",
     listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
     openMenu: "Open menu",
@@ -456,7 +456,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#07080b] text-zinc-100 antialiased">
+    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#050505] text-zinc-100 antialiased">
       <style>{`
         .reveal {
           opacity: 0;
@@ -489,8 +489,8 @@ export default function Home() {
           opacity: 0;
           background: radial-gradient(
             420px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
-            rgba(255, 255, 255, 0.12),
-            rgba(45, 212, 191, 0.055) 34%,
+            rgba(255, 255, 255, 0.105),
+            rgba(89, 216, 255, 0.055) 34%,
             transparent 68%
           );
           transition: opacity 420ms ease;
@@ -578,17 +578,17 @@ export default function Home() {
           }
         }
       `}</style>
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(79,70,229,0.26),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(20,184,166,0.18),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(244,114,182,0.11),transparent_34%),linear-gradient(180deg,#07080b_0%,#101116_46%,#07080b_100%)]" />
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(109,94,247,0.22),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(89,216,255,0.16),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(255,180,87,0.09),transparent_34%),linear-gradient(180deg,#050505_0%,#111111_46%,#050505_100%)]" />
       <div className="fixed inset-0 -z-10 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.055)_38%,transparent_58%)] opacity-70 [animation:glowDrift_14s_ease-in-out_infinite]" />
       <div
         className="pointer-events-none fixed inset-0 z-0 hidden opacity-45 mix-blend-screen transition-opacity duration-500 lg:block"
         style={{
-          background: `radial-gradient(560px circle at ${mouse.x}% ${mouse.y}%, rgba(45, 212, 191, 0.105), rgba(99, 102, 241, 0.045) 34%, transparent 70%)`,
+          background: `radial-gradient(560px circle at ${mouse.x}% ${mouse.y}%, rgba(89, 216, 255, 0.095), rgba(109, 94, 247, 0.045) 34%, transparent 70%)`,
         }}
       />
       <div className="fixed inset-x-0 top-0 z-[60] h-px bg-white/10">
         <div
-          className="h-full origin-left bg-gradient-to-r from-white via-teal-200 to-pink-200 shadow-[0_0_18px_rgba(94,234,212,0.55)] transition-transform duration-150"
+          className="h-full origin-left bg-gradient-to-r from-white via-[#59D8FF] to-[#FFB457] shadow-[0_0_18px_rgba(89,216,255,0.48)] transition-transform duration-150"
           style={{ transform: `scaleX(${scrollProgress})` }}
         />
       </div>
@@ -596,8 +596,8 @@ export default function Home() {
       <header
         className={`sticky top-0 z-50 border-b backdrop-blur-2xl transition-all duration-500 ${
           hasScrolled
-            ? "border-white/15 bg-[#07080b]/82 shadow-[0_1px_44px_rgba(0,0,0,0.42)]"
-            : "border-white/10 bg-[#07080b]/62 shadow-[0_1px_40px_rgba(0,0,0,0.28)]"
+            ? "border-white/15 bg-[#050505]/82 shadow-[0_1px_44px_rgba(0,0,0,0.42)]"
+            : "border-white/10 bg-[#050505]/62 shadow-[0_1px_40px_rgba(0,0,0,0.28)]"
         }`}
       >
         <div
@@ -609,7 +609,7 @@ export default function Home() {
             <a href="#home" className="flex items-center gap-2.5 text-sm font-semibold text-white transition hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200/50">
               <Image
                 src="/joabrav-logo.png"
-                alt="JØA BRAV"
+                alt="Joaquín G. Bravo"
                 width={72}
                 height={48}
                 priority
@@ -632,7 +632,7 @@ export default function Home() {
                   >
                     <span>{item.label}</span>
                     <span
-                      className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-teal-200 via-white to-pink-200 transition-all duration-500 ${
+                    className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-[#59D8FF] via-white to-[#FFB457] transition-all duration-500 ${
                         activeSection === item.href.slice(1)
                           ? "w-full -translate-x-1/2 opacity-100"
                           : "w-0 -translate-x-1/2 opacity-0 group-hover:w-full group-hover:opacity-60"
@@ -732,7 +732,7 @@ export default function Home() {
                 >
                   <span>{item.label}</span>
                   <span
-                      className={`h-px rounded-full bg-gradient-to-r from-teal-200 via-white to-pink-200 transition-all duration-500 ${
+                      className={`h-px rounded-full bg-gradient-to-r from-[#59D8FF] via-white to-[#FFB457] transition-all duration-500 ${
                       activeSection === item.href.slice(1)
                           ? "w-10 opacity-100"
                           : "w-0 opacity-0 group-hover:w-8 group-hover:opacity-60"
@@ -749,7 +749,7 @@ export default function Home() {
       <section id="home" className="relative z-10 mx-auto grid max-w-6xl gap-9 px-5 pb-14 pt-11 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:pb-28 lg:pt-24">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 top-4 -z-10 h-[34rem] overflow-hidden rounded-[3rem] border border-white/[0.03] bg-[radial-gradient(circle_at_20%_18%,rgba(45,212,191,0.14),transparent_28%),radial-gradient(circle_at_78%_24%,rgba(99,102,241,0.18),transparent_32%),radial-gradient(circle_at_52%_82%,rgba(244,114,182,0.08),transparent_30%)] opacity-80 blur-0 lg:top-10"
+          className="pointer-events-none absolute inset-x-0 top-4 -z-10 h-[34rem] overflow-hidden rounded-[3rem] border border-white/[0.03] bg-[radial-gradient(circle_at_20%_18%,rgba(89,216,255,0.13),transparent_28%),radial-gradient(circle_at_78%_24%,rgba(109,94,247,0.16),transparent_32%),radial-gradient(circle_at_52%_82%,rgba(255,180,87,0.07),transparent_30%)] opacity-80 blur-0 lg:top-10"
         />
         <div
           aria-hidden="true"
@@ -773,7 +773,7 @@ export default function Home() {
                 <path d="M85 120L210 78L346 168L506 98L642 152" stroke="url(#networkLineA)" strokeWidth="1" />
                 <path d="M130 365L256 278L410 320L602 250" stroke="url(#networkLineB)" strokeWidth="1" />
                 <path d="M210 78L256 278L346 168L410 320L506 98" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
-                <path d="M85 120L130 365L256 278" stroke="rgba(45,212,191,0.12)" strokeWidth="1" />
+                <path d="M85 120L130 365L256 278" stroke="rgba(89,216,255,0.12)" strokeWidth="1" />
                 {[
                   [85, 120],
                   [210, 78],
@@ -795,13 +795,13 @@ export default function Home() {
                 ))}
                 <defs>
                   <linearGradient id="networkLineA" x1="85" x2="642" y1="120" y2="152">
-                    <stop stopColor="rgba(45,212,191,0.05)" />
+                    <stop stopColor="rgba(89,216,255,0.05)" />
                     <stop offset="0.52" stopColor="rgba(255,255,255,0.22)" />
-                    <stop offset="1" stopColor="rgba(236,72,153,0.08)" />
+                    <stop offset="1" stopColor="rgba(255,180,87,0.08)" />
                   </linearGradient>
                   <linearGradient id="networkLineB" x1="130" x2="602" y1="365" y2="250">
                     <stop stopColor="rgba(99,102,241,0.08)" />
-                    <stop offset="0.5" stopColor="rgba(45,212,191,0.2)" />
+                    <stop offset="0.5" stopColor="rgba(89,216,255,0.2)" />
                     <stop offset="1" stopColor="rgba(255,255,255,0.08)" />
                   </linearGradient>
                 </defs>
@@ -821,7 +821,7 @@ export default function Home() {
               <p className="mt-2 text-white/35">{"latency: 0.2s"}</p>
             </div>
             <div className="absolute right-0 top-48 rounded-xl border border-white/10 bg-black/25 px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8s_ease-in-out_infinite]">
-              <p className="text-pink-100/70">{"sound.design()"}</p>
+              <p className="text-[#FFB457]/70">{"sound.design()"}</p>
               <p className="mt-2 text-white/35">{"motion: subtle"}</p>
             </div>
           </div>
@@ -872,7 +872,7 @@ export default function Home() {
               href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-zinc-300 transition duration-300 hover:-translate-y-1 hover:border-pink-200/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-pink-200/35 active:scale-[0.98]"
+              className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-zinc-300 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
             >
               {t.instagramButton}
             </a>
@@ -934,7 +934,7 @@ export default function Home() {
             </div>
           </Reveal>
           <div className="relative">
-            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_12%_15%,rgba(45,212,191,0.12),transparent_34%),radial-gradient(circle_at_88%_82%,rgba(236,72,153,0.08),transparent_36%)] blur-2xl" />
+            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_12%_15%,rgba(89,216,255,0.11),transparent_34%),radial-gradient(circle_at_88%_82%,rgba(255,180,87,0.07),transparent_36%)] blur-2xl" />
             <Reveal className="relative overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-8 lg:p-10">
               <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
               <div className="space-y-6 text-lg leading-9 text-zinc-300 sm:text-xl sm:leading-10">
@@ -966,7 +966,7 @@ export default function Home() {
                 className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.092),rgba(255,255,255,0.025)_52%,rgba(20,184,166,0.035))] p-6 shadow-xl shadow-black/25 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-teal-200/40 hover:bg-white/[0.09] hover:shadow-[0_28px_80px_rgba(20,184,166,0.14)] sm:p-7"
               >
                 <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.055),transparent_36%)] opacity-0 transition duration-500 group-hover:opacity-100" />
-                <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-teal-200 via-white to-pink-200 transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
+                <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-[#59D8FF] via-white to-[#FFB457] transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
                 <div className="mb-8 flex items-center justify-between sm:mb-10">
                   <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-black/25 px-2 text-[0.8125rem] font-medium leading-none text-zinc-400 shadow-inner shadow-white/5 transition duration-300 group-hover:border-teal-200/30 group-hover:text-teal-100 group-hover:shadow-[0_0_26px_rgba(45,212,191,0.13)] sm:text-sm">
                     0{index + 1}
@@ -979,7 +979,7 @@ export default function Home() {
                 <p className="mt-5 leading-7 text-zinc-400">{service.text}</p>
                 <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-zinc-500 transition duration-300 group-hover:text-teal-100/70">
                   <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-teal-200 group-hover:shadow-[0_0_18px_rgba(94,234,212,0.75)]" />
-                  <span>JØA BRAV</span>
+                  <span>Joaquín G. Bravo</span>
                 </div>
               </article>
             </Reveal>
@@ -1046,9 +1046,9 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
+                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(89,216,255,0.2),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.12),transparent_32%),linear-gradient(135deg,#181818,#08090d)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
                         <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
-                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] p-3 sm:h-20 md:h-28 md:p-5">
+                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.2),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(89,216,255,0.2),transparent_34%),linear-gradient(135deg,rgba(17,17,17,0.82),rgba(24,24,27,0.84)_48%,rgba(109,94,247,0.36))] p-3 sm:h-20 md:h-28 md:p-5">
                             <div className="flex items-center gap-1.5 md:gap-2">
                               <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
                               <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
@@ -1118,7 +1118,7 @@ export default function Home() {
               {[20, 34, 24, 42, 28, 52, 36, 24].map((height, index) => (
                 <span
                   key={`${height}-${index}`}
-                  className="w-1 rounded-full bg-gradient-to-t from-teal-300/25 via-white/45 to-pink-200/25"
+                  className="w-1 rounded-full bg-gradient-to-t from-[#59D8FF]/25 via-white/45 to-[#FFB457]/25"
                   style={{
                     height,
                     animation: prefersReducedMotion
@@ -1174,14 +1174,14 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={120} className="relative">
-            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(45,212,191,0.2),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(236,72,153,0.14),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
+            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(89,216,255,0.17),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(255,180,87,0.1),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
             <div className="absolute -right-4 top-10 hidden h-48 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent lg:block" />
             <div className="mb-4 hidden items-center justify-end gap-1.5 pr-2 opacity-75 md:flex" aria-hidden="true">
               {[18, 30, 46, 26, 56, 34, 42, 24, 50, 32, 22, 38].map(
                 (height, index) => (
                   <span
                     key={`${height}-${index}`}
-                    className="w-1 rounded-full bg-gradient-to-t from-teal-300/35 via-white/55 to-pink-200/35 shadow-[0_0_14px_rgba(45,212,191,0.18)]"
+                    className="w-1 rounded-full bg-gradient-to-t from-[#59D8FF]/35 via-white/55 to-[#FFB457]/35 shadow-[0_0_14px_rgba(89,216,255,0.16)]"
                     style={{
                       height,
                       animation: prefersReducedMotion
@@ -1255,7 +1255,7 @@ export default function Home() {
               href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-pink-200/30 hover:bg-white/10 hover:shadow-pink-500/10 focus:outline-none focus:ring-2 focus:ring-pink-200/35 active:scale-[0.98]"
+              className="rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/10 hover:shadow-[#FFB457]/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
             >
               Instagram
             </a>

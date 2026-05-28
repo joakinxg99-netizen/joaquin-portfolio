@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "JØA BRAV — Web Developer and Techno Producer";
+export const alt = "Joaquín G. Bravo — Creative Developer";
 export const size = {
   width: 1200,
   height: 630,
@@ -27,7 +27,7 @@ export default async function Image() {
           padding: "72px",
           color: "#ffffff",
           background:
-            "radial-gradient(circle at 20% 20%, rgba(45,212,191,0.28), transparent 34%), radial-gradient(circle at 84% 18%, rgba(244,114,182,0.18), transparent 32%), linear-gradient(135deg, #06070a 0%, #11131a 48%, #07080b 100%)",
+            "radial-gradient(circle at 20% 20%, rgba(89,216,255,0.26), transparent 34%), radial-gradient(circle at 84% 18%, rgba(109,94,247,0.18), transparent 32%), radial-gradient(circle at 58% 88%, rgba(255,180,87,0.12), transparent 30%), linear-gradient(135deg, #050505 0%, #111111 48%, #050505 100%)",
           fontFamily: "Arial, Helvetica, sans-serif",
           overflow: "hidden",
           position: "relative",
@@ -58,7 +58,7 @@ export default async function Image() {
               height: 2,
               marginBottom: 34,
               background:
-                "linear-gradient(90deg, #99f6e4 0%, #ffffff 52%, #fbcfe8 100%)",
+                "linear-gradient(90deg, #59D8FF 0%, #ffffff 52%, #FFB457 100%)",
             }}
           />
           <div
@@ -70,7 +70,7 @@ export default async function Image() {
               letterSpacing: "-1px",
             }}
           >
-            JØA BRAV
+            Joaquín G. Bravo
           </div>
           <div
             style={{
@@ -81,7 +81,7 @@ export default async function Image() {
               color: "rgba(255,255,255,0.78)",
             }}
           >
-            Web Developer • Techno Producer
+            Creative Developer • Premium Websites
           </div>
           <div
             style={{

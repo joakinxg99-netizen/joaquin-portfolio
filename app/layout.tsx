@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joabrav.com"),
-  title: "JØA BRAV — Web Developer & Techno Producer",
+  title: "Joaquín G. Bravo — Creative Developer",
   description:
-    "Premium web experiences, creative development and techno identity.",
+    "Premium digital experiences for professionals and personal brands.",
   alternates: {
     canonical: "https://joabrav.com",
   },
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     apple: "/joabrav-logo.png",
   },
   openGraph: {
-    title: "JØA BRAV — Web Developer & Techno Producer",
+    title: "Joaquín G. Bravo — Creative Developer",
     description:
-      "Premium web experiences, creative development and techno identity.",
+      "Premium digital experiences for professionals and personal brands.",
     url: "https://joabrav.com",
-    siteName: "JØA BRAV",
+    siteName: "Joaquín G. Bravo",
     images: [
       {
         url: "https://joabrav.com/joabrav-logo.png",
         width: 1536,
         height: 1024,
-        alt: "JØA BRAV — Web Developer and Techno Producer",
+        alt: "Joaquín G. Bravo — Creative Developer",
       },
     ],
     locale: "en_US",
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JØA BRAV — Web Developer & Techno Producer",
+    title: "Joaquín G. Bravo — Creative Developer",
     description:
-      "Premium web experiences, creative development and techno identity.",
+      "Premium digital experiences for professionals and personal brands.",
     images: [
       {
         url: "https://joabrav.com/joabrav-logo.png",
-        alt: "JØA BRAV — Web Developer and Techno Producer",
+        alt: "Joaquín G. Bravo — Creative Developer",
       },
     ],
   },
