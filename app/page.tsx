@@ -23,8 +23,8 @@ const content = {
     instagramButton: "Instagram",
     aboutTitle: "Sobre mim",
     aboutText: [
-      "Olá, sou Joaquín G. Bravo, desenvolvedor criativo argentino vivendo no Brasil.",
-      "Desenvolvo experiências digitais premium para profissionais, marcas pessoais e negócios que precisam de uma presença online clara, elegante e orientada a resultados.",
+      "Oi, eu sou Joaquín.",
+      "Crio experiências digitais premium para profissionais, marcas pessoais e negócios que precisam de uma presença online clara, elegante e orientada a resultados.",
     ],
     servicesTitle: "O que eu faço",
     whyTitle: "Por que trabalhar comigo",
@@ -104,8 +104,8 @@ const content = {
     instagramButton: "Instagram",
     aboutTitle: "Sobre mí",
     aboutText: [
-      "Hola, soy Joaquín G. Bravo, desarrollador creativo argentino viviendo en Brasil.",
-      "Desarrollo experiencias digitales premium para profesionales, marcas personales y negocios que necesitan una presencia online clara, elegante y orientada a resultados.",
+      "Hola, soy Joaquín.",
+      "Creo experiencias digitales premium para profesionales, marcas personales y negocios que necesitan una presencia online clara, elegante y orientada a resultados.",
     ],
     servicesTitle: "Qué hago",
     whyTitle: "Por qué trabajar conmigo",
@@ -185,7 +185,7 @@ const content = {
     instagramButton: "Instagram",
     aboutTitle: "About me",
     aboutText: [
-      "Hi, I’m Joaquín G. Bravo, a creative developer from Argentina living in Brazil.",
+      "Hi, I’m Joaquín.",
       "I build premium digital experiences for professionals, personal brands and businesses that need a clear, elegant and results-driven online presence.",
     ],
     servicesTitle: "What I do",
