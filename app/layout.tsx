@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://joabrav.com"),
   title: "JØA BRAV — Web Developer & Techno Producer",
   description:
-    "Premium digital experiences, cinematic design and techno identity.",
+    "Premium web experiences, creative development and electronic music identity.",
+  alternates: {
+    canonical: "https://joabrav.com",
+  },
   icons: {
     icon: "/joabrav-logo.png",
     shortcut: "/joabrav-logo.png",
@@ -25,14 +28,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "JØA BRAV — Web Developer & Techno Producer",
     description:
-      "Premium digital experiences, cinematic design and techno identity.",
+      "Premium web experiences, creative development and electronic music identity.",
     url: "https://joabrav.com",
     siteName: "JØA BRAV",
     images: [
       {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
+        url: "https://joabrav.com/joabrav-logo.png",
+        width: 1536,
+        height: 1024,
         alt: "JØA BRAV — Web Developer and Techno Producer",
       },
     ],
@@ -43,10 +46,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JØA BRAV — Web Developer & Techno Producer",
     description:
-      "Premium digital experiences, cinematic design and techno identity.",
+      "Premium web experiences, creative development and electronic music identity.",
     images: [
       {
-        url: "/twitter-image",
+        url: "https://joabrav.com/joabrav-logo.png",
         alt: "JØA BRAV — Web Developer and Techno Producer",
       },
     ],
