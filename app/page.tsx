@@ -20,13 +20,11 @@ const content = {
     heroDescription:
       "Experiências digitais criadas para elevar sua presença online e atrair mais clientes.",
     projectsButton: "Ver projetos",
-    spotifyButton: "Ouvir no Spotify",
     instagramButton: "Instagram",
     aboutTitle: "Sobre mim",
     aboutText: [
       "Olá, sou Joaquín G. Bravo, desenvolvedor criativo argentino vivendo no Brasil.",
       "Desenvolvo experiências digitais premium para profissionais, marcas pessoais e negócios que precisam de uma presença online clara, elegante e orientada a resultados.",
-      "JØA BRAV permanece como uma identidade artística paralela, trazendo sensibilidade sonora, atmosfera e direção criativa ao meu trabalho.",
     ],
     servicesTitle: "O que eu faço",
     whyTitle: "Por que trabalhar comigo",
@@ -37,7 +35,7 @@ const content = {
       },
       {
         title: "Experiência premium",
-        text: "Interfaces modernas, responsivas e com identidade visual forte.",
+        text: "Experiências modernas, adaptadas para celulares e com identidade visual forte.",
       },
       {
         title: "Direção criativa",
@@ -54,25 +52,25 @@ const content = {
         text: "Páginas estratégicas para profissionais que querem apresentar sua história, serviços e valor com clareza e estilo.",
       },
       {
-        title: "Experiências responsivas",
-        text: "Interfaces rápidas, elegantes e adaptadas para que sua marca funcione perfeitamente em qualquer dispositivo.",
+        title: "Presença adaptada para celulares",
+        text: "Páginas rápidas, elegantes e preparadas para sua marca funcionar bem em qualquer dispositivo.",
       },
     ],
     projectsTitle: "Projetos",
     projectTitle: "Site para Psicologia Clínica",
     projectDescription:
-      "Presença digital premium para psicologia clínica, com branding elegante, UX responsiva e navegação clara.",
+      "Presença digital premium para psicologia clínica, com marca elegante, navegação intuitiva e experiência clara.",
     projectPreviewTitle: "Site para Psicologia Clínica",
     projectPreviewDescription:
-      "Website profissional com branding elegante, experiência responsiva e navegação orientada à confiança.",
-    projectTags: ["Design responsivo", "SEO", "UX", "Branding"],
+      "Website profissional com marca elegante, experiência clara e navegação orientada à confiança.",
+    projectTags: ["Adaptado para celulares", "SEO", "Navegação intuitiva", "Marca profissional"],
     eduardoProjectTitle: "Site para Clínica de Psicologia",
     eduardoProjectDescription:
-      "Website profissional para psicologia, focado em clareza, confiança, UX responsiva e identidade premium.",
+      "Website profissional para psicologia, focado em clareza, confiança, presença premium e experiência fácil.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
     eduardoProjectPreviewDescription:
       "Presença digital profissional para psicologia, com navegação clara, visual premium e foco em credibilidade.",
-    eduardoProjectTags: ["Design responsivo", "UX", "SEO", "Branding"],
+    eduardoProjectTags: ["Adaptado para celulares", "Experiência clara", "SEO", "Marca profissional"],
     projectButton: "Ver projeto",
     featuredProject: "Projeto em destaque",
     comingSoon: "Em breve",
@@ -103,13 +101,11 @@ const content = {
     heroDescription:
       "Experiencias digitales creadas para elevar tu presencia online y atraer más clientes.",
     projectsButton: "Ver proyectos",
-    spotifyButton: "Escuchar en Spotify",
     instagramButton: "Instagram",
     aboutTitle: "Sobre mí",
     aboutText: [
       "Hola, soy Joaquín G. Bravo, desarrollador creativo argentino viviendo en Brasil.",
       "Desarrollo experiencias digitales premium para profesionales, marcas personales y negocios que necesitan una presencia online clara, elegante y orientada a resultados.",
-      "JØA BRAV permanece como una identidad artística paralela, aportando sensibilidad sonora, atmósfera y dirección creativa a mi trabajo.",
     ],
     servicesTitle: "Qué hago",
     whyTitle: "Por qué trabajar conmigo",
@@ -120,7 +116,7 @@ const content = {
       },
       {
         title: "Experiencia premium",
-        text: "Interfaces modernas, responsivas y con fuerte identidad visual.",
+        text: "Experiencias modernas, adaptadas para celulares y con fuerte identidad visual.",
       },
       {
         title: "Dirección creativa",
@@ -137,25 +133,25 @@ const content = {
         text: "Páginas estratégicas para profesionales que quieren presentar su historia, servicios y valor con claridad y estilo.",
       },
       {
-        title: "Experiencias responsivas",
-        text: "Interfaces rápidas, elegantes y adaptadas para que tu marca funcione perfectamente en cualquier dispositivo.",
+        title: "Presencia adaptada para celulares",
+        text: "Páginas rápidas, elegantes y preparadas para que tu marca funcione bien en cualquier dispositivo.",
       },
     ],
     projectsTitle: "Proyectos",
     projectTitle: "Sitio para Psicología Clínica",
     projectDescription:
-      "Presencia digital premium para psicología clínica, con branding elegante, UX responsiva y navegación clara.",
+      "Presencia digital premium para psicología clínica, con marca elegante, navegación intuitiva y experiencia clara.",
     projectPreviewTitle: "Sitio para Psicología Clínica",
     projectPreviewDescription:
-      "Sitio profesional con branding elegante, experiencia responsiva y navegación orientada a la confianza.",
-    projectTags: ["Diseño responsivo", "SEO", "UX", "Branding"],
+      "Sitio profesional con marca elegante, experiencia clara y navegación orientada a la confianza.",
+    projectTags: ["Adaptado a celulares", "SEO", "Navegación intuitiva", "Marca profesional"],
     eduardoProjectTitle: "Sitio para Clínica de Psicología",
     eduardoProjectDescription:
-      "Sitio profesional para psicología, enfocado en claridad, confianza, UX responsiva e identidad premium.",
+      "Sitio profesional para psicología, enfocado en claridad, confianza, presencia premium y experiencia fácil.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
     eduardoProjectPreviewDescription:
       "Presencia digital profesional para psicología, con navegación clara, visual premium y foco en credibilidad.",
-    eduardoProjectTags: ["Diseño responsivo", "UX", "SEO", "Branding"],
+    eduardoProjectTags: ["Adaptado a celulares", "Experiencia clara", "SEO", "Marca profesional"],
     projectButton: "Ver proyecto",
     featuredProject: "Proyecto destacado",
     comingSoon: "Próximamente",
@@ -186,13 +182,11 @@ const content = {
     heroDescription:
       "Digital experiences designed to elevate your online presence and attract more clients.",
     projectsButton: "View projects",
-    spotifyButton: "Listen on Spotify",
     instagramButton: "Instagram",
     aboutTitle: "About me",
     aboutText: [
       "Hi, I’m Joaquín G. Bravo, a creative developer from Argentina living in Brazil.",
       "I build premium digital experiences for professionals, personal brands and businesses that need a clear, elegant and results-driven online presence.",
-      "JØA BRAV remains a secondary artistic identity, bringing sound sensitivity, atmosphere and creative direction into my work.",
     ],
     servicesTitle: "What I do",
     whyTitle: "Why work with me",
@@ -203,7 +197,7 @@ const content = {
       },
       {
         title: "Premium Experience",
-        text: "Modern responsive interfaces with strong visual identity.",
+        text: "Modern mobile-friendly experiences with strong visual identity.",
       },
       {
         title: "Creative Direction",
@@ -220,25 +214,25 @@ const content = {
         text: "Strategic pages for professionals who want to present their story, services and value with clarity and style.",
       },
       {
-        title: "Responsive experiences",
-        text: "Fast, elegant interfaces adapted so your brand feels sharp and consistent on every device.",
+        title: "Mobile-friendly presence",
+        text: "Fast, elegant pages prepared so your brand feels clear and consistent on every device.",
       },
     ],
     projectsTitle: "Projects",
     projectTitle: "Clinical Psychology Website",
     projectDescription:
-      "Premium digital presence for clinical psychology, with elegant branding, responsive UX and clear navigation.",
+      "Premium digital presence for clinical psychology, with elegant branding, intuitive navigation and a clear experience.",
     projectPreviewTitle: "Clinical Psychology Website",
     projectPreviewDescription:
-      "Professional website with elegant branding, responsive experience and trust-focused navigation.",
-    projectTags: ["Responsive Design", "SEO", "UX", "Branding"],
+      "Professional website with elegant branding, clear experience and trust-focused navigation.",
+    projectTags: ["Mobile-friendly", "SEO", "Intuitive navigation", "Professional brand"],
     eduardoProjectTitle: "Psychology Clinic Website",
     eduardoProjectDescription:
-      "Professional psychology website focused on clarity, trust, responsive UX and premium identity.",
+      "Professional psychology website focused on clarity, trust, premium presence and an easy experience.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
     eduardoProjectPreviewDescription:
       "Professional digital presence for psychology, with clear navigation, premium visuals and credibility-focused structure.",
-    eduardoProjectTags: ["Responsive Design", "UX", "SEO", "Branding"],
+    eduardoProjectTags: ["Mobile-friendly", "Clear experience", "SEO", "Professional brand"],
     projectButton: "View project",
     featuredProject: "Featured Project",
     comingSoon: "Coming soon",
@@ -859,14 +853,6 @@ export default function Home() {
               className="rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-white/20 focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.98]"
             >
               {t.projectsButton}
-            </a>
-            <a
-              href="https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=97afc819229c46ec"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-center text-sm font-medium text-white shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-teal-200/30 hover:bg-white/10 hover:shadow-teal-500/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 active:scale-[0.98]"
-            >
-              {t.spotifyButton} ↗
             </a>
             <a
               href={instagramUrl}
