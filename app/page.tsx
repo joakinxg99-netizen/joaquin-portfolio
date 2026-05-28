@@ -825,7 +825,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="home" className="relative z-10 mx-auto grid max-w-6xl gap-9 px-5 pb-14 pt-11 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:pb-28 lg:pt-24">
+      <section id="home" className="relative z-10 mx-auto grid max-w-6xl scroll-mt-24 gap-9 px-5 pb-14 pt-11 sm:px-6 sm:pb-20 sm:pt-16 md:scroll-mt-28 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:pb-28 lg:pt-24">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-4 -z-10 h-[34rem] overflow-hidden rounded-[3rem] border border-white/[0.03] bg-[radial-gradient(circle_at_20%_18%,rgba(107,226,255,0.13),transparent_28%),radial-gradient(circle_at_78%_24%,rgba(109,94,247,0.16),transparent_32%),radial-gradient(circle_at_52%_82%,rgba(255,180,87,0.07),transparent_30%)] opacity-80 blur-0 lg:top-10"
@@ -992,7 +992,7 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section id="about" className="relative z-10 border-y border-white/10 bg-white/[0.018] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+      <section id="about" className="relative z-10 scroll-mt-24 border-y border-white/10 bg-white/[0.018] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] md:scroll-mt-28">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-24 sm:px-6 lg:grid-cols-[0.36fr_0.64fr] lg:items-start">
           <Reveal>
             <div>
@@ -1023,7 +1023,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
+      <section id="services" className="relative z-10 mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-20 md:scroll-mt-28">
         <Reveal>
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.servicesTitle}
@@ -1083,7 +1083,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="relative z-10 border-y border-white/10 bg-white/[0.018]">
+      <section id="projects" className="relative z-10 scroll-mt-24 border-y border-white/10 bg-white/[0.018] md:scroll-mt-28">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
           <Reveal>
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
@@ -1198,7 +1198,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="music" className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
+      <section id="music" className="relative z-10 mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-20 md:scroll-mt-28">
         <div className="pointer-events-none absolute inset-x-5 top-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
           <Reveal>
@@ -1328,7 +1328,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="relative z-10 border-t border-white/10 bg-white/[0.018]">
+      <section id="contact" className="relative z-10 scroll-mt-24 border-t border-white/10 bg-white/[0.018] md:scroll-mt-28">
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
           <Reveal>
             <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
