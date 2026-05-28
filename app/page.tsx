@@ -484,7 +484,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#030303] text-zinc-100 antialiased">
+    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#0B0B0C] text-stone-100 antialiased">
       <style>{`
         .reveal {
           opacity: 0;
@@ -606,7 +606,7 @@ export default function Home() {
           }
         }
       `}</style>
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(109,94,247,0.22),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(107,226,255,0.16),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(255,180,87,0.09),transparent_34%),linear-gradient(180deg,#030303_0%,#0F0F10_46%,#030303_100%)]" />
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(109,94,247,0.22),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(107,226,255,0.16),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(255,180,87,0.09),transparent_34%),linear-gradient(180deg,#0B0B0C_0%,#141416_46%,#0B0B0C_100%)]" />
       <div className="fixed inset-0 -z-10 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.04)_38%,transparent_58%)] opacity-70 [animation:glowDrift_14s_ease-in-out_infinite]" />
       <div
         className="pointer-events-none fixed inset-0 z-0 hidden opacity-45 mix-blend-screen transition-opacity duration-500 lg:block"
@@ -624,8 +624,8 @@ export default function Home() {
       <header
         className={`sticky top-0 z-50 border-b backdrop-blur-2xl transition-all duration-500 ${
           hasScrolled
-            ? "border-white/15 bg-[#030303]/82 shadow-[0_1px_44px_rgba(0,0,0,0.42)]"
-            : "border-white/10 bg-[#030303]/62 shadow-[0_1px_40px_rgba(0,0,0,0.28)]"
+            ? "border-white/15 bg-[#0B0B0C]/82 shadow-[0_1px_44px_rgba(11,11,12,0.42)]"
+            : "border-white/10 bg-[#0B0B0C]/62 shadow-[0_1px_40px_rgba(11,11,12,0.28)]"
         }`}
       >
         <div
@@ -647,7 +647,7 @@ export default function Home() {
             </a>
 
             <div className="hidden items-center gap-8 lg:flex">
-              <nav className="flex gap-x-5 text-sm text-zinc-300">
+              <nav className="flex gap-x-5 text-sm text-stone-300">
                 {navItems.map((item) => (
                   <a
                     key={item.href}
@@ -678,8 +678,8 @@ export default function Home() {
                     onClick={() => setLang(item)}
                     className={`rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 ${
                       lang === item
-                        ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
-                        : "text-zinc-300 hover:bg-white/10 hover:text-white"
+                        ? "bg-white text-stone-950 shadow-lg shadow-white/10"
+                        : "text-stone-300 hover:bg-white/10 hover:text-white"
                     }`}
                   >
                     {item.toUpperCase()}
@@ -700,8 +700,8 @@ export default function Home() {
                     }}
                     className={`rounded-md px-2.5 py-1.5 text-[0.68rem] font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 ${
                       lang === item
-                        ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
-                        : "text-zinc-300 hover:bg-white/10 hover:text-white"
+                        ? "bg-white text-stone-950 shadow-lg shadow-white/10"
+                        : "text-stone-300 hover:bg-white/10 hover:text-white"
                     }`}
                   >
                     {item.toUpperCase()}
@@ -746,7 +746,7 @@ export default function Home() {
             }`}
           >
             <div className="overflow-hidden">
-              <nav className="mt-4 rounded-2xl border border-white/10 bg-[#0F0F10]/92 p-2 shadow-2xl shadow-black/40 backdrop-blur-2xl">
+              <nav className="mt-4 rounded-2xl border border-white/10 bg-[#141416]/92 p-2 shadow-2xl shadow-black/40 backdrop-blur-2xl">
               {navItems.map((item) => (
                 <a
                   key={item.href}
@@ -755,7 +755,7 @@ export default function Home() {
                     className={`group relative flex items-center justify-between rounded-xl px-4 py-3 text-sm transition duration-300 hover:bg-white/[0.04] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
                     activeSection === item.href.slice(1)
                       ? "text-white shadow-[0_8px_24px_rgba(255,255,255,0.08)]"
-                        : "text-zinc-300"
+                        : "text-stone-300"
                   }`}
                 >
                   <span>{item.label}</span>
@@ -844,11 +844,11 @@ export default function Home() {
               <p>{"interface Presence { web: true; music: true }"}</p>
               <p>{"mix.visuals(signal, atmosphere);"}</p>
             </div>
-            <div className="absolute left-28 bottom-20 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7s_ease-in-out_infinite]">
+            <div className="absolute left-28 bottom-20 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 font-mono text-[0.7rem] text-stone-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7s_ease-in-out_infinite]">
               <p className="text-cyan-100/70">{"<Experience />"}</p>
               <p className="mt-2 text-white/35">{"latency: 0.2s"}</p>
             </div>
-            <div className="absolute right-0 top-48 rounded-xl border border-white/10 bg-black/25 px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8s_ease-in-out_infinite]">
+            <div className="absolute right-0 top-48 rounded-xl border border-white/10 bg-[#0B0B0C]/55 px-4 py-3 font-mono text-[0.7rem] text-stone-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8s_ease-in-out_infinite]">
               <p className="text-[#FFB457]/70">{"sound.design()"}</p>
               <p className="mt-2 text-white/35">{"motion: subtle"}</p>
             </div>
@@ -856,23 +856,23 @@ export default function Home() {
         </div>
         <Reveal>
         <div>
-          <p className="mb-3 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-300 shadow-lg shadow-black/20 backdrop-blur sm:mb-4 sm:text-xs sm:tracking-[0.22em]">
+          <p className="mb-3 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-300 shadow-lg shadow-black/20 backdrop-blur sm:mb-4 sm:text-xs sm:tracking-[0.22em]">
             {t.heroEyebrow}
           </p>
           <h1
-            className="cinematic-line max-w-4xl bg-[linear-gradient(180deg,#ffffff_0%,#d8dee9_58%,#8b93a7_100%)] bg-clip-text text-[3rem] font-semibold leading-[0.98] text-transparent sm:text-7xl"
+            className="cinematic-line max-w-4xl bg-[linear-gradient(180deg,#ffffff_0%,#eee8df_58%,#a99f92_100%)] bg-clip-text text-[3rem] font-semibold leading-[0.98] text-transparent sm:text-7xl"
             style={{ "--line-delay": "160ms" } as CSSProperties}
           >
             Joaquín G. Bravo
           </h1>
           <p
-            className="cinematic-line mt-3 text-lg font-medium text-zinc-200 sm:mt-4 sm:text-2xl"
+            className="cinematic-line mt-3 text-lg font-medium text-stone-200 sm:mt-4 sm:text-2xl"
             style={{ "--line-delay": "280ms" } as CSSProperties}
           >
             {t.heroSubtitle}
           </p>
           <p
-            className="cinematic-line mt-4 max-w-2xl text-[0.98rem] leading-7 text-zinc-300 sm:mt-5 sm:text-lg sm:leading-8"
+            className="cinematic-line mt-4 max-w-2xl text-[0.98rem] leading-7 text-stone-300 sm:mt-5 sm:text-lg sm:leading-8"
             style={{ "--line-delay": "400ms" } as CSSProperties}
           >
             {t.heroDescription}
@@ -884,7 +884,7 @@ export default function Home() {
           >
             <a
               href="#projects"
-              className="rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-white/20 focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.98]"
+              className="rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-white/20 focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.98]"
             >
               {t.projectsButton}
             </a>
@@ -892,7 +892,7 @@ export default function Home() {
               href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-zinc-300 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
+              className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
             >
               {t.instagramButton}
             </a>
@@ -901,10 +901,10 @@ export default function Home() {
         </Reveal>
 
         <Reveal delay={120} className="group relative mx-auto w-full max-w-[20rem] sm:max-w-sm lg:max-w-md">
-          <div className="pointer-events-none absolute -left-8 top-10 z-20 hidden rounded-xl border border-white/10 bg-[#0F0F10]/75 px-4 py-3 font-mono text-[0.68rem] text-cyan-100/75 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7.5s_ease-in-out_infinite] lg:block">
+          <div className="pointer-events-none absolute -left-8 top-10 z-20 hidden rounded-xl border border-white/10 bg-[#141416]/75 px-4 py-3 font-mono text-[0.68rem] text-cyan-100/75 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7.5s_ease-in-out_infinite] lg:block">
             {"npm run build"}
           </div>
-          <div className="pointer-events-none absolute -right-8 bottom-20 z-20 hidden rounded-xl border border-white/10 bg-[#0F0F10]/75 px-4 py-3 text-xs text-zinc-300/85 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8.5s_ease-in-out_infinite] lg:block">
+          <div className="pointer-events-none absolute -right-8 bottom-20 z-20 hidden rounded-xl border border-white/10 bg-[#141416]/75 px-4 py-3 text-xs text-stone-300/85 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8.5s_ease-in-out_infinite] lg:block">
             <span className="mr-2 inline-block h-2 w-2 rounded-full bg-cyan-200 shadow-[0_0_16px_rgba(94,234,212,0.8)]" />
             Premium UI
           </div>
@@ -924,7 +924,7 @@ export default function Home() {
                 : `translate3d(${parallax.x * 0.35}px, ${parallax.y * 0.35}px, 0)`,
             }}
           >
-            <div className="relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0F0F10]">
+            <div className="relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#141416]">
               <div className="relative aspect-[4/5] min-h-[330px] overflow-hidden sm:min-h-[480px]">
                 <Image
                   src="/joaquin.jpg"
@@ -934,7 +934,7 @@ export default function Home() {
                   className="object-cover object-center transition duration-700 group-hover:scale-[1.035]"
                   preload
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_52%,rgba(0,0,0,0.14)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,11,12,0)_52%,rgba(11,11,12,0.16)_100%)]" />
               </div>
             </div>
           </div>
@@ -957,7 +957,7 @@ export default function Home() {
             <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_12%_15%,rgba(107,226,255,0.11),transparent_34%),radial-gradient(circle_at_88%_82%,rgba(255,180,87,0.07),transparent_36%)] blur-2xl" />
             <Reveal className="relative overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.04),rgba(255,255,255,0.025))] p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-8 lg:p-10">
               <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
-              <div className="space-y-6 text-lg leading-9 text-zinc-300 sm:text-xl sm:leading-10">
+              <div className="space-y-6 text-lg leading-9 text-stone-300 sm:text-xl sm:leading-10">
             {t.aboutText.map((paragraph, index) => (
                 <p
                   key={paragraph}
@@ -988,7 +988,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.04),transparent_36%)] opacity-0 transition duration-500 group-hover:opacity-100" />
                 <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-[#6BE2FF] via-white to-[#FFB457] transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
                 <div className="mb-8 flex items-center justify-between sm:mb-10">
-                  <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-black/25 px-2 text-[0.8125rem] font-medium leading-none text-zinc-300 shadow-inner shadow-white/5 transition duration-300 group-hover:border-cyan-200/30 group-hover:text-cyan-100 group-hover:shadow-[0_0_26px_rgba(107,226,255,0.12)] sm:text-sm">
+                  <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-[#0B0B0C]/55 px-2 text-[0.8125rem] font-medium leading-none text-stone-300 shadow-inner shadow-white/5 transition duration-300 group-hover:border-cyan-200/30 group-hover:text-cyan-100 group-hover:shadow-[0_0_26px_rgba(107,226,255,0.12)] sm:text-sm">
                     0{index + 1}
                   </span>
                   <span className="h-px w-16 origin-right scale-x-50 bg-gradient-to-r from-transparent via-white/25 to-[#6BE2FF]/60 transition duration-500 group-hover:scale-x-100" />
@@ -996,8 +996,8 @@ export default function Home() {
                 <h3 className="text-xl font-medium text-white">
                   {service.title}
                 </h3>
-                <p className="mt-5 leading-7 text-zinc-300">{service.text}</p>
-                <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-zinc-400 transition duration-300 group-hover:text-cyan-100/75">
+                <p className="mt-5 leading-7 text-stone-300">{service.text}</p>
+                <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-stone-400 transition duration-300 group-hover:text-cyan-100/75">
                   <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-[#6BE2FF] group-hover:shadow-[0_0_18px_rgba(107,226,255,0.6)]" />
                   <span>Joaquín G. Bravo</span>
                 </div>
@@ -1024,7 +1024,7 @@ export default function Home() {
                   <h3 className="text-lg font-medium text-white">
                     {card.title}
                   </h3>
-                  <p className="mt-4 leading-7 text-zinc-300">{card.text}</p>
+                  <p className="mt-4 leading-7 text-stone-300">{card.text}</p>
                 </article>
               </Reveal>
             ))}
@@ -1051,24 +1051,24 @@ export default function Home() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-xl border border-white/10 bg-black/20 p-2 shadow-inner shadow-white/5 transition duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-200/40 sm:p-3"
+                    className="block rounded-xl border border-white/10 bg-[#0B0B0C]/45 p-2 shadow-inner shadow-white/5 transition duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-200/40 sm:p-3"
                     aria-label={project.previewTitle}
                   >
-                    <div className="overflow-hidden rounded-xl border border-white/14 bg-[#0F0F10]/95 shadow-2xl shadow-black/40">
+                    <div className="overflow-hidden rounded-xl border border-white/14 bg-[#141416]/95 shadow-2xl shadow-black/40">
                       <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.045] px-3 py-2 md:gap-3 md:px-4 md:py-3">
                         <div className="flex gap-1 md:gap-1.5">
                           <span className="h-2 w-2 rounded-full bg-red-300/75 md:h-2.5 md:w-2.5" />
                           <span className="h-2 w-2 rounded-full bg-yellow-200/75 md:h-2.5 md:w-2.5" />
                           <span className="h-2 w-2 rounded-full bg-cyan-200/75 md:h-2.5 md:w-2.5" />
                         </div>
-                        <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-300 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
+                        <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-[#0B0B0C]/55 px-2 py-1 text-center text-[0.65rem] text-stone-300 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
                           {project.domain}
                         </div>
                       </div>
 
-                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(107,226,255,0.18),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.1),transparent_32%),linear-gradient(135deg,#0F0F10,#030303)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
+                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(107,226,255,0.18),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.1),transparent_32%),linear-gradient(135deg,#141416,#0B0B0C)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
                         <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.04] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
-                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.2),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(107,226,255,0.2),transparent_34%),linear-gradient(135deg,rgba(17,17,17,0.82),rgba(24,24,27,0.84)_48%,rgba(109,94,247,0.36))] p-3 sm:h-20 md:h-28 md:p-5">
+                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.2),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(107,226,255,0.2),transparent_34%),linear-gradient(135deg,rgba(20,20,22,0.84),rgba(27,27,30,0.86)_48%,rgba(109,94,247,0.36))] p-3 sm:h-20 md:h-28 md:p-5">
                             <div className="flex items-center gap-1.5 md:gap-2">
                               <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
                               <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
@@ -1078,13 +1078,13 @@ export default function Home() {
                           </div>
 
                           <div className="p-2.5 sm:p-3 md:p-5">
-                            <p className="truncate text-[0.64rem] text-zinc-300 md:text-xs">
+                            <p className="truncate text-[0.64rem] text-stone-300 md:text-xs">
                               {project.domain}
                             </p>
                             <h4 className="mt-1 text-[0.82rem] font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
                               {project.previewTitle}
                             </h4>
-                            <p className="mt-1.5 line-clamp-2 text-[0.66rem] leading-4 text-zinc-300/85 sm:text-xs sm:leading-5 md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
+                            <p className="mt-1.5 line-clamp-2 text-[0.66rem] leading-4 text-stone-300/85 sm:text-xs sm:leading-5 md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
                               {project.previewDescription}
                             </p>
                           </div>
@@ -1094,29 +1094,29 @@ export default function Home() {
                   </a>
 
                   <div>
-                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-400">
+                    <p className="text-sm uppercase tracking-[0.16em] text-stone-400">
                       {t.featuredProject}
                     </p>
                     <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
                       {project.title}
                     </h3>
-                    <p className="mt-4 max-w-xl leading-7 text-zinc-300 sm:mt-5 sm:leading-8">
+                    <p className="mt-4 max-w-xl leading-7 text-stone-300 sm:mt-5 sm:leading-8">
                       {project.description}
                     </p>
                     <div className="mt-5 grid gap-3 border-l border-white/10 pl-4 text-sm sm:grid-cols-2 sm:border-l-0 sm:pl-0">
-                      <div className="rounded-lg border border-white/10 bg-[#0F0F10]/70 p-3">
-                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-400">
+                      <div className="rounded-lg border border-white/10 bg-[#141416]/70 p-3">
+                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-400">
                           {t.caseGoalLabel}
                         </p>
-                        <p className="mt-2 leading-6 text-zinc-300">
+                        <p className="mt-2 leading-6 text-stone-300">
                           {project.caseStudy.goal}
                         </p>
                       </div>
-                      <div className="rounded-lg border border-white/10 bg-[#0F0F10]/70 p-3">
-                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-400">
+                      <div className="rounded-lg border border-white/10 bg-[#141416]/70 p-3">
+                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-400">
                           {t.caseFocusLabel}
                         </p>
-                        <p className="mt-2 leading-6 text-zinc-300">
+                        <p className="mt-2 leading-6 text-stone-300">
                           {project.caseStudy.focus}
                         </p>
                       </div>
@@ -1125,7 +1125,7 @@ export default function Home() {
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-full border border-white/10 bg-white/[0.018] px-3 py-1.5 text-xs font-medium text-zinc-300"
+                          className="rounded-full border border-white/10 bg-white/[0.018] px-3 py-1.5 text-xs font-medium text-stone-300"
                         >
                           {tag}
                         </span>
@@ -1135,7 +1135,7 @@ export default function Home() {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
+                      className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
                     >
                       {t.projectButton}
                     </a>
@@ -1170,7 +1170,7 @@ export default function Home() {
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
               {t.musicTitle}
             </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-300">
+            <p className="mt-6 max-w-xl text-lg leading-8 text-stone-300">
               {t.musicText}
             </p>
 
@@ -1186,14 +1186,14 @@ export default function Home() {
                   <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
                     {t.featuredTrackTitle}
                   </h3>
-                  <p className="mt-2 text-sm uppercase tracking-[0.16em] text-zinc-400">
+                  <p className="mt-2 text-sm uppercase tracking-[0.16em] text-stone-400">
                     {t.trackArtistLabel}:{" "}
-                    <span className="text-zinc-300">{t.trackArtist}</span>
+                    <span className="text-stone-300">{t.trackArtist}</span>
                   </p>
                 </div>
                 <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent sm:mb-3" />
               </div>
-              <p className="mt-5 text-sm leading-7 text-zinc-300">
+              <p className="mt-5 text-sm leading-7 text-stone-300">
                 {t.trackMood}
               </p>
 
@@ -1201,7 +1201,7 @@ export default function Home() {
                 {t.musicTags.map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-medium text-zinc-300 shadow-inner shadow-white/5"
+                    className="rounded-full border border-white/10 bg-[#0B0B0C]/45 px-3 py-1.5 text-xs font-medium text-stone-300 shadow-inner shadow-white/5"
                   >
                     {tag}
                   </span>
@@ -1261,7 +1261,7 @@ export default function Home() {
               href="https://open.spotify.com/intl-es/track/134WSBaVh7ePxkY4j3c83B?si=97afc819229c46ec"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex w-full cursor-pointer items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] md:hidden"
+              className="mt-4 inline-flex w-full cursor-pointer items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] md:hidden"
             >
               {t.listenOnSpotify} ↗
             </a>
@@ -1283,7 +1283,7 @@ export default function Home() {
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
               {t.contactTitle}
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl leading-8 text-zinc-300">
+            <p className="mx-auto mt-5 max-w-2xl leading-8 text-stone-300">
               {t.contactText}
             </p>
           </Reveal>
@@ -1299,7 +1299,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:joakinxg100@gmail.com"
-              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-zinc-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.03] hover:text-white hover:shadow-lg hover:shadow-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98]"
+              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.03] hover:text-white hover:shadow-lg hover:shadow-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98]"
             >
               Email: joakinxg100@gmail.com
             </a>
@@ -1307,7 +1307,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="relative z-10 border-t border-white/10 px-5 py-6 text-center text-sm text-zinc-400 sm:py-8">
+      <footer className="relative z-10 border-t border-white/10 px-5 py-6 text-center text-sm text-stone-400 sm:py-8">
         {t.footer}
       </footer>
     </main>
