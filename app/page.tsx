@@ -57,14 +57,14 @@ const content = {
       },
     ],
     projectsTitle: "Projetos",
-    projectTitle: "Site para Psicologia Clínica",
+    projectTitle: "Sites para Psicologia Clínica",
     projectDescription:
       "Presença digital premium para psicologia clínica, com marca elegante, navegação intuitiva e experiência clara.",
-    projectPreviewTitle: "Site para Psicologia Clínica",
+    projectPreviewTitle: "Victoria Gómez",
     projectPreviewDescription:
       "Website profissional com marca elegante, experiência clara e navegação orientada à confiança.",
     projectTags: ["Adaptado para celulares", "SEO", "Navegação intuitiva", "Marca profissional"],
-    eduardoProjectTitle: "Site para Clínica de Psicologia",
+    eduardoProjectTitle: "Sites para Psicologia Clínica",
     eduardoProjectDescription:
       "Website profissional para psicologia, focado em clareza, confiança, presença premium e experiência fácil.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
@@ -147,14 +147,14 @@ const content = {
       },
     ],
     projectsTitle: "Proyectos",
-    projectTitle: "Sitio para Psicología Clínica",
+    projectTitle: "Sitios para Psicología Clínica",
     projectDescription:
       "Presencia digital premium para psicología clínica, con marca elegante, navegación intuitiva y experiencia clara.",
-    projectPreviewTitle: "Sitio para Psicología Clínica",
+    projectPreviewTitle: "Victoria Gómez",
     projectPreviewDescription:
       "Sitio profesional con marca elegante, experiencia clara y navegación orientada a la confianza.",
     projectTags: ["Adaptado a celulares", "SEO", "Navegación intuitiva", "Marca profesional"],
-    eduardoProjectTitle: "Sitio para Clínica de Psicología",
+    eduardoProjectTitle: "Sitios para Psicología Clínica",
     eduardoProjectDescription:
       "Sitio profesional para psicología, enfocado en claridad, confianza, presencia premium y experiencia fácil.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
@@ -237,14 +237,14 @@ const content = {
       },
     ],
     projectsTitle: "Projects",
-    projectTitle: "Clinical Psychology Website",
+    projectTitle: "Clinical Psychology Websites",
     projectDescription:
       "Premium digital presence for clinical psychology, with elegant branding, intuitive navigation and a clear experience.",
-    projectPreviewTitle: "Clinical Psychology Website",
+    projectPreviewTitle: "Victoria Gómez",
     projectPreviewDescription:
       "Professional website with elegant branding, clear experience and trust-focused navigation.",
     projectTags: ["Mobile-friendly", "SEO", "Intuitive navigation", "Professional brand"],
-    eduardoProjectTitle: "Psychology Clinic Website",
+    eduardoProjectTitle: "Clinical Psychology Websites",
     eduardoProjectDescription:
       "Professional psychology website focused on clarity, trust, premium presence and an easy experience.",
     eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
@@ -484,7 +484,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#050505] text-zinc-100 antialiased">
+    <main className="min-h-dvh overflow-x-clip scroll-smooth bg-[#030303] text-zinc-100 antialiased">
       <style>{`
         .reveal {
           opacity: 0;
@@ -518,7 +518,7 @@ export default function Home() {
           background: radial-gradient(
             420px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
             rgba(255, 255, 255, 0.105),
-            rgba(89, 216, 255, 0.055) 34%,
+            rgba(107, 226, 255, 0.055) 34%,
             transparent 68%
           );
           transition: opacity 420ms ease;
@@ -606,17 +606,17 @@ export default function Home() {
           }
         }
       `}</style>
-      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(109,94,247,0.22),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(89,216,255,0.16),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(255,180,87,0.09),transparent_34%),linear-gradient(180deg,#050505_0%,#111111_46%,#050505_100%)]" />
-      <div className="fixed inset-0 -z-10 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.055)_38%,transparent_58%)] opacity-70 [animation:glowDrift_14s_ease-in-out_infinite]" />
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_15%_8%,rgba(109,94,247,0.22),transparent_30%),radial-gradient(circle_at_88%_12%,rgba(107,226,255,0.16),transparent_28%),radial-gradient(circle_at_48%_92%,rgba(255,180,87,0.09),transparent_34%),linear-gradient(180deg,#030303_0%,#0F0F10_46%,#030303_100%)]" />
+      <div className="fixed inset-0 -z-10 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.04)_38%,transparent_58%)] opacity-70 [animation:glowDrift_14s_ease-in-out_infinite]" />
       <div
         className="pointer-events-none fixed inset-0 z-0 hidden opacity-45 mix-blend-screen transition-opacity duration-500 lg:block"
         style={{
-          background: `radial-gradient(560px circle at ${mouse.x}% ${mouse.y}%, rgba(89, 216, 255, 0.095), rgba(109, 94, 247, 0.045) 34%, transparent 70%)`,
+          background: `radial-gradient(560px circle at ${mouse.x}% ${mouse.y}%, rgba(107, 226, 255, 0.095), rgba(109, 94, 247, 0.045) 34%, transparent 70%)`,
         }}
       />
       <div className="fixed inset-x-0 top-0 z-[60] h-px bg-white/10">
         <div
-          className="h-full origin-left bg-gradient-to-r from-white via-[#59D8FF] to-[#FFB457] shadow-[0_0_18px_rgba(89,216,255,0.48)] transition-transform duration-150"
+          className="h-full origin-left bg-gradient-to-r from-white via-[#6BE2FF] to-[#FFB457] shadow-[0_0_18px_rgba(107,226,255,0.48)] transition-transform duration-150"
           style={{ transform: `scaleX(${scrollProgress})` }}
         />
       </div>
@@ -624,8 +624,8 @@ export default function Home() {
       <header
         className={`sticky top-0 z-50 border-b backdrop-blur-2xl transition-all duration-500 ${
           hasScrolled
-            ? "border-white/15 bg-[#050505]/82 shadow-[0_1px_44px_rgba(0,0,0,0.42)]"
-            : "border-white/10 bg-[#050505]/62 shadow-[0_1px_40px_rgba(0,0,0,0.28)]"
+            ? "border-white/15 bg-[#030303]/82 shadow-[0_1px_44px_rgba(0,0,0,0.42)]"
+            : "border-white/10 bg-[#030303]/62 shadow-[0_1px_40px_rgba(0,0,0,0.28)]"
         }`}
       >
         <div
@@ -634,7 +634,7 @@ export default function Home() {
           }`}
         >
           <div className="flex items-center justify-between gap-4">
-            <a href="#home" className="flex items-center gap-2.5 text-sm font-semibold text-white transition hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200/50">
+            <a href="#home" className="flex items-center gap-2.5 text-sm font-semibold text-white transition hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-200/50">
               <Image
                 src="/joabrav-logo.png"
                 alt="Joaquín G. Bravo"
@@ -647,7 +647,7 @@ export default function Home() {
             </a>
 
             <div className="hidden items-center gap-8 lg:flex">
-              <nav className="flex gap-x-5 text-sm text-zinc-400">
+              <nav className="flex gap-x-5 text-sm text-zinc-300">
                 {navItems.map((item) => (
                   <a
                     key={item.href}
@@ -660,7 +660,7 @@ export default function Home() {
                   >
                     <span>{item.label}</span>
                     <span
-                    className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-[#59D8FF] via-white to-[#FFB457] transition-all duration-500 ${
+                    className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-[#6BE2FF] via-white to-[#FFB457] transition-all duration-500 ${
                         activeSection === item.href.slice(1)
                           ? "w-full -translate-x-1/2 opacity-100"
                           : "w-0 -translate-x-1/2 opacity-0 group-hover:w-full group-hover:opacity-60"
@@ -676,10 +676,10 @@ export default function Home() {
                     key={item}
                     type="button"
                     onClick={() => setLang(item)}
-                    className={`rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-200/50 active:scale-95 ${
+                    className={`rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 ${
                       lang === item
                         ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
-                        : "text-zinc-400 hover:bg-white/10 hover:text-white"
+                        : "text-zinc-300 hover:bg-white/10 hover:text-white"
                     }`}
                   >
                     {item.toUpperCase()}
@@ -698,10 +698,10 @@ export default function Home() {
                       setLang(item);
                       setIsMenuOpen(false);
                     }}
-                    className={`rounded-md px-2.5 py-1.5 text-[0.68rem] font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-200/50 active:scale-95 ${
+                    className={`rounded-md px-2.5 py-1.5 text-[0.68rem] font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 ${
                       lang === item
                         ? "bg-white text-zinc-950 shadow-lg shadow-white/10"
-                        : "text-zinc-400 hover:bg-white/10 hover:text-white"
+                        : "text-zinc-300 hover:bg-white/10 hover:text-white"
                     }`}
                   >
                     {item.toUpperCase()}
@@ -714,7 +714,7 @@ export default function Home() {
                 onClick={() => setIsMenuOpen((open) => !open)}
                 aria-label={isMenuOpen ? t.closeMenu : t.openMenu}
                 aria-expanded={isMenuOpen}
-                className="group relative flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 active:scale-95"
+                className="group relative flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-200/40 active:scale-95"
               >
                 <span className="sr-only">{isMenuOpen ? t.closeMenu : t.openMenu}</span>
                 <span className="relative h-3.5 w-4">
@@ -746,21 +746,21 @@ export default function Home() {
             }`}
           >
             <div className="overflow-hidden">
-              <nav className="mt-4 rounded-2xl border border-white/10 bg-[#08090d]/92 p-2 shadow-2xl shadow-black/40 backdrop-blur-2xl">
+              <nav className="mt-4 rounded-2xl border border-white/10 bg-[#0F0F10]/92 p-2 shadow-2xl shadow-black/40 backdrop-blur-2xl">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`group relative flex items-center justify-between rounded-xl px-4 py-3 text-sm transition duration-300 hover:bg-white/[0.055] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
+                    className={`group relative flex items-center justify-between rounded-xl px-4 py-3 text-sm transition duration-300 hover:bg-white/[0.04] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
                     activeSection === item.href.slice(1)
                       ? "text-white shadow-[0_8px_24px_rgba(255,255,255,0.08)]"
-                        : "text-zinc-400"
+                        : "text-zinc-300"
                   }`}
                 >
                   <span>{item.label}</span>
                   <span
-                      className={`h-px rounded-full bg-gradient-to-r from-[#59D8FF] via-white to-[#FFB457] transition-all duration-500 ${
+                      className={`h-px rounded-full bg-gradient-to-r from-[#6BE2FF] via-white to-[#FFB457] transition-all duration-500 ${
                       activeSection === item.href.slice(1)
                           ? "w-10 opacity-100"
                           : "w-0 opacity-0 group-hover:w-8 group-hover:opacity-60"
@@ -777,7 +777,7 @@ export default function Home() {
       <section id="home" className="relative z-10 mx-auto grid max-w-6xl gap-9 px-5 pb-14 pt-11 sm:px-6 sm:pb-20 sm:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:pb-28 lg:pt-24">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 top-4 -z-10 h-[34rem] overflow-hidden rounded-[3rem] border border-white/[0.03] bg-[radial-gradient(circle_at_20%_18%,rgba(89,216,255,0.13),transparent_28%),radial-gradient(circle_at_78%_24%,rgba(109,94,247,0.16),transparent_32%),radial-gradient(circle_at_52%_82%,rgba(255,180,87,0.07),transparent_30%)] opacity-80 blur-0 lg:top-10"
+          className="pointer-events-none absolute inset-x-0 top-4 -z-10 h-[34rem] overflow-hidden rounded-[3rem] border border-white/[0.03] bg-[radial-gradient(circle_at_20%_18%,rgba(107,226,255,0.13),transparent_28%),radial-gradient(circle_at_78%_24%,rgba(109,94,247,0.16),transparent_32%),radial-gradient(circle_at_52%_82%,rgba(255,180,87,0.07),transparent_30%)] opacity-80 blur-0 lg:top-10"
         />
         <div
           aria-hidden="true"
@@ -801,7 +801,7 @@ export default function Home() {
                 <path d="M85 120L210 78L346 168L506 98L642 152" stroke="url(#networkLineA)" strokeWidth="1" />
                 <path d="M130 365L256 278L410 320L602 250" stroke="url(#networkLineB)" strokeWidth="1" />
                 <path d="M210 78L256 278L346 168L410 320L506 98" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
-                <path d="M85 120L130 365L256 278" stroke="rgba(89,216,255,0.12)" strokeWidth="1" />
+                <path d="M85 120L130 365L256 278" stroke="rgba(107,226,255,0.12)" strokeWidth="1" />
                 {[
                   [85, 120],
                   [210, 78],
@@ -823,13 +823,13 @@ export default function Home() {
                 ))}
                 <defs>
                   <linearGradient id="networkLineA" x1="85" x2="642" y1="120" y2="152">
-                    <stop stopColor="rgba(89,216,255,0.05)" />
+                    <stop stopColor="rgba(107,226,255,0.05)" />
                     <stop offset="0.52" stopColor="rgba(255,255,255,0.22)" />
                     <stop offset="1" stopColor="rgba(255,180,87,0.08)" />
                   </linearGradient>
                   <linearGradient id="networkLineB" x1="130" x2="602" y1="365" y2="250">
                     <stop stopColor="rgba(99,102,241,0.08)" />
-                    <stop offset="0.5" stopColor="rgba(89,216,255,0.2)" />
+                    <stop offset="0.5" stopColor="rgba(107,226,255,0.2)" />
                     <stop offset="1" stopColor="rgba(255,255,255,0.08)" />
                   </linearGradient>
                 </defs>
@@ -840,12 +840,12 @@ export default function Home() {
               <p>{"render(<Portfolio rhythm=\"dark\" />);"}</p>
               <p>{"deploy({ speed: 'fast', feeling: 'premium' });"}</p>
             </div>
-            <div className="absolute bottom-24 right-12 space-y-3 font-mono text-[0.68rem] leading-none text-teal-100/18 [animation:codeFloat_11s_ease-in-out_infinite]">
+            <div className="absolute bottom-24 right-12 space-y-3 font-mono text-[0.68rem] leading-none text-cyan-100/18 [animation:codeFloat_11s_ease-in-out_infinite]">
               <p>{"interface Presence { web: true; music: true }"}</p>
               <p>{"mix.visuals(signal, atmosphere);"}</p>
             </div>
-            <div className="absolute left-28 bottom-20 rounded-xl border border-white/10 bg-white/[0.055] px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7s_ease-in-out_infinite]">
-              <p className="text-teal-100/70">{"<Experience />"}</p>
+            <div className="absolute left-28 bottom-20 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7s_ease-in-out_infinite]">
+              <p className="text-cyan-100/70">{"<Experience />"}</p>
               <p className="mt-2 text-white/35">{"latency: 0.2s"}</p>
             </div>
             <div className="absolute right-0 top-48 rounded-xl border border-white/10 bg-black/25 px-4 py-3 font-mono text-[0.7rem] text-zinc-300/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8s_ease-in-out_infinite]">
@@ -856,7 +856,7 @@ export default function Home() {
         </div>
         <Reveal>
         <div>
-          <p className="mb-3 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-400 shadow-lg shadow-black/20 backdrop-blur sm:mb-4 sm:text-xs sm:tracking-[0.22em]">
+          <p className="mb-3 inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-300 shadow-lg shadow-black/20 backdrop-blur sm:mb-4 sm:text-xs sm:tracking-[0.22em]">
             {t.heroEyebrow}
           </p>
           <h1
@@ -872,7 +872,7 @@ export default function Home() {
             {t.heroSubtitle}
           </p>
           <p
-            className="cinematic-line mt-4 max-w-2xl text-[0.98rem] leading-7 text-zinc-400 sm:mt-5 sm:text-lg sm:leading-8"
+            className="cinematic-line mt-4 max-w-2xl text-[0.98rem] leading-7 text-zinc-300 sm:mt-5 sm:text-lg sm:leading-8"
             style={{ "--line-delay": "400ms" } as CSSProperties}
           >
             {t.heroDescription}
@@ -901,15 +901,15 @@ export default function Home() {
         </Reveal>
 
         <Reveal delay={120} className="group relative mx-auto w-full max-w-[20rem] sm:max-w-sm lg:max-w-md">
-          <div className="pointer-events-none absolute -left-8 top-10 z-20 hidden rounded-xl border border-white/10 bg-[#090b10]/75 px-4 py-3 font-mono text-[0.68rem] text-teal-100/70 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7.5s_ease-in-out_infinite] lg:block">
+          <div className="pointer-events-none absolute -left-8 top-10 z-20 hidden rounded-xl border border-white/10 bg-[#0F0F10]/75 px-4 py-3 font-mono text-[0.68rem] text-cyan-100/75 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_7.5s_ease-in-out_infinite] lg:block">
             {"npm run build"}
           </div>
-          <div className="pointer-events-none absolute -right-8 bottom-20 z-20 hidden rounded-xl border border-white/10 bg-[#090b10]/75 px-4 py-3 text-xs text-zinc-300/80 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8.5s_ease-in-out_infinite] lg:block">
-            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-teal-200 shadow-[0_0_16px_rgba(94,234,212,0.8)]" />
+          <div className="pointer-events-none absolute -right-8 bottom-20 z-20 hidden rounded-xl border border-white/10 bg-[#0F0F10]/75 px-4 py-3 text-xs text-zinc-300/85 shadow-2xl shadow-black/30 backdrop-blur-2xl [animation:floatSoft_8.5s_ease-in-out_infinite] lg:block">
+            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-cyan-200 shadow-[0_0_16px_rgba(94,234,212,0.8)]" />
             Premium UI
           </div>
           <div
-            className="absolute -inset-5 rounded-[2rem] bg-[radial-gradient(circle_at_35%_15%,rgba(255,255,255,0.2),transparent_34%),radial-gradient(circle_at_78%_70%,rgba(20,184,166,0.24),transparent_36%),radial-gradient(circle_at_18%_88%,rgba(99,102,241,0.24),transparent_34%)] opacity-70 blur-2xl transition duration-700 group-hover:opacity-100"
+            className="absolute -inset-5 rounded-[2rem] bg-[radial-gradient(circle_at_35%_15%,rgba(255,255,255,0.18),transparent_34%),radial-gradient(circle_at_78%_70%,rgba(107,226,255,0.2),transparent_36%),radial-gradient(circle_at_18%_88%,rgba(109,94,247,0.22),transparent_34%)] opacity-70 blur-2xl transition duration-700 group-hover:opacity-100"
             style={{
               transform: prefersReducedMotion
                 ? undefined
@@ -917,14 +917,14 @@ export default function Home() {
             }}
           />
           <div
-            className="relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/[0.055] p-3 shadow-2xl shadow-black/50 backdrop-blur-2xl transition duration-500 group-hover:-translate-y-2 group-hover:border-white/25"
+            className="relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/[0.04] p-3 shadow-2xl shadow-black/50 backdrop-blur-2xl transition duration-500 group-hover:-translate-y-2 group-hover:border-white/25"
             style={{
               transform: prefersReducedMotion
                 ? undefined
                 : `translate3d(${parallax.x * 0.35}px, ${parallax.y * 0.35}px, 0)`,
             }}
           >
-            <div className="relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0b0d12]">
+            <div className="relative overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0F0F10]">
               <div className="relative aspect-[4/5] min-h-[330px] overflow-hidden sm:min-h-[480px]">
                 <Image
                   src="/joaquin.jpg"
@@ -941,11 +941,11 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section id="about" className="relative z-10 border-y border-white/10 bg-white/[0.035] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+      <section id="about" className="relative z-10 border-y border-white/10 bg-white/[0.018] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-24 sm:px-6 lg:grid-cols-[0.36fr_0.64fr] lg:items-start">
           <Reveal>
             <div>
-              <p className="mb-4 text-xs font-medium uppercase tracking-[0.24em] text-teal-100/50">
+              <p className="mb-4 text-xs font-medium uppercase tracking-[0.24em] text-cyan-100/50">
                 Editorial
               </p>
               <h2 className="text-2xl font-semibold text-white sm:text-4xl">
@@ -954,8 +954,8 @@ export default function Home() {
             </div>
           </Reveal>
           <div className="relative">
-            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_12%_15%,rgba(89,216,255,0.11),transparent_34%),radial-gradient(circle_at_88%_82%,rgba(255,180,87,0.07),transparent_36%)] blur-2xl" />
-            <Reveal className="relative overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-8 lg:p-10">
+            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_12%_15%,rgba(107,226,255,0.11),transparent_34%),radial-gradient(circle_at_88%_82%,rgba(255,180,87,0.07),transparent_36%)] blur-2xl" />
+            <Reveal className="relative overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.04),rgba(255,255,255,0.025))] p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-8 lg:p-10">
               <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
               <div className="space-y-6 text-lg leading-9 text-zinc-300 sm:text-xl sm:leading-10">
             {t.aboutText.map((paragraph, index) => (
@@ -983,22 +983,22 @@ export default function Home() {
             <Reveal key={service.title} delay={index * 110}>
               <article
                 onMouseMove={handleSpotlightMove}
-                className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.092),rgba(255,255,255,0.025)_52%,rgba(20,184,166,0.035))] p-6 shadow-xl shadow-black/25 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-teal-200/40 hover:bg-white/[0.09] hover:shadow-[0_28px_80px_rgba(20,184,166,0.14)] sm:p-7"
+                className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.065),rgba(255,255,255,0.025)_52%,rgba(107,226,255,0.03))] p-6 shadow-xl shadow-black/25 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-cyan-200/40 hover:bg-white/[0.065] hover:shadow-[0_28px_80px_rgba(107,226,255,0.12)] sm:p-7"
               >
-                <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.055),transparent_36%)] opacity-0 transition duration-500 group-hover:opacity-100" />
-                <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-[#59D8FF] via-white to-[#FFB457] transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
+                <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.04),transparent_36%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+                <div className="absolute inset-x-6 top-0 h-px origin-left scale-x-0 bg-gradient-to-r from-[#6BE2FF] via-white to-[#FFB457] transition duration-500 group-hover:scale-x-100 sm:inset-x-7" />
                 <div className="mb-8 flex items-center justify-between sm:mb-10">
-                  <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-black/25 px-2 text-[0.8125rem] font-medium leading-none text-zinc-400 shadow-inner shadow-white/5 transition duration-300 group-hover:border-teal-200/30 group-hover:text-teal-100 group-hover:shadow-[0_0_26px_rgba(45,212,191,0.13)] sm:text-sm">
+                  <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-black/25 px-2 text-[0.8125rem] font-medium leading-none text-zinc-300 shadow-inner shadow-white/5 transition duration-300 group-hover:border-cyan-200/30 group-hover:text-cyan-100 group-hover:shadow-[0_0_26px_rgba(107,226,255,0.12)] sm:text-sm">
                     0{index + 1}
                   </span>
-                  <span className="h-px w-16 origin-right scale-x-50 bg-gradient-to-r from-transparent via-white/25 to-teal-200/60 transition duration-500 group-hover:scale-x-100" />
+                  <span className="h-px w-16 origin-right scale-x-50 bg-gradient-to-r from-transparent via-white/25 to-[#6BE2FF]/60 transition duration-500 group-hover:scale-x-100" />
                 </div>
                 <h3 className="text-xl font-medium text-white">
                   {service.title}
                 </h3>
-                <p className="mt-5 leading-7 text-zinc-400">{service.text}</p>
-                <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-zinc-500 transition duration-300 group-hover:text-teal-100/70">
-                  <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-teal-200 group-hover:shadow-[0_0_18px_rgba(94,234,212,0.75)]" />
+                <p className="mt-5 leading-7 text-zinc-300">{service.text}</p>
+                <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-zinc-400 transition duration-300 group-hover:text-cyan-100/75">
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-[#6BE2FF] group-hover:shadow-[0_0_18px_rgba(107,226,255,0.6)]" />
                   <span>Joaquín G. Bravo</span>
                 </div>
               </article>
@@ -1007,7 +1007,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-10 border-y border-white/10 bg-white/[0.025]">
+      <section className="relative z-10 border-y border-white/10 bg-white/[0.018]">
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
           <Reveal>
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
@@ -1019,12 +1019,12 @@ export default function Home() {
               <Reveal key={card.title} delay={index * 90}>
                 <article
                   onMouseMove={handleSpotlightMove}
-                  className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.07),rgba(255,255,255,0.022))] p-6 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/30 hover:shadow-[0_20px_58px_rgba(20,184,166,0.11)]"
+                  className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.022))] p-6 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-cyan-200/30 hover:shadow-[0_20px_58px_rgba(107,226,255,0.1)]"
                 >
                   <h3 className="text-lg font-medium text-white">
                     {card.title}
                   </h3>
-                  <p className="mt-4 leading-7 text-zinc-400">{card.text}</p>
+                  <p className="mt-4 leading-7 text-zinc-300">{card.text}</p>
                 </article>
               </Reveal>
             ))}
@@ -1032,7 +1032,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="relative z-10 border-y border-white/10 bg-white/[0.035]">
+      <section id="projects" className="relative z-10 border-y border-white/10 bg-white/[0.018]">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
           <Reveal>
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
@@ -1045,30 +1045,30 @@ export default function Home() {
               <Reveal key={project.url} delay={120 + index * 100}>
                 <article
                   onMouseMove={handleSpotlightMove}
-                  className="spotlight-card group relative grid items-center gap-8 overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-4 shadow-2xl shadow-black/30 backdrop-blur transition duration-300 hover:border-teal-200/30 hover:shadow-[0_20px_58px_rgba(20,184,166,0.12)] sm:p-6 lg:grid-cols-2 lg:gap-12"
+                  className="spotlight-card group relative grid items-center gap-8 overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.04),rgba(255,255,255,0.025))] p-4 shadow-2xl shadow-black/30 backdrop-blur transition duration-300 hover:border-cyan-200/30 hover:shadow-[0_20px_58px_rgba(107,226,255,0.11)] sm:p-6 lg:grid-cols-2 lg:gap-12"
                 >
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-xl border border-white/10 bg-black/20 p-2 shadow-inner shadow-white/5 transition duration-300 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-3"
+                    className="block rounded-xl border border-white/10 bg-black/20 p-2 shadow-inner shadow-white/5 transition duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-200/40 sm:p-3"
                     aria-label={project.previewTitle}
                   >
-                    <div className="overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40">
+                    <div className="overflow-hidden rounded-xl border border-white/14 bg-[#0F0F10]/95 shadow-2xl shadow-black/40">
                       <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.045] px-3 py-2 md:gap-3 md:px-4 md:py-3">
                         <div className="flex gap-1 md:gap-1.5">
                           <span className="h-2 w-2 rounded-full bg-red-300/75 md:h-2.5 md:w-2.5" />
                           <span className="h-2 w-2 rounded-full bg-yellow-200/75 md:h-2.5 md:w-2.5" />
-                          <span className="h-2 w-2 rounded-full bg-teal-200/75 md:h-2.5 md:w-2.5" />
+                          <span className="h-2 w-2 rounded-full bg-cyan-200/75 md:h-2.5 md:w-2.5" />
                         </div>
-                        <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-400 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
+                        <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-300 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
                           {project.domain}
                         </div>
                       </div>
 
-                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(89,216,255,0.2),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.12),transparent_32%),linear-gradient(135deg,#181818,#08090d)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
-                        <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
-                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.2),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(89,216,255,0.2),transparent_34%),linear-gradient(135deg,rgba(17,17,17,0.82),rgba(24,24,27,0.84)_48%,rgba(109,94,247,0.36))] p-3 sm:h-20 md:h-28 md:p-5">
+                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(107,226,255,0.18),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.1),transparent_32%),linear-gradient(135deg,#0F0F10,#030303)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
+                        <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.04] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
+                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.2),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(107,226,255,0.2),transparent_34%),linear-gradient(135deg,rgba(17,17,17,0.82),rgba(24,24,27,0.84)_48%,rgba(109,94,247,0.36))] p-3 sm:h-20 md:h-28 md:p-5">
                             <div className="flex items-center gap-1.5 md:gap-2">
                               <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
                               <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
@@ -1078,7 +1078,7 @@ export default function Home() {
                           </div>
 
                           <div className="p-2.5 sm:p-3 md:p-5">
-                            <p className="truncate text-[0.64rem] text-zinc-400 md:text-xs">
+                            <p className="truncate text-[0.64rem] text-zinc-300 md:text-xs">
                               {project.domain}
                             </p>
                             <h4 className="mt-1 text-[0.82rem] font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
@@ -1094,26 +1094,26 @@ export default function Home() {
                   </a>
 
                   <div>
-                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
+                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-400">
                       {t.featuredProject}
                     </p>
                     <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
                       {project.title}
                     </h3>
-                    <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
+                    <p className="mt-4 max-w-xl leading-7 text-zinc-300 sm:mt-5 sm:leading-8">
                       {project.description}
                     </p>
                     <div className="mt-5 grid gap-3 border-l border-white/10 pl-4 text-sm sm:grid-cols-2 sm:border-l-0 sm:pl-0">
-                      <div className="rounded-lg border border-white/10 bg-black/15 p-3">
-                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-500">
+                      <div className="rounded-lg border border-white/10 bg-[#0F0F10]/70 p-3">
+                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-400">
                           {t.caseGoalLabel}
                         </p>
                         <p className="mt-2 leading-6 text-zinc-300">
                           {project.caseStudy.goal}
                         </p>
                       </div>
-                      <div className="rounded-lg border border-white/10 bg-black/15 p-3">
-                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-500">
+                      <div className="rounded-lg border border-white/10 bg-[#0F0F10]/70 p-3">
+                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-400">
                           {t.caseFocusLabel}
                         </p>
                         <p className="mt-2 leading-6 text-zinc-300">
@@ -1125,7 +1125,7 @@ export default function Home() {
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-full border border-white/10 bg-white/[0.035] px-3 py-1.5 text-xs font-medium text-zinc-300"
+                          className="rounded-full border border-white/10 bg-white/[0.018] px-3 py-1.5 text-xs font-medium text-zinc-300"
                         >
                           {tag}
                         </span>
@@ -1156,7 +1156,7 @@ export default function Home() {
               {[20, 34, 24, 42, 28, 52, 36, 24].map((height, index) => (
                 <span
                   key={`${height}-${index}`}
-                  className="w-1 rounded-full bg-gradient-to-t from-[#59D8FF]/25 via-white/45 to-[#FFB457]/25"
+                  className="w-1 rounded-full bg-gradient-to-t from-[#6BE2FF]/25 via-white/45 to-[#FFB457]/25"
                   style={{
                     height,
                     animation: prefersReducedMotion
@@ -1176,24 +1176,24 @@ export default function Home() {
 
             <div
               onMouseMove={handleSpotlightMove}
-              className="spotlight-card relative mt-7 overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-4 shadow-2xl shadow-black/20 backdrop-blur sm:mt-8 sm:p-5"
+              className="spotlight-card relative mt-7 overflow-hidden rounded-lg border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.04),rgba(255,255,255,0.025))] p-4 shadow-2xl shadow-black/20 backdrop-blur sm:mt-8 sm:p-5"
             >
               <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-teal-100/60">
+                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-100/60">
                     {t.featuredTrack}
                   </p>
                   <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
                     {t.featuredTrackTitle}
                   </h3>
-                  <p className="mt-2 text-sm uppercase tracking-[0.16em] text-zinc-500">
+                  <p className="mt-2 text-sm uppercase tracking-[0.16em] text-zinc-400">
                     {t.trackArtistLabel}:{" "}
                     <span className="text-zinc-300">{t.trackArtist}</span>
                   </p>
                 </div>
                 <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent sm:mb-3" />
               </div>
-              <p className="mt-5 text-sm leading-7 text-zinc-400">
+              <p className="mt-5 text-sm leading-7 text-zinc-300">
                 {t.trackMood}
               </p>
 
@@ -1212,14 +1212,14 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={120} className="relative">
-            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(89,216,255,0.17),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(255,180,87,0.1),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
+            <div className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_30%_30%,rgba(107,226,255,0.17),transparent_34%),radial-gradient(circle_at_80%_70%,rgba(255,180,87,0.1),transparent_38%)] opacity-75 blur-2xl transition duration-700 hover:opacity-100" />
             <div className="absolute -right-4 top-10 hidden h-48 w-px bg-gradient-to-b from-transparent via-white/15 to-transparent lg:block" />
             <div className="mb-4 hidden items-center justify-end gap-1.5 pr-2 opacity-75 md:flex" aria-hidden="true">
               {[18, 30, 46, 26, 56, 34, 42, 24, 50, 32, 22, 38].map(
                 (height, index) => (
                   <span
                     key={`${height}-${index}`}
-                    className="w-1 rounded-full bg-gradient-to-t from-[#59D8FF]/35 via-white/55 to-[#FFB457]/35 shadow-[0_0_14px_rgba(89,216,255,0.16)]"
+                    className="w-1 rounded-full bg-gradient-to-t from-[#6BE2FF]/35 via-white/55 to-[#FFB457]/35 shadow-[0_0_14px_rgba(107,226,255,0.16)]"
                     style={{
                       height,
                       animation: prefersReducedMotion
@@ -1233,9 +1233,9 @@ export default function Home() {
             </div>
             <div
               onMouseMove={handleSpotlightMove}
-              className="spotlight-card group relative hidden overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-3 shadow-2xl shadow-black/35 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-teal-200/25 hover:shadow-[0_24px_80px_rgba(20,184,166,0.14)] md:block"
+              className="spotlight-card group relative hidden overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.065),rgba(255,255,255,0.025))] p-3 shadow-2xl shadow-black/35 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-cyan-200/25 hover:shadow-[0_24px_80px_rgba(107,226,255,0.11)] md:block"
             >
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-100/50 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+              <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-100/50 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
               <iframe
                 title="Spotify track player - Into Space"
                 src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
@@ -1246,7 +1246,7 @@ export default function Home() {
                 className="rounded-lg"
               />
             </div>
-            <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.09),rgba(255,255,255,0.025))] p-2 shadow-2xl shadow-black/30 backdrop-blur md:hidden">
+            <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.065),rgba(255,255,255,0.025))] p-2 shadow-2xl shadow-black/30 backdrop-blur md:hidden">
               <iframe
                 title="Compact Spotify track player - Into Space"
                 src="https://open.spotify.com/embed/track/134WSBaVh7ePxkY4j3c83B?utm_source=generator"
@@ -1269,7 +1269,7 @@ export default function Home() {
               href={spotifyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-flex w-full items-center justify-center rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-teal-200/30 hover:bg-white/10 hover:shadow-[0_14px_34px_rgba(45,212,191,0.12)] focus:outline-none focus:ring-2 focus:ring-teal-200/40 active:scale-[0.98] sm:w-fit"
+              className="mt-5 inline-flex w-full items-center justify-center rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/10 hover:shadow-[0_14px_34px_rgba(107,226,255,0.11)] focus:outline-none focus:ring-2 focus:ring-cyan-200/40 active:scale-[0.98] sm:w-fit"
             >
               {t.fullSpotifyProfile} ↗
             </a>
@@ -1277,13 +1277,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="relative z-10 border-t border-white/10 bg-white/[0.035]">
+      <section id="contact" className="relative z-10 border-t border-white/10 bg-white/[0.018]">
         <div className="mx-auto max-w-6xl px-5 py-16 text-center sm:px-6 sm:py-20">
           <Reveal>
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
               {t.contactTitle}
             </h2>
-            <p className="mx-auto mt-5 max-w-2xl leading-8 text-zinc-400">
+            <p className="mx-auto mt-5 max-w-2xl leading-8 text-zinc-300">
               {t.contactText}
             </p>
           </Reveal>
@@ -1299,7 +1299,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:joakinxg100@gmail.com"
-              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-zinc-300 transition duration-300 hover:-translate-y-1 hover:border-teal-200/30 hover:bg-white/[0.03] hover:text-white hover:shadow-lg hover:shadow-teal-500/10 focus:outline-none focus:ring-2 focus:ring-teal-200/35 active:scale-[0.98]"
+              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-zinc-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.03] hover:text-white hover:shadow-lg hover:shadow-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98]"
             >
               Email: joakinxg100@gmail.com
             </a>
@@ -1307,7 +1307,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="relative z-10 border-t border-white/10 px-5 py-6 text-center text-sm text-zinc-500 sm:py-8">
+      <footer className="relative z-10 border-t border-white/10 px-5 py-6 text-center text-sm text-zinc-400 sm:py-8">
         {t.footer}
       </footer>
     </main>

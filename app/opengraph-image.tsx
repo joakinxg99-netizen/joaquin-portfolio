@@ -27,7 +27,7 @@ export default async function Image() {
           padding: "72px",
           color: "#ffffff",
           background:
-            "radial-gradient(circle at 20% 20%, rgba(89,216,255,0.26), transparent 34%), radial-gradient(circle at 84% 18%, rgba(109,94,247,0.18), transparent 32%), radial-gradient(circle at 58% 88%, rgba(255,180,87,0.12), transparent 30%), linear-gradient(135deg, #050505 0%, #111111 48%, #050505 100%)",
+            "radial-gradient(circle at 20% 20%, rgba(107,226,255,0.26), transparent 34%), radial-gradient(circle at 84% 18%, rgba(109,94,247,0.18), transparent 32%), radial-gradient(circle at 58% 88%, rgba(255,180,87,0.12), transparent 30%), linear-gradient(135deg, #030303 0%, #0F0F10 48%, #030303 100%)",
           fontFamily: "Arial, Helvetica, sans-serif",
           overflow: "hidden",
           position: "relative",
@@ -58,7 +58,7 @@ export default async function Image() {
               height: 2,
               marginBottom: 34,
               background:
-                "linear-gradient(90deg, #59D8FF 0%, #ffffff 52%, #FFB457 100%)",
+                "linear-gradient(90deg, #6BE2FF 0%, #ffffff 52%, #FFB457 100%)",
             }}
           />
           <div
