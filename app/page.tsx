@@ -685,16 +685,15 @@ export default function Home() {
           }`}
         >
           <div className="flex items-center justify-between gap-4">
-            <a href="#home" className="flex items-center gap-2.5 text-sm font-semibold text-white transition hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-200/50">
+            <a href="#home" className="flex items-center text-sm font-semibold text-white transition hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-200/50">
               <Image
                 src="/logo.png"
                 alt="Joaquín G. Bravo"
-                width={108}
-                height={72}
+                width={126}
+                height={84}
                 priority
-                className="h-11 w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-12 lg:h-14"
+                className="h-12 w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-14 lg:h-16"
               />
-              <span className="hidden sm:inline">Joaquín G. Bravo</span>
             </a>
 
             <div className="hidden items-center gap-8 lg:flex">
@@ -1198,6 +1197,38 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="relative z-10 border-y border-white/10 bg-white/[0.018]">
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
+          <Reveal>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <h2 className="text-2xl font-semibold text-white sm:text-4xl">
+                {t.testimonialsTitle}
+              </h2>
+              <div className="hidden h-px flex-1 bg-gradient-to-r from-white/15 via-[#FFB457]/20 to-transparent sm:block" />
+            </div>
+          </Reveal>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {t.testimonials.map((testimonial, index) => (
+              <Reveal key={testimonial.author} delay={index * 100}>
+                <article
+                  onMouseMove={handleSpotlightMove}
+                  className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.045),rgba(255,255,255,0.02))] p-5 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-[#FFB457]/25 hover:shadow-[0_22px_70px_rgba(255,180,87,0.08)] sm:p-6"
+                >
+                  <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#FFB457]/35 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+                  <p className="text-lg leading-8 text-stone-200">
+                    “{testimonial.quote}”
+                  </p>
+                  <p className="mt-5 text-sm font-medium text-stone-400">
+                    — {testimonial.author}
+                  </p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="music" className="relative z-10 mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-6 sm:py-20 md:scroll-mt-28">
         <div className="pointer-events-none absolute inset-x-5 top-10 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
@@ -1329,36 +1360,6 @@ export default function Home() {
       </section>
 
       <section id="contact" className="relative z-10 scroll-mt-24 border-t border-white/10 bg-white/[0.018] md:scroll-mt-28">
-        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
-          <Reveal>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <h2 className="text-2xl font-semibold text-white sm:text-4xl">
-                {t.testimonialsTitle}
-              </h2>
-              <div className="hidden h-px flex-1 bg-gradient-to-r from-white/15 via-[#FFB457]/20 to-transparent sm:block" />
-            </div>
-          </Reveal>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {t.testimonials.map((testimonial, index) => (
-              <Reveal key={testimonial.author} delay={index * 100}>
-                <article
-                  onMouseMove={handleSpotlightMove}
-                  className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.045),rgba(255,255,255,0.02))] p-5 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-[#FFB457]/25 hover:shadow-[0_22px_70px_rgba(255,180,87,0.08)] sm:p-6"
-                >
-                  <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#FFB457]/35 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
-                  <p className="text-lg leading-8 text-stone-200">
-                    “{testimonial.quote}”
-                  </p>
-                  <p className="mt-5 text-sm font-medium text-stone-400">
-                    — {testimonial.author}
-                  </p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-
         <div className="mx-auto max-w-6xl px-5 py-16 text-center sm:px-6 sm:py-20">
           <div className="pointer-events-none absolute inset-x-6 bottom-24 -z-10 h-48 bg-[radial-gradient(circle_at_50%_50%,rgba(255,180,87,0.09),transparent_62%)] blur-2xl" />
           <Reveal>
