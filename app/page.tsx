@@ -515,14 +515,14 @@ export default function Home() {
           }`}
         >
           <div className="flex items-center justify-between gap-4">
-            <a href="#home" className="flex items-center gap-2 text-sm font-semibold text-white transition hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200/50">
+            <a href="#home" className="flex items-center gap-2.5 text-sm font-semibold text-white transition hover:text-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-200/50">
               <Image
                 src="/joabrav-logo.png"
                 alt="JØA BRAV"
-                width={42}
-                height={28}
+                width={72}
+                height={48}
                 priority
-                className="h-7 w-auto object-contain"
+                className="h-10 w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.18)] sm:h-11"
               />
               <span className="hidden sm:inline">Joaquín G. Bravo</span>
             </a>
