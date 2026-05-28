@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "https://joabrav.com",
   },
   icons: {
-    icon: "/joabrav-logo.png",
-    shortcut: "/joabrav-logo.png",
-    apple: "/joabrav-logo.png",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
     title: "Joaquín G. Bravo — Creative Developer",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Joaquín G. Bravo",
     images: [
       {
-        url: "https://joabrav.com/joabrav-logo.png",
+        url: "https://joabrav.com/logo.png",
         width: 1536,
         height: 1024,
         alt: "Joaquín G. Bravo — Creative Developer",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Premium digital experiences for professionals and personal brands.",
     images: [
       {
-        url: "https://joabrav.com/joabrav-logo.png",
+        url: "https://joabrav.com/logo.png",
         alt: "Joaquín G. Bravo — Creative Developer",
       },
     ],

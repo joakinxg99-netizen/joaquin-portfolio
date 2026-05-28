@@ -687,12 +687,12 @@ export default function Home() {
           <div className="flex items-center justify-between gap-4">
             <a href="#home" className="flex items-center gap-2.5 text-sm font-semibold text-white transition hover:text-cyan-100 focus:outline-none focus:ring-2 focus:ring-cyan-200/50">
               <Image
-                src="/joabrav-logo.png"
+                src="/logo.png"
                 alt="Joaquín G. Bravo"
-                width={72}
-                height={48}
+                width={108}
+                height={72}
                 priority
-                className="h-10 w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.18)] sm:h-11"
+                className="h-11 w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-12 lg:h-14"
               />
               <span className="hidden sm:inline">Joaquín G. Bravo</span>
             </a>

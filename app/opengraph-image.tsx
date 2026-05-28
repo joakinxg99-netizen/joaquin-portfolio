@@ -11,7 +11,7 @@ export const contentType = "image/png";
 
 export default async function Image() {
   const photo = await readFile(join(process.cwd(), "public", "joaquin.jpg"));
-  const logo = await readFile(join(process.cwd(), "public", "joabrav-logo.png"));
+  const logo = await readFile(join(process.cwd(), "public", "logo.png"));
   const photoSrc = `data:image/jpeg;base64,${photo.toString("base64")}`;
   const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
 
@@ -45,8 +45,8 @@ export default async function Image() {
             src={logoSrc}
             alt=""
             style={{
-              width: 112,
-              height: 74,
+              width: 132,
+              height: 88,
               objectFit: "contain",
               marginBottom: 22,
             }}
