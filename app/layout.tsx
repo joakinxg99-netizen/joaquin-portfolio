@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   description:
     "Premium digital experiences, cinematic design and techno identity.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/joabrav-logo.png",
+    shortcut: "/joabrav-logo.png",
+    apple: "/joabrav-logo.png",
   },
   openGraph: {
     title: "JØA BRAV — Web Developer & Techno Producer",
