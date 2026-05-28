@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://joabrav.com"),
   title: "JØA BRAV — Web Developer & Techno Producer",
   description:
-    "Premium web experiences, creative development and electronic music identity.",
+    "Premium web experiences, creative development and techno identity.",
   alternates: {
     canonical: "https://joabrav.com",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "JØA BRAV — Web Developer & Techno Producer",
     description:
-      "Premium web experiences, creative development and electronic music identity.",
+      "Premium web experiences, creative development and techno identity.",
     url: "https://joabrav.com",
     siteName: "JØA BRAV",
     images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JØA BRAV — Web Developer & Techno Producer",
     description:
-      "Premium web experiences, creative development and electronic music identity.",
+      "Premium web experiences, creative development and techno identity.",
     images: [
       {
         url: "https://joabrav.com/joabrav-logo.png",
