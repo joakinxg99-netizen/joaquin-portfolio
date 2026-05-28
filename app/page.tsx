@@ -10,186 +10,211 @@ const spotifyUrl =
   "https://open.spotify.com/intl-es/artist/25JUXI8MfGUhSKUdAatSzt";
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
+const eduardoProjectUrl = "https://www.eduardolealpsicologia.com.br/";
 
 const content = {
   pt: {
     nav: ["Início", "Sobre", "Projetos", "Música", "Contato"],
-    heroEyebrow: "Creative Developer • Techno",
-    heroSubtitle: "Desenvolvedor Web • Produtor de Techno",
+    heroEyebrow: "Creative Developer • Premium Digital Experiences",
+    heroSubtitle: "Desenvolvedor Web para marcas pessoais premium",
     heroDescription:
-      "Crio experiências digitais modernas, rápidas e premium para marcas, profissionais e negócios. Também crio música eletrônica com uma identidade cinematográfica, hipnótica e orientada à pista.",
+      "Crio websites elegantes, rápidos e estratégicos para profissionais e marcas pessoais que querem elevar sua presença online, transmitir confiança e atrair novos clientes.",
     projectsButton: "Ver projetos",
     spotifyButton: "Ouvir no Spotify",
     instagramButton: "Instagram",
     aboutTitle: "Sobre mim",
     aboutText: [
-      "Olá, sou Joaquín G. Bravo, desenvolvedor web e produtor musical argentino vivendo no Brasil.",
-      "Crio websites modernos, rápidos e profissionais para psicólogos, profissionais autônomos, marcas pessoais e negócios.",
-      "Também crio música eletrônica com uma identidade cinematográfica, hipnótica e orientada à pista.",
+      "Olá, sou Joaquín G. Bravo, creative developer argentino vivendo no Brasil.",
+      "Desenvolvo experiências digitais premium para profissionais, marcas pessoais e negócios que precisam de uma presença online clara, elegante e orientada a resultados.",
+      "Minha identidade artística como JØA BRAV também influencia meu olhar criativo, trazendo atmosfera, ritmo e direção estética para cada projeto.",
     ],
     servicesTitle: "O que eu faço",
     services: [
       {
-        title: "Websites profissionais",
-        text: "Sites modernos, responsivos e otimizados para transmitir confiança e gerar presença digital.",
+        title: "Websites premium",
+        text: "Experiências digitais refinadas para comunicar autoridade, aumentar confiança e transformar visitantes em clientes.",
       },
       {
-        title: "Portfólios e marcas pessoais",
-        text: "Páginas elegantes para profissionais que querem apresentar seu trabalho com clareza e estilo.",
+        title: "Presença de marca pessoal",
+        text: "Páginas estratégicas para profissionais que querem apresentar sua história, serviços e valor com clareza e estilo.",
       },
       {
-        title: "Música eletrônica",
-        text: "Produção de techno com identidade cinematográfica, atmosfera profunda e energia hipnótica.",
+        title: "Experiências responsivas",
+        text: "Interfaces rápidas, elegantes e adaptadas para que sua marca funcione perfeitamente em qualquer dispositivo.",
       },
     ],
     projectsTitle: "Projetos",
     projectTitle: "Site para Psicologia Clínica",
     projectDescription:
-      "Website profissional desenvolvido para atendimento psicológico, com design elegante, navegação moderna e experiência otimizada.",
+      "Solução digital premium para uma psicóloga clínica, criada para fortalecer sua marca profissional, facilitar a navegação e converter visitantes em contatos qualificados.",
     projectPreviewTitle: "Site para Psicologia Clínica",
     projectPreviewDescription:
-      "Website profissional desenvolvido para atendimento psicológico, com design elegante, navegação moderna e experiência otimizada.",
+      "Website profissional com branding elegante, experiência responsiva e navegação orientada à confiança.",
+    projectTags: ["Design responsivo", "SEO", "UX", "Branding"],
+    eduardoProjectTitle: "Site para Clínica de Psicologia",
+    eduardoProjectDescription:
+      "Website moderno e profissional para psicologia, focado em clareza, confiança, experiência responsiva e identidade visual premium.",
+    eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
+    eduardoProjectPreviewDescription:
+      "Presença digital profissional para psicologia, com navegação clara, visual premium e foco em credibilidade.",
+    eduardoProjectTags: ["Design responsivo", "UX", "SEO", "Branding"],
     projectButton: "Ver projeto",
     featuredProject: "Projeto em destaque",
     comingSoon: "Em breve",
     moreProjectsComingSoon: "Mais trabalhos selecionados em breve.",
-    musicTitle: "Música",
+    musicTitle: "Identidade sonora",
     musicText:
-      "Além do desenvolvimento web, crio música eletrônica com uma identidade cinematográfica e hipnótica — unindo tensão melódica, atmosferas escuras e energia de pista.",
-    featuredTrack: "Faixa em destaque",
+      "Como extensão artística da minha direção criativa, o projeto musical JØA BRAV explora atmosferas eletrônicas cinematográficas, tensão e identidade sonora.",
+    featuredTrack: "Projeto artístico",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
-    musicTags: ["Produtor de Techno", "Identidade cinematográfica", "Energia hipnótica"],
+    musicTags: ["Sound identity", "Atmosfera cinematográfica", "Projeto artístico"],
     trackMood:
-      "Uma viagem sonora escura e hipnótica, construída para tensão, atmosfera e movimento.",
+      "Uma camada criativa paralela ao meu trabalho digital, onde som, atmosfera e identidade visual se encontram.",
     listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
     contactTitle: "Contato",
     contactText:
-      "Quer criar uma presença digital profissional ou conhecer meu trabalho musical? Entre em contato.",
+      "Quer criar uma presença digital premium para sua marca ou serviço profissional? Entre em contato.",
     footer: "© 2026 Joaquín G. Bravo. Todos os direitos reservados.",
   },
   es: {
     nav: ["Inicio", "Sobre mí", "Proyectos", "Música", "Contacto"],
-    heroEyebrow: "Creative Developer • Techno",
-    heroSubtitle: "Desarrollador Web • Productor de Techno",
+    heroEyebrow: "Creative Developer • Experiencias Digitales Premium",
+    heroSubtitle: "Desarrollador web para marcas personales premium",
     heroDescription:
-      "Creo experiencias digitales modernas, rápidas y premium para marcas, profesionales y negocios. También creo música electrónica con una identidad cinematográfica, hipnótica y orientada a la pista.",
+      "Creo sitios web elegantes, rápidos y estratégicos para profesionales y marcas personales que quieren elevar su presencia online, transmitir confianza y atraer nuevos clientes.",
     projectsButton: "Ver proyectos",
     spotifyButton: "Escuchar en Spotify",
     instagramButton: "Instagram",
     aboutTitle: "Sobre mí",
     aboutText: [
-      "Hola, soy Joaquín G. Bravo, desarrollador web y productor musical argentino viviendo en Brasil.",
-      "Creo sitios web modernos, rápidos y profesionales para psicólogos, profesionales independientes, marcas personales y negocios.",
-      "También creo música electrónica con una identidad cinematográfica, hipnótica y orientada a la pista.",
+      "Hola, soy Joaquín G. Bravo, creative developer argentino viviendo en Brasil.",
+      "Desarrollo experiencias digitales premium para profesionales, marcas personales y negocios que necesitan una presencia online clara, elegante y orientada a resultados.",
+      "Mi identidad artística como JØA BRAV también influencia mi mirada creativa, aportando atmósfera, ritmo y dirección estética a cada proyecto.",
     ],
     servicesTitle: "Qué hago",
     services: [
       {
-        title: "Sitios web profesionales",
-        text: "Sitios modernos, responsivos y optimizados para transmitir confianza y generar presencia digital.",
+        title: "Sitios web premium",
+        text: "Experiencias digitales refinadas para comunicar autoridad, aumentar confianza y convertir visitantes en clientes.",
       },
       {
-        title: "Portfolios y marcas personales",
-        text: "Páginas elegantes para profesionales que quieren presentar su trabajo con claridad y estilo.",
+        title: "Presencia de marca personal",
+        text: "Páginas estratégicas para profesionales que quieren presentar su historia, servicios y valor con claridad y estilo.",
       },
       {
-        title: "Música electrónica",
-        text: "Producción de techno con identidad cinematográfica, atmósfera profunda y energía hipnótica.",
+        title: "Experiencias responsivas",
+        text: "Interfaces rápidas, elegantes y adaptadas para que tu marca funcione perfectamente en cualquier dispositivo.",
       },
     ],
     projectsTitle: "Proyectos",
     projectTitle: "Sitio para Psicología Clínica",
     projectDescription:
-      "Sitio web profesional desarrollado para atención psicológica, con diseño elegante, navegación moderna y experiencia optimizada.",
+      "Solución digital premium para una psicóloga clínica, creada para fortalecer su marca profesional, facilitar la navegación y convertir visitantes en contactos calificados.",
     projectPreviewTitle: "Sitio para Psicología Clínica",
     projectPreviewDescription:
-      "Sitio web profesional desarrollado para atención psicológica, con diseño elegante, navegación moderna y experiencia optimizada.",
+      "Sitio profesional con branding elegante, experiencia responsiva y navegación orientada a la confianza.",
+    projectTags: ["Diseño responsivo", "SEO", "UX", "Branding"],
+    eduardoProjectTitle: "Sitio para Clínica de Psicología",
+    eduardoProjectDescription:
+      "Sitio moderno y profesional de psicología enfocado en claridad, confianza, experiencia responsiva e identidad visual premium.",
+    eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
+    eduardoProjectPreviewDescription:
+      "Presencia digital profesional para psicología, con navegación clara, visual premium y foco en credibilidad.",
+    eduardoProjectTags: ["Diseño responsivo", "UX", "SEO", "Branding"],
     projectButton: "Ver proyecto",
     featuredProject: "Proyecto destacado",
     comingSoon: "Próximamente",
     moreProjectsComingSoon: "Más trabajos seleccionados próximamente.",
-    musicTitle: "Música",
+    musicTitle: "Identidad sonora",
     musicText:
-      "Además del desarrollo web, creo música electrónica con una identidad cinematográfica e hipnótica — combinando tensión melódica, atmósferas oscuras y energía de pista.",
-    featuredTrack: "Canción destacada",
+      "Como extensión artística de mi dirección creativa, el proyecto musical JØA BRAV explora atmósferas electrónicas cinematográficas, tensión e identidad sonora.",
+    featuredTrack: "Proyecto artístico",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
     trackArtist: "JØA BRAV",
-    musicTags: ["Productor de Techno", "Identidad cinematográfica", "Energía hipnótica"],
+    musicTags: ["Identidad sonora", "Atmósfera cinematográfica", "Proyecto artístico"],
     trackMood:
-      "Un viaje sonoro oscuro e hipnótico, construido para tensión, atmósfera y movimiento.",
+      "Una capa creativa paralela a mi trabajo digital, donde sonido, atmósfera e identidad visual se encuentran.",
     listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     contactTitle: "Contacto",
     contactText:
-      "¿Querés crear una presencia digital profesional o conocer mi trabajo musical? Entrá en contacto.",
+      "¿Querés crear una presencia digital premium para tu marca o servicio profesional? Entrá en contacto.",
     footer: "© 2026 Joaquín G. Bravo. Todos los derechos reservados.",
   },
   en: {
     nav: ["Home", "About", "Projects", "Music", "Contact"],
-    heroEyebrow: "Creative Developer • Techno",
-    heroSubtitle: "Web Developer • Techno Producer",
+    heroEyebrow: "Creative Developer • Premium Digital Experiences",
+    heroSubtitle: "Web Developer for premium personal brands",
     heroDescription:
-      "I create modern, fast and premium digital experiences for brands, professionals and businesses. I also create electronic music with a cinematic, hypnotic and club-driven identity.",
+      "I create elegant, fast and strategic websites for professionals and personal brands who want to elevate their online presence, build trust and attract new clients.",
     projectsButton: "View projects",
     spotifyButton: "Listen on Spotify",
     instagramButton: "Instagram",
     aboutTitle: "About me",
     aboutText: [
-      "Hi, I’m Joaquín G. Bravo, a web developer and music producer from Argentina living in Brazil.",
-      "I create modern, fast and professional websites for psychologists, independent professionals, personal brands and businesses.",
-      "I also create electronic music with a cinematic, hypnotic and club-driven identity.",
+      "Hi, I’m Joaquín G. Bravo, a creative developer from Argentina living in Brazil.",
+      "I build premium digital experiences for professionals, personal brands and businesses that need a clear, elegant and results-driven online presence.",
+      "My artistic identity as JØA BRAV also shapes my creative eye, bringing atmosphere, rhythm and visual direction into each project.",
     ],
     servicesTitle: "What I do",
     services: [
       {
-        title: "Professional websites",
-        text: "Modern, responsive and optimized websites built to communicate trust and create digital presence.",
+        title: "Premium websites",
+        text: "Refined digital experiences built to communicate authority, increase trust and turn visitors into clients.",
       },
       {
-        title: "Portfolios and personal brands",
-        text: "Elegant pages for professionals who want to present their work with clarity and style.",
+        title: "Personal brand presence",
+        text: "Strategic pages for professionals who want to present their story, services and value with clarity and style.",
       },
       {
-        title: "Electronic music",
-        text: "Techno production with cinematic identity, deep atmosphere and hypnotic energy.",
+        title: "Responsive experiences",
+        text: "Fast, elegant interfaces adapted so your brand feels sharp and consistent on every device.",
       },
     ],
     projectsTitle: "Projects",
     projectTitle: "Clinical Psychology Website",
     projectDescription:
-      "Professional website developed for psychological care, with elegant design, modern navigation and optimized user experience.",
+      "A premium digital solution for a clinical psychologist, created to strengthen professional branding, simplify navigation and convert visitors into qualified contacts.",
     projectPreviewTitle: "Clinical Psychology Website",
     projectPreviewDescription:
-      "Professional website developed for psychological care, with elegant design, modern navigation and optimized user experience.",
+      "Professional website with elegant branding, responsive experience and trust-focused navigation.",
+    projectTags: ["Responsive Design", "SEO", "UX", "Branding"],
+    eduardoProjectTitle: "Psychology Clinic Website",
+    eduardoProjectDescription:
+      "Modern and professional psychology website focused on clarity, trust, responsive experience and premium visual identity.",
+    eduardoProjectPreviewTitle: "Eduardo Leal Psicologia",
+    eduardoProjectPreviewDescription:
+      "Professional digital presence for psychology, with clear navigation, premium visuals and credibility-focused structure.",
+    eduardoProjectTags: ["Responsive Design", "UX", "SEO", "Branding"],
     projectButton: "View project",
     featuredProject: "Featured Project",
     comingSoon: "Coming soon",
     moreProjectsComingSoon: "More selected work coming soon.",
-    musicTitle: "Music",
+    musicTitle: "Sound Identity",
     musicText:
-      "Beyond web development, I create electronic music with a cinematic and hypnotic identity — blending melodic tension, dark atmospheres and dancefloor energy.",
-    featuredTrack: "Featured Track",
+      "As an artistic extension of my creative direction, the JØA BRAV music project explores cinematic electronic atmospheres, tension and sound identity.",
+    featuredTrack: "Artistic Project",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artist",
     trackArtist: "JØA BRAV",
-    musicTags: ["Techno Producer", "Cinematic Identity", "Hypnotic Energy"],
+    musicTags: ["Sound Identity", "Cinematic Atmosphere", "Artistic Project"],
     trackMood:
-      "A dark, hypnotic sonic trip shaped for tension, atmosphere and movement.",
+      "A parallel creative layer to my digital work, where sound, atmosphere and visual identity meet.",
     listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     contactTitle: "Contact",
     contactText:
-      "Want to create a professional digital presence or explore my music work? Get in touch.",
+      "Want to create a premium digital presence for your brand or professional service? Get in touch.",
     footer: "© 2026 Joaquín G. Bravo. All rights reserved.",
   },
 };
@@ -265,6 +290,27 @@ export default function Home() {
     { label: t.nav[2], href: "#projects" },
     { label: t.nav[3], href: "#music" },
     { label: t.nav[4], href: "#contact" },
+  ];
+
+  const projectCards = [
+    {
+      url: projectUrl,
+      domain: "dravictoriagomez.com.br",
+      title: t.projectTitle,
+      description: t.projectDescription,
+      previewTitle: t.projectPreviewTitle,
+      previewDescription: t.projectPreviewDescription,
+      tags: t.projectTags,
+    },
+    {
+      url: eduardoProjectUrl,
+      domain: "eduardolealpsicologia.com.br",
+      title: t.eduardoProjectTitle,
+      description: t.eduardoProjectDescription,
+      previewTitle: t.eduardoProjectPreviewTitle,
+      previewDescription: t.eduardoProjectPreviewDescription,
+      tags: t.eduardoProjectTags,
+    },
   ];
 
   useEffect(() => {
@@ -904,79 +950,92 @@ export default function Home() {
             </h2>
           </Reveal>
 
-          <Reveal delay={120}>
-            <div className="mt-10 grid items-center gap-12 lg:grid-cols-2">
-              <a
-                href={projectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-3 shadow-2xl shadow-black/30 backdrop-blur transition duration-300 hover:border-teal-200/30 hover:shadow-[0_20px_58px_rgba(20,184,166,0.12)] focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-4"
-                aria-label={t.projectPreviewTitle}
-              >
-                <div className="overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40">
-                  <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.045] px-3 py-2 md:gap-3 md:px-4 md:py-3">
-                    <div className="flex gap-1 md:gap-1.5">
-                      <span className="h-2 w-2 rounded-full bg-red-300/75 md:h-2.5 md:w-2.5" />
-                      <span className="h-2 w-2 rounded-full bg-yellow-200/75 md:h-2.5 md:w-2.5" />
-                      <span className="h-2 w-2 rounded-full bg-teal-200/75 md:h-2.5 md:w-2.5" />
-                    </div>
-                    <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-400 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
-                      dravictoriagomez.com.br
-                    </div>
-                  </div>
-
-                  <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
-                    <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
-                      <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] p-3 sm:h-20 md:h-28 md:p-5">
-                        <div className="flex items-center gap-1.5 md:gap-2">
-                          <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
-                          <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
-                            dravictoriagomez.com.br
-                          </span>
+          <div className="mt-10 grid gap-8 lg:gap-10">
+            {projectCards.map((project, index) => (
+              <Reveal key={project.url} delay={120 + index * 100}>
+                <article
+                  onMouseMove={handleSpotlightMove}
+                  className="spotlight-card group relative grid items-center gap-8 overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))] p-4 shadow-2xl shadow-black/30 backdrop-blur transition duration-300 hover:border-teal-200/30 hover:shadow-[0_20px_58px_rgba(20,184,166,0.12)] sm:p-6 lg:grid-cols-2 lg:gap-12"
+                >
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-xl border border-white/10 bg-black/20 p-2 shadow-inner shadow-white/5 transition duration-300 focus:outline-none focus:ring-2 focus:ring-teal-200/40 sm:p-3"
+                    aria-label={project.previewTitle}
+                  >
+                    <div className="overflow-hidden rounded-xl border border-white/14 bg-[#0d0f14]/95 shadow-2xl shadow-black/40">
+                      <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.045] px-3 py-2 md:gap-3 md:px-4 md:py-3">
+                        <div className="flex gap-1 md:gap-1.5">
+                          <span className="h-2 w-2 rounded-full bg-red-300/75 md:h-2.5 md:w-2.5" />
+                          <span className="h-2 w-2 rounded-full bg-yellow-200/75 md:h-2.5 md:w-2.5" />
+                          <span className="h-2 w-2 rounded-full bg-teal-200/75 md:h-2.5 md:w-2.5" />
+                        </div>
+                        <div className="min-w-0 flex-1 truncate rounded-md border border-white/10 bg-black/25 px-2 py-1 text-center text-[0.65rem] text-zinc-400 shadow-inner shadow-black/20 md:px-3 md:py-1.5 md:text-xs">
+                          {project.domain}
                         </div>
                       </div>
 
-                      <div className="p-2.5 sm:p-3 md:p-5">
-                        <p className="truncate text-[0.64rem] text-zinc-400 md:text-xs">
-                          dravictoriagomez.com.br
-                        </p>
-                        <h4 className="mt-1 text-[0.82rem] font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
-                          {t.projectPreviewTitle}
-                        </h4>
-                        <p className="mt-1.5 line-clamp-2 text-[0.66rem] leading-4 text-zinc-300/85 sm:text-xs sm:leading-5 md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
-                          {t.projectPreviewDescription}
-                        </p>
+                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(45,212,191,0.22),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(244,114,182,0.16),transparent_32%),linear-gradient(135deg,#171a20,#08090d)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
+                        <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.075] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
+                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.22),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(45,212,191,0.24),transparent_34%),linear-gradient(135deg,rgba(19,78,74,0.72),rgba(24,24,27,0.82)_48%,rgba(88,28,135,0.5))] p-3 sm:h-20 md:h-28 md:p-5">
+                            <div className="flex items-center gap-1.5 md:gap-2">
+                              <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
+                              <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
+                                {project.domain}
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="p-2.5 sm:p-3 md:p-5">
+                            <p className="truncate text-[0.64rem] text-zinc-400 md:text-xs">
+                              {project.domain}
+                            </p>
+                            <h4 className="mt-1 text-[0.82rem] font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
+                              {project.previewTitle}
+                            </h4>
+                            <p className="mt-1.5 line-clamp-2 text-[0.66rem] leading-4 text-zinc-300/85 sm:text-xs sm:leading-5 md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
+                              {project.previewDescription}
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </a>
-
-              <div>
-                  <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
-                    {t.featuredProject}
-                  </p>
-                  <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
-                    {t.projectTitle}
-                  </h3>
-                  <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
-                    {t.projectDescription}
-                  </p>
-                  <a
-                    href={projectUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
-                  >
-                    {t.projectButton}
                   </a>
-                </div>
-            </div>
 
-            <p className="mt-5 text-center text-sm text-zinc-500">
-              {t.moreProjectsComingSoon}
-            </p>
-          </Reveal>
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.16em] text-zinc-500">
+                      {t.featuredProject}
+                    </p>
+                    <h3 className="mt-3 text-2xl font-semibold text-white sm:mt-4 sm:text-3xl">
+                      {project.title}
+                    </h3>
+                    <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
+                      {project.description}
+                    </p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-white/10 bg-white/[0.035] px-3 py-1.5 text-xs font-medium text-zinc-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-zinc-950 shadow-xl shadow-white/10 transition duration-300 hover:bg-zinc-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
+                    >
+                      {t.projectButton}
+                    </a>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
