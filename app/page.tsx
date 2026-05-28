@@ -96,6 +96,23 @@ const content = {
       "Uma peça sonora que conecta atmosfera, ritmo e identidade editorial.",
     listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
+    testimonialsTitle: "Feedback selecionado",
+    testimonials: [
+      {
+        quote:
+          "Trabalhar com Joaquín elevou completamente minha presença online. O website ficou moderno, claro e altamente profissional.",
+        author: "Victoria Gómez",
+      },
+      {
+        quote:
+          "Toda a experiência foi cuidadosa e premium do início ao fim. O resultado final comunica confiança e profissionalismo perfeitamente.",
+        author: "Eduardo Leal",
+      },
+    ],
+    finalCtaTitle: "Vamos construir sua presença online.",
+    finalCtaText:
+      "Experiências digitais premium criadas para comunicar confiança, clareza e profissionalismo.",
+    startProject: "Iniciar projeto",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
     contactTitle: "Contato",
@@ -186,6 +203,23 @@ const content = {
       "Una pieza sonora que conecta atmósfera, ritmo e identidad editorial.",
     listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
+    testimonialsTitle: "Comentarios seleccionados",
+    testimonials: [
+      {
+        quote:
+          "Trabajar con Joaquín elevó completamente mi presencia online. El sitio se siente moderno, claro y altamente profesional.",
+        author: "Victoria Gómez",
+      },
+      {
+        quote:
+          "Toda la experiencia se sintió cuidada y premium de principio a fin. El resultado final comunica confianza y profesionalismo perfectamente.",
+        author: "Eduardo Leal",
+      },
+    ],
+    finalCtaTitle: "Construyamos tu presencia online.",
+    finalCtaText:
+      "Experiencias digitales premium diseñadas para comunicar confianza, claridad y profesionalismo.",
+    startProject: "Iniciar proyecto",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     contactTitle: "Contacto",
@@ -275,6 +309,23 @@ const content = {
       "A sonic piece connecting atmosphere, rhythm and editorial identity.",
     listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
+    testimonialsTitle: "Selected feedback",
+    testimonials: [
+      {
+        quote:
+          "Working with Joaquín completely elevated my online presence. The website feels modern, clear and highly professional.",
+        author: "Victoria Gómez",
+      },
+      {
+        quote:
+          "The entire experience felt thoughtful and premium from start to finish. The final result communicates trust and professionalism perfectly.",
+        author: "Eduardo Leal",
+      },
+    ],
+    finalCtaTitle: "Let’s build your online presence.",
+    finalCtaText:
+      "Premium digital experiences designed to communicate trust, clarity and professionalism.",
+    startProject: "Start a Project",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     contactTitle: "Contact",
@@ -1278,17 +1329,54 @@ export default function Home() {
       </section>
 
       <section id="contact" className="relative z-10 border-t border-white/10 bg-white/[0.018]">
+        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
+          <Reveal>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <h2 className="text-2xl font-semibold text-white sm:text-4xl">
+                {t.testimonialsTitle}
+              </h2>
+              <div className="hidden h-px flex-1 bg-gradient-to-r from-white/15 via-[#FFB457]/20 to-transparent sm:block" />
+            </div>
+          </Reveal>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {t.testimonials.map((testimonial, index) => (
+              <Reveal key={testimonial.author} delay={index * 100}>
+                <article
+                  onMouseMove={handleSpotlightMove}
+                  className="spotlight-card group relative h-full overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.045),rgba(255,255,255,0.02))] p-5 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-[#FFB457]/25 hover:shadow-[0_22px_70px_rgba(255,180,87,0.08)] sm:p-6"
+                >
+                  <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#FFB457]/35 to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
+                  <p className="text-lg leading-8 text-stone-200">
+                    “{testimonial.quote}”
+                  </p>
+                  <p className="mt-5 text-sm font-medium text-stone-400">
+                    — {testimonial.author}
+                  </p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
         <div className="mx-auto max-w-6xl px-5 py-16 text-center sm:px-6 sm:py-20">
+          <div className="pointer-events-none absolute inset-x-6 bottom-24 -z-10 h-48 bg-[radial-gradient(circle_at_50%_50%,rgba(255,180,87,0.09),transparent_62%)] blur-2xl" />
           <Reveal>
             <h2 className="text-2xl font-semibold text-white sm:text-4xl">
-              {t.contactTitle}
+              {t.finalCtaTitle}
             </h2>
             <p className="mx-auto mt-5 max-w-2xl leading-8 text-stone-300">
-              {t.contactText}
+              {t.finalCtaText}
             </p>
           </Reveal>
 
           <Reveal delay={120} className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href="mailto:joakinxg100@gmail.com"
+              className="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
+            >
+              {t.startProject}
+            </a>
             <a
               href={instagramUrl}
               target="_blank"
@@ -1296,12 +1384,6 @@ export default function Home() {
               className="rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/10 hover:shadow-[#FFB457]/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
             >
               Instagram
-            </a>
-            <a
-              href="mailto:joakinxg100@gmail.com"
-              className="rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.03] hover:text-white hover:shadow-lg hover:shadow-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98]"
-            >
-              Email: joakinxg100@gmail.com
             </a>
           </Reveal>
         </div>
