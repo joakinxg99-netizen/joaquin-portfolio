@@ -86,7 +86,7 @@ const content = {
     moreProjectsComingSoon: "Mais trabalhos selecionados em breve.",
     musicTitle: "Identidade sonora",
     musicText:
-      "Projeto artístico paralelo de JØA BRAV, explorando identidade sonora, atmosfera e direção criativa.",
+      "Projeto artístico paralelo, explorando identidade sonora, atmosfera e direção criativa.",
     featuredTrack: "Identidade artística",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
@@ -193,7 +193,7 @@ const content = {
     moreProjectsComingSoon: "Más trabajos seleccionados próximamente.",
     musicTitle: "Identidad sonora",
     musicText:
-      "Proyecto artístico paralelo de JØA BRAV, explorando identidad sonora, atmósfera y dirección creativa.",
+      "Proyecto artístico paralelo, explorando identidad sonora, atmósfera y dirección creativa.",
     featuredTrack: "Identidad artística",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artista",
@@ -299,7 +299,7 @@ const content = {
     moreProjectsComingSoon: "More selected work coming soon.",
     musicTitle: "Sound Identity",
     musicText:
-      "A secondary artistic project by JØA BRAV, exploring sound identity, atmosphere and creative direction.",
+      "A secondary artistic project, exploring sound identity, atmosphere and creative direction.",
     featuredTrack: "Artistic Identity",
     featuredTrackTitle: "Into Space",
     trackArtistLabel: "Artist",
@@ -689,10 +689,10 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="Joaquín G. Bravo"
-                width={126}
-                height={84}
+                width={138}
+                height={92}
                 priority
-                className="h-12 w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-14 lg:h-16"
+                className="h-[3.25rem] w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-[3.65rem] lg:h-[4.25rem]"
               />
             </a>
 
