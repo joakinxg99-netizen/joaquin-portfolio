@@ -11,6 +11,8 @@ const spotifyUrl =
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
 const eduardoProjectUrl = "https://www.eduardolealpsicologia.com.br/";
+const projectInquiryUrl =
+  "mailto:joakinxg100@gmail.com?subject=Project%20Inquiry&body=Hi%20Joaqu%C3%ADn%2C%0A%0AI%E2%80%99m%20interested%20in%20building%20a%20premium%20website%20for%20my%20business%2Fbrand.%0A%0AName%3A%0ABusiness%3A%0AProject%20goals%3A%0ATimeline%3A";
 
 const content = {
   pt: {
@@ -45,15 +47,15 @@ const content = {
     services: [
       {
         title: "Websites premium",
-        text: "Experiências digitais refinadas para comunicar autoridade, aumentar confiança e transformar visitantes em clientes.",
+        text: "Websites modernos criados para construir confiança e atrair clientes.",
       },
       {
         title: "Presença de marca pessoal",
-        text: "Páginas estratégicas para profissionais que querem apresentar sua história, serviços e valor com clareza e estilo.",
+        text: "Experiências digitais claras e elegantes para profissionais e criadores.",
       },
       {
-        title: "Presença adaptada para celulares",
-        text: "Páginas rápidas, elegantes e preparadas para sua marca funcionar bem em qualquer dispositivo.",
+        title: "Experiência responsiva",
+        text: "Websites rápidos e polidos, otimizados para todos os dispositivos.",
       },
     ],
     projectsTitle: "Projetos",
@@ -111,7 +113,7 @@ const content = {
     ],
     finalCtaTitle: "Vamos construir sua presença online.",
     finalCtaText:
-      "Experiências digitais premium criadas para comunicar confiança, clareza e profissionalismo.",
+      "Experiências digitais claras, modernas e premium criadas para comunicar profissionalismo e confiança.",
     startProject: "Iniciar projeto",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
@@ -152,15 +154,15 @@ const content = {
     services: [
       {
         title: "Sitios web premium",
-        text: "Experiencias digitales refinadas para comunicar autoridad, aumentar confianza y convertir visitantes en clientes.",
+        text: "Sitios modernos diseñados para construir confianza y atraer clientes.",
       },
       {
         title: "Presencia de marca personal",
-        text: "Páginas estratégicas para profesionales que quieren presentar su historia, servicios y valor con claridad y estilo.",
+        text: "Experiencias digitales claras y elegantes para profesionales y creadores.",
       },
       {
-        title: "Presencia adaptada para celulares",
-        text: "Páginas rápidas, elegantes y preparadas para que tu marca funcione bien en cualquier dispositivo.",
+        title: "Experiencia responsiva",
+        text: "Sitios rápidos y pulidos, optimizados para todos los dispositivos.",
       },
     ],
     projectsTitle: "Proyectos",
@@ -218,7 +220,7 @@ const content = {
     ],
     finalCtaTitle: "Construyamos tu presencia online.",
     finalCtaText:
-      "Experiencias digitales premium diseñadas para comunicar confianza, claridad y profesionalismo.",
+      "Experiencias digitales claras, modernas y premium diseñadas para comunicar profesionalismo y confianza.",
     startProject: "Iniciar proyecto",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
@@ -258,16 +260,16 @@ const content = {
     ],
     services: [
       {
-        title: "Premium websites",
-        text: "Refined digital experiences built to communicate authority, increase trust and turn visitors into clients.",
+        title: "Premium Websites",
+        text: "Modern websites designed to build trust and attract clients.",
       },
       {
-        title: "Personal brand presence",
-        text: "Strategic pages for professionals who want to present their story, services and value with clarity and style.",
+        title: "Personal Brand Presence",
+        text: "Clear and elegant digital experiences for professionals and creators.",
       },
       {
-        title: "Mobile-friendly presence",
-        text: "Fast, elegant pages prepared so your brand feels clear and consistent on every device.",
+        title: "Responsive Experience",
+        text: "Fast and polished websites optimized for every device.",
       },
     ],
     projectsTitle: "Projects",
@@ -324,7 +326,7 @@ const content = {
     ],
     finalCtaTitle: "Let’s build your online presence.",
     finalCtaText:
-      "Premium digital experiences designed to communicate trust, clarity and professionalism.",
+      "Clear, modern and premium digital experiences designed to communicate professionalism and trust.",
     startProject: "Start a Project",
     openMenu: "Open menu",
     closeMenu: "Close menu",
@@ -1373,7 +1375,7 @@ export default function Home() {
 
           <Reveal delay={120} className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:joakinxg100@gmail.com"
+              href={projectInquiryUrl}
               className="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
             >
               {t.startProject}
