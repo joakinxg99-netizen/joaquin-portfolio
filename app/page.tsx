@@ -71,6 +71,15 @@ const content = {
     eduardoProjectPreviewDescription:
       "Presença digital profissional para psicologia, com navegação clara, visual premium e foco em credibilidade.",
     eduardoProjectTags: ["Adaptado para celulares", "Experiência clara", "SEO", "Marca profissional"],
+    caseGoalLabel: "Objetivo",
+    caseFocusLabel: "Foco",
+    projectGoal:
+      "Criar uma presença online moderna e confiável para uma clínica de psicologia.",
+    projectFocus: "Clareza, experiência adaptada para celulares e marca premium.",
+    eduardoProjectGoal:
+      "Construir uma presença online profissional focada em confiança e acessibilidade.",
+    eduardoProjectFocus:
+      "Design elegante, clareza e experiência adaptada para celulares.",
     projectButton: "Ver projeto",
     featuredProject: "Projeto em destaque",
     comingSoon: "Em breve",
@@ -152,6 +161,15 @@ const content = {
     eduardoProjectPreviewDescription:
       "Presencia digital profesional para psicología, con navegación clara, visual premium y foco en credibilidad.",
     eduardoProjectTags: ["Adaptado a celulares", "Experiencia clara", "SEO", "Marca profesional"],
+    caseGoalLabel: "Objetivo",
+    caseFocusLabel: "Enfoque",
+    projectGoal:
+      "Crear una presencia online moderna y confiable para una clínica de psicología.",
+    projectFocus: "Claridad, experiencia adaptada a celulares y marca premium.",
+    eduardoProjectGoal:
+      "Construir una presencia online profesional enfocada en confianza y accesibilidad.",
+    eduardoProjectFocus:
+      "Diseño elegante, claridad y experiencia adaptada a celulares.",
     projectButton: "Ver proyecto",
     featuredProject: "Proyecto destacado",
     comingSoon: "Próximamente",
@@ -233,6 +251,14 @@ const content = {
     eduardoProjectPreviewDescription:
       "Professional digital presence for psychology, with clear navigation, premium visuals and credibility-focused structure.",
     eduardoProjectTags: ["Mobile-friendly", "Clear experience", "SEO", "Professional brand"],
+    caseGoalLabel: "Goal",
+    caseFocusLabel: "Focus",
+    projectGoal:
+      "Create a modern and trustworthy online presence for a clinical psychology practice.",
+    projectFocus: "Clarity, responsive experience and premium branding.",
+    eduardoProjectGoal:
+      "Build a professional online presence focused on trust and accessibility.",
+    eduardoProjectFocus: "Elegant design, clarity and responsive experience.",
     projectButton: "View project",
     featuredProject: "Featured Project",
     comingSoon: "Coming soon",
@@ -340,6 +366,10 @@ export default function Home() {
       previewTitle: t.projectPreviewTitle,
       previewDescription: t.projectPreviewDescription,
       tags: t.projectTags,
+      caseStudy: {
+        goal: t.projectGoal,
+        focus: t.projectFocus,
+      },
     },
     {
       url: eduardoProjectUrl,
@@ -349,6 +379,10 @@ export default function Home() {
       previewTitle: t.eduardoProjectPreviewTitle,
       previewDescription: t.eduardoProjectPreviewDescription,
       tags: t.eduardoProjectTags,
+      caseStudy: {
+        goal: t.eduardoProjectGoal,
+        focus: t.eduardoProjectFocus,
+      },
     },
   ];
 
@@ -1069,6 +1103,24 @@ export default function Home() {
                     <p className="mt-4 max-w-xl leading-7 text-zinc-400 sm:mt-5 sm:leading-8">
                       {project.description}
                     </p>
+                    <div className="mt-5 grid gap-3 border-l border-white/10 pl-4 text-sm sm:grid-cols-2 sm:border-l-0 sm:pl-0">
+                      <div className="rounded-lg border border-white/10 bg-black/15 p-3">
+                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-500">
+                          {t.caseGoalLabel}
+                        </p>
+                        <p className="mt-2 leading-6 text-zinc-300">
+                          {project.caseStudy.goal}
+                        </p>
+                      </div>
+                      <div className="rounded-lg border border-white/10 bg-black/15 p-3">
+                        <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-zinc-500">
+                          {t.caseFocusLabel}
+                        </p>
+                        <p className="mt-2 leading-6 text-zinc-300">
+                          {project.caseStudy.focus}
+                        </p>
+                      </div>
+                    </div>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
                         <span
