@@ -98,16 +98,16 @@ const content = {
     ],
     services: [
       {
-        title: "Presença Profissional",
-        text: "Sites criados para transmitir confiança e credibilidade.",
+        title: "Estratégia",
+        text: "Entendo seu objetivo, público e mensagem antes de criar a experiência.",
       },
       {
-        title: "Mais Visibilidade",
-        text: "Ajuda mais pessoas a descobrir seu trabalho e entrar em contato.",
+        title: "Design",
+        text: "Transformo sua presença online em algo claro, moderno e profissional.",
       },
       {
-        title: "Experiência Moderna",
-        text: "Rápido, profissional e adaptado para qualquer dispositivo.",
+        title: "Desenvolvimento",
+        text: "Construo uma página rápida, responsiva e pronta para ser publicada.",
       },
     ],
     projectsTitle: "Projetos",
@@ -207,16 +207,16 @@ const content = {
     ],
     services: [
       {
-        title: "Presencia Profesional",
-        text: "Sitios diseñados para transmitir confianza y credibilidad.",
+        title: "Estrategia",
+        text: "Entiendo tu objetivo, público y mensaje antes de crear la experiencia.",
       },
       {
-        title: "Más Visibilidad",
-        text: "Ayuda a que más personas descubran tu trabajo y se pongan en contacto contigo.",
+        title: "Diseño",
+        text: "Transformo tu presencia online en algo claro, moderno y profesional.",
       },
       {
-        title: "Experiencia Moderna",
-        text: "Rápido, profesional y adaptado a cualquier dispositivo.",
+        title: "Desarrollo",
+        text: "Construyo una página rápida, adaptada a dispositivos y lista para publicar.",
       },
     ],
     projectsTitle: "Proyectos",
@@ -316,16 +316,16 @@ const content = {
     ],
     services: [
       {
-        title: "Professional Presence",
-        text: "Websites designed to communicate trust and credibility.",
+        title: "Strategy",
+        text: "I understand your goal, audience and message before creating the experience.",
       },
       {
-        title: "More Visibility",
-        text: "Help more people discover your work and get in touch.",
+        title: "Design",
+        text: "I turn your online presence into something clear, modern and professional.",
       },
       {
-        title: "Modern Experience",
-        text: "Fast, professional and adapted to every device.",
+        title: "Development",
+        text: "I build a fast, responsive page ready to launch.",
       },
     ],
     projectsTitle: "Projects",

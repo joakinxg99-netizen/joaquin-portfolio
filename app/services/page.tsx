@@ -73,17 +73,17 @@ const content = {
     services: [
       {
         title: "Presença Profissional",
-        text: "Um website que transmite confiança e credibilidade.",
+        text: "Um site que transmite confiança e credibilidade.",
         includes: [],
       },
       {
         title: "Mais Contatos",
-        text: "Um caminho claro para novos clientes entrarem em contato.",
+        text: "Um caminho claro para que novos clientes entrem em contato.",
         includes: [],
       },
       {
-        title: "Funciona em Qualquer Dispositivo",
-        text: "Seu site funciona bem no celular, tablet e computador.",
+        title: "Experiência Moderna",
+        text: "Seu site será rápido, moderno e profissional em qualquer dispositivo.",
         includes: [],
       },
     ],
@@ -130,8 +130,8 @@ const content = {
         includes: [],
       },
       {
-        title: "Works Everywhere",
-        text: "Your website works well on mobile, tablet and desktop.",
+        title: "Modern Experience",
+        text: "Your website will feel modern, fast and professional on every device.",
         includes: [],
       },
     ],
@@ -174,12 +174,12 @@ const content = {
       },
       {
         title: "Más Contactos",
-        text: "Un camino claro para que nuevos clientes se contacten contigo.",
+        text: "Un camino claro para que nuevos clientes se pongan en contacto contigo.",
         includes: [],
       },
       {
-        title: "Funciona en Cualquier Dispositivo",
-        text: "Tu sitio funciona bien en celular, tablet y computadora.",
+        title: "Experiencia Moderna",
+        text: "Tu sitio se verá moderno, rápido y profesional en cualquier dispositivo.",
         includes: [],
       },
     ],
