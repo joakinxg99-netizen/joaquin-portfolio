@@ -49,39 +49,59 @@ const content = {
     back: "Início",
     eyebrow: "Serviços Digitais Premium",
     title: "Websites premium para profissionais e marcas pessoais.",
-    subtitle: "Experiências digitais claras, modernas e orientadas à confiança.",
+    subtitle: "Entregas claras para construir confiança, apresentar seu trabalho e facilitar novos contatos.",
     servicesTitle: "Serviços",
+    includesLabel: "Inclui",
     services: [
       {
-        title: "Presença Profissional",
-        text: "Confiança, clareza e credibilidade online.",
+        title: "Premium Website",
+        text: "Para profissionais que precisam de uma presença online clara, elegante e confiável.",
+        includes: [
+          "design visual personalizado",
+          "website responsivo",
+          "links de contato, Instagram e WhatsApp",
+          "SEO básico",
+          "suporte na publicação",
+        ],
       },
       {
-        title: "Mais Oportunidades",
-        text: "Ajude mais pessoas a conhecer seu trabalho.",
+        title: "Personal Brand Presence",
+        text: "Para profissionais e criadores que querem parecer mais premium online.",
+        includes: [
+          "direção visual",
+          "mensagem clara",
+          "layout premium",
+          "apresentação focada em confiança",
+        ],
       },
       {
-        title: "Celular, Tablet e Computador",
-        text: "Experiência rápida e adaptada para todos os dispositivos.",
+        title: "Monthly Care",
+        text: "Para clientes que querem manter o website cuidado depois do lançamento.",
+        includes: [
+          "pequenas atualizações",
+          "alterações de conteúdo",
+          "checagens de performance",
+          "suporte",
+        ],
       },
     ],
-    processTitle: "Processo",
+    processTitle: "Como funciona",
     process: [
       {
         title: "Estratégia",
-        text: "Definimos posicionamento, objetivos e a mensagem principal do projeto.",
+        text: "Definimos objetivo, público e direção visual.",
       },
       {
         title: "Design",
-        text: "Criamos uma direção visual clara, premium e alinhada à sua marca.",
+        text: "Crio uma experiência digital premium em torno da sua marca.",
       },
       {
-        title: "Desenvolvimento",
-        text: "Construímos uma experiência rápida, responsiva e pronta para publicar.",
+        title: "Lançamento",
+        text: "O website é publicado, otimizado e pronto para compartilhar.",
       },
     ],
-    ctaTitle: "Vamos construir sua presença online.",
-    ctaText: "Um website premium para comunicar confiança, clareza e profissionalismo.",
+    ctaTitle: "Pronto para construir uma presença online mais forte?",
+    ctaText: "Vamos criar uma experiência digital clara, premium e orientada à confiança.",
     start: "Iniciar projeto",
     instagram: "Instagram",
   },
@@ -89,39 +109,59 @@ const content = {
     back: "Home",
     eyebrow: "Premium Digital Services",
     title: "Premium websites for professionals and personal brands.",
-    subtitle: "Clear, modern and trust-driven digital experiences.",
+    subtitle: "Clear deliverables to build trust, present your work and make contact easier.",
     servicesTitle: "Services",
+    includesLabel: "Includes",
     services: [
       {
-        title: "Professional Presence",
-        text: "Trust, clarity and credibility online.",
+        title: "Premium Website",
+        text: "For professionals who need a clear, elegant and trustworthy online presence.",
+        includes: [
+          "custom visual design",
+          "responsive website",
+          "contact, Instagram and WhatsApp links",
+          "SEO basics",
+          "deployment support",
+        ],
       },
       {
-        title: "More Opportunities",
-        text: "Help more people discover your work.",
+        title: "Personal Brand Presence",
+        text: "For professionals and creators who want to look more premium online.",
+        includes: [
+          "visual direction",
+          "clear messaging",
+          "premium layout",
+          "trust-focused presentation",
+        ],
       },
       {
-        title: "Mobile, Tablet & Desktop",
-        text: "A fast experience adapted to every device.",
+        title: "Monthly Care",
+        text: "For clients who want their website maintained after launch.",
+        includes: [
+          "small updates",
+          "content changes",
+          "performance checks",
+          "support",
+        ],
       },
     ],
-    processTitle: "Process",
+    processTitle: "How it works",
     process: [
       {
         title: "Strategy",
-        text: "We define positioning, goals and the core message of the project.",
+        text: "We define the goal, audience and visual direction.",
       },
       {
         title: "Design",
-        text: "We create a clear, premium visual direction aligned with your brand.",
+        text: "I create a premium digital experience around your brand.",
       },
       {
-        title: "Development",
-        text: "We build a fast, responsive experience ready to publish.",
+        title: "Launch",
+        text: "The website is published, optimized and ready to share.",
       },
     ],
-    ctaTitle: "Let’s build your online presence.",
-    ctaText: "A premium website designed to communicate trust, clarity and professionalism.",
+    ctaTitle: "Ready to build a stronger online presence?",
+    ctaText: "Let’s create a clear, premium digital experience designed to build trust.",
     start: "Start a Project",
     instagram: "Instagram",
   },
@@ -129,39 +169,59 @@ const content = {
     back: "Inicio",
     eyebrow: "Servicios Digitales Premium",
     title: "Sitios web premium para profesionales y marcas personales.",
-    subtitle: "Experiencias digitales claras, modernas y orientadas a la confianza.",
+    subtitle: "Entregas claras para construir confianza, presentar tu trabajo y facilitar nuevos contactos.",
     servicesTitle: "Servicios",
+    includesLabel: "Incluye",
     services: [
       {
-        title: "Presencia Profesional",
-        text: "Confianza, claridad y credibilidad online.",
+        title: "Premium Website",
+        text: "Para profesionales que necesitan una presencia online clara, elegante y confiable.",
+        includes: [
+          "diseño visual personalizado",
+          "sitio responsivo",
+          "links de contacto, Instagram y WhatsApp",
+          "SEO básico",
+          "soporte en publicación",
+        ],
       },
       {
-        title: "Más Oportunidades",
-        text: "Ayudá a que más personas conozcan tu trabajo.",
+        title: "Personal Brand Presence",
+        text: "Para profesionales y creadores que quieren verse más premium online.",
+        includes: [
+          "dirección visual",
+          "mensaje claro",
+          "layout premium",
+          "presentación enfocada en confianza",
+        ],
       },
       {
-        title: "Celular, Tablet y Computadora",
-        text: "Experiencia rápida y adaptada a todos los dispositivos.",
+        title: "Monthly Care",
+        text: "Para clientes que quieren mantener su sitio cuidado después del lanzamiento.",
+        includes: [
+          "pequeñas actualizaciones",
+          "cambios de contenido",
+          "chequeos de performance",
+          "soporte",
+        ],
       },
     ],
-    processTitle: "Proceso",
+    processTitle: "Cómo funciona",
     process: [
       {
         title: "Estrategia",
-        text: "Definimos posicionamiento, objetivos y el mensaje principal del proyecto.",
+        text: "Definimos el objetivo, la audiencia y la dirección visual.",
       },
       {
         title: "Diseño",
-        text: "Creamos una dirección visual clara, premium y alineada con tu marca.",
+        text: "Creo una experiencia digital premium alrededor de tu marca.",
       },
       {
-        title: "Desarrollo",
-        text: "Construimos una experiencia rápida, responsiva y lista para publicar.",
+        title: "Lanzamiento",
+        text: "El sitio se publica, se optimiza y queda listo para compartir.",
       },
     ],
-    ctaTitle: "Construyamos tu presencia online.",
-    ctaText: "Un sitio premium diseñado para comunicar confianza, claridad y profesionalismo.",
+    ctaTitle: "¿Listo para construir una presencia online más fuerte?",
+    ctaText: "Creemos una experiencia digital clara, premium y orientada a la confianza.",
     start: "Iniciar proyecto",
     instagram: "Instagram",
   },
@@ -180,7 +240,7 @@ export default function ServicesPage() {
       <Link
         href="/"
         aria-label={t.back}
-        className="fixed bottom-5 left-5 z-50 inline-flex items-center rounded-full border border-white/15 bg-[#141416]/80 px-3.5 py-2 text-sm font-medium text-white shadow-xl shadow-black/25 backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5 hover:border-[#FFB457]/30 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98] sm:bottom-6 sm:left-6"
+        className="fixed bottom-5 right-5 z-50 inline-flex items-center rounded-full border border-white/15 bg-[#141416]/80 px-3.5 py-2 text-sm font-medium text-white shadow-xl shadow-black/25 backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5 hover:border-[#FFB457]/30 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
       >
         ← {t.back}
       </Link>
@@ -268,6 +328,22 @@ export default function ServicesPage() {
                   {service.title}
                 </h3>
                 <p className="mt-4 leading-7 text-stone-300">{service.text}</p>
+                <div className="mt-6 border-t border-white/10 pt-5">
+                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-400">
+                    {t.includesLabel}
+                  </p>
+                  <ul className="mt-4 space-y-3">
+                    {service.includes.map((item) => (
+                      <li
+                        key={item}
+                        className="flex gap-3 text-sm leading-6 text-stone-300"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FFB457]/70" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </article>
             ))}
           </div>
