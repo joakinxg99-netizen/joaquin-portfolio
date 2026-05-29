@@ -66,8 +66,8 @@ const content = {
   pt: {
     back: "Início",
     eyebrow: "Serviços Digitais Premium",
-    title: "Seu website deve transmitir confiança antes mesmo da primeira conversa.",
-    subtitle: "Crio websites modernos para profissionais e marcas pessoais que desejam uma presença online clara, elegante e profissional.",
+    title: "Websites que transmitem confiança.",
+    subtitle: "Presença online clara, moderna e profissional para atrair mais clientes.",
     servicesTitle: "O que você recebe",
     includesLabel: "Inclui",
     services: [
@@ -113,8 +113,8 @@ const content = {
   en: {
     back: "Home",
     eyebrow: "Premium Digital Services",
-    title: "Your website should build trust before the first conversation.",
-    subtitle: "I create modern websites for professionals and personal brands who want a clear, elegant and professional online presence.",
+    title: "Websites that build trust.",
+    subtitle: "Clear, modern and professional online presence designed to attract more clients.",
     servicesTitle: "What You Receive",
     includesLabel: "Includes",
     services: [
@@ -160,8 +160,8 @@ const content = {
   es: {
     back: "Inicio",
     eyebrow: "Servicios Digitales Premium",
-    title: "Tu sitio web debe transmitir confianza incluso antes de la primera conversación.",
-    subtitle: "Creo sitios modernos para profesionales y marcas personales que buscan una presencia online clara, elegante y profesional.",
+    title: "Sitios que transmiten confianza.",
+    subtitle: "Presencia online clara, moderna y profesional para atraer más clientes.",
     servicesTitle: "Lo que recibes",
     includesLabel: "Incluye",
     services: [
@@ -241,7 +241,7 @@ export default function ServicesPage() {
       <Link
         href={homeHref}
         aria-label={t.back}
-        className="fixed bottom-[18px] right-4 z-50 inline-flex items-center gap-2 rounded-full border border-[rgba(107,226,255,0.35)] bg-[rgba(107,226,255,0.12)] px-3.5 py-2 text-sm font-medium tracking-[-0.01em] text-[#EAFBFF] shadow-[0_0_20px_rgba(107,226,255,0.18)] backdrop-blur-[18px] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(107,226,255,0.48)] hover:shadow-[0_0_35px_rgba(107,226,255,0.35)] focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
+        className="fixed bottom-3 right-3 z-50 inline-flex items-center gap-1.5 rounded-full border border-[rgba(107,226,255,0.35)] bg-[rgba(107,226,255,0.12)] px-3 py-1.5 text-xs font-medium tracking-[-0.01em] text-[#EAFBFF] shadow-[0_0_20px_rgba(107,226,255,0.18)] backdrop-blur-[18px] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(107,226,255,0.48)] hover:shadow-[0_0_35px_rgba(107,226,255,0.35)] focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98] sm:bottom-6 sm:right-6 sm:gap-2 sm:px-3.5 sm:py-2 sm:text-sm"
       >
         <span className="h-1.5 w-1.5 rounded-full bg-[#6BE2FF] shadow-[0_0_12px_rgba(107,226,255,0.8)]" />
         <span>← {t.back}</span>
@@ -281,17 +281,17 @@ export default function ServicesPage() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-5 pb-12 pt-11 sm:px-6 sm:pb-16 sm:pt-16">
+      <section className="mx-auto max-w-6xl px-5 pb-10 pt-8 sm:px-6 sm:pb-16 sm:pt-16">
         <p className="inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-300 shadow-lg shadow-black/20 backdrop-blur sm:text-xs sm:tracking-[0.22em]">
           {t.eyebrow}
         </p>
-        <h1 className="mt-5 max-w-4xl bg-[linear-gradient(180deg,#ffffff_0%,#eee8df_58%,#a99f92_100%)] bg-clip-text text-[2.75rem] font-semibold leading-[1] text-transparent sm:text-6xl">
+        <h1 className="mt-4 max-w-4xl bg-[linear-gradient(180deg,#ffffff_0%,#eee8df_58%,#a99f92_100%)] bg-clip-text text-[2.25rem] font-semibold leading-[1.02] text-transparent sm:mt-5 sm:text-6xl sm:leading-[1]">
           {t.title}
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-8 text-stone-300 sm:text-xl">
+        <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300 sm:mt-5 sm:text-xl sm:leading-8">
           {t.subtitle}
         </p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row">
           <a
             href={inquiryHref}
             className="rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
