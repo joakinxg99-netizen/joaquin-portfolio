@@ -66,60 +66,46 @@ const content = {
   pt: {
     back: "Início",
     eyebrow: "Serviços Digitais Premium",
-    title: "Websites premium para profissionais e marcas pessoais.",
-    subtitle: "Entregas claras para construir confiança, apresentar seu trabalho e facilitar novos contatos.",
-    servicesTitle: "Serviços",
+    title: "Seu website deve transmitir confiança antes mesmo da primeira conversa.",
+    subtitle: "Crio websites modernos para profissionais e marcas pessoais que desejam uma presença online clara, elegante e profissional.",
+    servicesTitle: "O que você recebe",
     includesLabel: "Inclui",
     services: [
       {
-        title: "Website Premium",
-        text: "Ideal para profissionais que precisam de uma presença online confiável.",
-        includes: [
-          "Visual moderno e profissional",
-          "Funciona em celular, tablet e computador",
-          "Botões para WhatsApp, Instagram e contato",
-          "Preparado para aparecer no Google",
-          "Ajuda para colocar o site no ar",
-        ],
+        title: "Presença Profissional",
+        text: "Um website que transmite confiança e credibilidade.",
+        includes: [],
       },
       {
-        title: "Presença de Marca Pessoal",
-        text: "Ideal para profissionais que querem transmitir mais confiança online.",
-        includes: [
-          "Identidade visual consistente",
-          "Mensagem clara para seus clientes",
-          "Apresentação profissional",
-          "Estrutura focada em credibilidade",
-        ],
+        title: "Mais Contatos",
+        text: "Estrutura pensada para facilitar o contato de novos clientes.",
+        includes: [],
       },
       {
-        title: "Manutenção Mensal",
-        text: "Para quem quer manter o site atualizado após o lançamento.",
-        includes: [
-          "Atualizações de conteúdo",
-          "Pequenas alterações",
-          "Suporte técnico",
-          "Monitoramento básico",
-        ],
+        title: "Funciona em Qualquer Dispositivo",
+        text: "Experiência otimizada para celular, tablet e computador.",
+        includes: [],
       },
     ],
+    idealTitle: "Ideal para:",
+    idealItems: ["Profissionais da saúde", "Consultores", "Marcas pessoais", "Criadores", "Pequenos negócios"],
     processTitle: "Como funciona",
     process: [
       {
-        title: "Estratégia",
-        text: "Definimos objetivo, público e direção visual.",
+        title: "Descoberta",
+        text: "Entendemos objetivo, público e mensagem.",
       },
       {
         title: "Design",
-        text: "Crio uma experiência digital premium em torno da sua marca.",
+        text: "Transformo isso em uma presença visual clara.",
       },
       {
         title: "Lançamento",
-        text: "O website é publicado, otimizado e pronto para compartilhar.",
+        text: "Publico o site pronto para compartilhar.",
       },
     ],
-    ctaTitle: "Pronto para construir uma presença online mais forte?",
-    ctaText: "Vamos criar uma experiência digital clara, premium e orientada à confiança.",
+    ctaTitle: "Vamos conversar sobre seu projeto.",
+    ctaText: "",
     start: "Iniciar projeto",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
@@ -127,60 +113,46 @@ const content = {
   en: {
     back: "Home",
     eyebrow: "Premium Digital Services",
-    title: "Premium websites for professionals and personal brands.",
-    subtitle: "Clear deliverables to build trust, present your work and make contact easier.",
-    servicesTitle: "Services",
+    title: "Your website should build trust before the first conversation.",
+    subtitle: "I create modern websites for professionals and personal brands who want a clear, elegant and professional online presence.",
+    servicesTitle: "What You Receive",
     includesLabel: "Includes",
     services: [
       {
-        title: "Premium Website",
-        text: "Ideal for professionals who need a trustworthy online presence.",
-        includes: [
-          "Modern and professional visual style",
-          "Works on mobile, tablet and desktop",
-          "Buttons for WhatsApp, Instagram and contact",
-          "Prepared to appear on Google",
-          "Help putting the website online",
-        ],
+        title: "Professional Presence",
+        text: "A website that communicates trust and credibility.",
+        includes: [],
       },
       {
-        title: "Personal Brand Presence",
-        text: "Ideal for professionals who want to communicate more trust online.",
-        includes: [
-          "Consistent visual identity",
-          "Clear message for your clients",
-          "Professional presentation",
-          "Structure focused on credibility",
-        ],
+        title: "More Contacts",
+        text: "A structure designed to make it easier for new clients to reach you.",
+        includes: [],
       },
       {
-        title: "Monthly Care",
-        text: "For those who want to keep the website updated after launch.",
-        includes: [
-          "Content updates",
-          "Small changes",
-          "Technical support",
-          "Basic monitoring",
-        ],
+        title: "Works Everywhere",
+        text: "An experience optimized for mobile, tablet and desktop.",
+        includes: [],
       },
     ],
+    idealTitle: "Ideal for:",
+    idealItems: ["Health Professionals", "Consultants", "Personal Brands", "Creators", "Small Businesses"],
     processTitle: "How it works",
     process: [
       {
-        title: "Strategy",
-        text: "We define the goal, audience and visual direction.",
+        title: "Discovery",
+        text: "We define the goal, audience and message.",
       },
       {
         title: "Design",
-        text: "I create a premium digital experience around your brand.",
+        text: "I shape that into a clear visual presence.",
       },
       {
         title: "Launch",
-        text: "The website is published, optimized and ready to share.",
+        text: "The website goes live, ready to share.",
       },
     ],
-    ctaTitle: "Ready to build a stronger online presence?",
-    ctaText: "Let’s create a clear, premium digital experience designed to build trust.",
+    ctaTitle: "Let’s talk about your project.",
+    ctaText: "",
     start: "Start a Project",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
@@ -188,60 +160,46 @@ const content = {
   es: {
     back: "Inicio",
     eyebrow: "Servicios Digitales Premium",
-    title: "Sitios web premium para profesionales y marcas personales.",
-    subtitle: "Entregas claras para construir confianza, presentar tu trabajo y facilitar nuevos contactos.",
-    servicesTitle: "Servicios",
+    title: "Tu sitio web debe transmitir confianza incluso antes de la primera conversación.",
+    subtitle: "Creo sitios modernos para profesionales y marcas personales que buscan una presencia online clara, elegante y profesional.",
+    servicesTitle: "Lo que recibes",
     includesLabel: "Incluye",
     services: [
       {
-        title: "Sitio Web Premium",
-        text: "Ideal para profesionales que necesitan una presencia online confiable.",
-        includes: [
-          "Visual moderno y profesional",
-          "Funciona en celular, tablet y computadora",
-          "Botones para WhatsApp, Instagram y contacto",
-          "Preparado para aparecer en Google",
-          "Ayuda para publicar el sitio",
-        ],
+        title: "Presencia Profesional",
+        text: "Un sitio que transmite confianza y credibilidad.",
+        includes: [],
       },
       {
-        title: "Presencia de Marca Personal",
-        text: "Ideal para profesionales que quieren transmitir más confianza online.",
-        includes: [
-          "Identidad visual consistente",
-          "Mensaje claro para tus clientes",
-          "Presentación profesional",
-          "Estructura enfocada en credibilidad",
-        ],
+        title: "Más Contactos",
+        text: "Una estructura diseñada para facilitar el contacto de nuevos clientes.",
+        includes: [],
       },
       {
-        title: "Mantenimiento Mensual",
-        text: "Para quienes quieren mantener el sitio actualizado después del lanzamiento.",
-        includes: [
-          "Actualizaciones de contenido",
-          "Pequeños cambios",
-          "Soporte técnico",
-          "Monitoreo básico",
-        ],
+        title: "Funciona en Cualquier Dispositivo",
+        text: "Experiencia optimizada para celular, tablet y computadora.",
+        includes: [],
       },
     ],
+    idealTitle: "Ideal para:",
+    idealItems: ["Profesionales de la salud", "Consultores", "Marcas personales", "Creadores", "Pequeños negocios"],
     processTitle: "Cómo funciona",
     process: [
       {
-        title: "Estrategia",
-        text: "Definimos el objetivo, la audiencia y la dirección visual.",
+        title: "Descubrimiento",
+        text: "Definimos objetivo, audiencia y mensaje.",
       },
       {
         title: "Diseño",
-        text: "Creo una experiencia digital premium alrededor de tu marca.",
+        text: "Lo transformo en una presencia visual clara.",
       },
       {
         title: "Lanzamiento",
-        text: "El sitio se publica, se optimiza y queda listo para compartir.",
+        text: "El sitio queda publicado y listo para compartir.",
       },
     ],
-    ctaTitle: "¿Listo para construir una presencia online más fuerte?",
-    ctaText: "Creemos una experiencia digital clara, premium y orientada a la confianza.",
+    ctaTitle: "Hablemos sobre tu proyecto.",
+    ctaText: "",
     start: "Iniciar proyecto",
     whatsapp: "WhatsApp",
     instagram: "Instagram",
@@ -380,23 +338,43 @@ export default function ServicesPage() {
                   {service.title}
                 </h3>
                 <p className="mt-4 leading-7 text-stone-300">{service.text}</p>
-                <div className="mt-6 border-t border-white/10 pt-5">
-                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-400">
-                    {t.includesLabel}
-                  </p>
-                  <ul className="mt-4 space-y-3">
-                    {service.includes.map((item) => (
-                      <li
-                        key={item}
-                        className="flex gap-3 text-sm leading-6 text-stone-300"
-                      >
-                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FFB457]/70" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {service.includes.length > 0 ? (
+                  <div className="mt-6 border-t border-white/10 pt-5">
+                    <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-400">
+                      {t.includesLabel}
+                    </p>
+                    <ul className="mt-4 space-y-3">
+                      {service.includes.map((item) => (
+                        <li
+                          key={item}
+                          className="flex gap-3 text-sm leading-6 text-stone-300"
+                        >
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FFB457]/70" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14">
+        <div className="rounded-xl border border-white/10 bg-[#141416]/70 p-5 shadow-xl shadow-black/20 sm:p-6">
+          <h2 className="text-2xl font-semibold text-white sm:text-4xl">
+            {t.idealTitle}
+          </h2>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {t.idealItems.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
+              >
+                {item}
+              </span>
             ))}
           </div>
         </div>
@@ -430,9 +408,11 @@ export default function ServicesPage() {
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.ctaTitle}
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl leading-8 text-stone-300">
-            {t.ctaText}
-          </p>
+          {t.ctaText ? (
+            <p className="mx-auto mt-5 max-w-2xl leading-8 text-stone-300">
+              {t.ctaText}
+            </p>
+          ) : null}
           <a
             href={inquiryHref}
             className="mt-8 inline-flex rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
