@@ -345,25 +345,23 @@ export default function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-8 sm:px-6 sm:py-10">
-        <div className="rounded-xl border border-white/10 bg-[#141416]/70 p-5 shadow-xl shadow-black/20 sm:p-6">
-          <h2 className="text-2xl font-semibold text-white sm:text-4xl">
-            {t.idealTitle}
-          </h2>
-          {t.idealText ? (
-            <p className="mt-4 max-w-2xl leading-7 text-stone-300">
-              {t.idealText}
-            </p>
-          ) : null}
-          <div className="mt-6 flex flex-wrap gap-2.5">
-            {t.idealItems.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+        <h2 className="text-2xl font-semibold text-white sm:text-4xl">
+          {t.idealTitle}
+        </h2>
+        {t.idealText ? (
+          <p className="mt-4 max-w-2xl leading-7 text-stone-300">
+            {t.idealText}
+          </p>
+        ) : null}
+        <div className="mt-7 flex flex-wrap gap-3 sm:gap-4">
+          {t.idealItems.map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
+            >
+              {item}
+            </span>
+          ))}
         </div>
       </section>
 
@@ -372,11 +370,11 @@ export default function ServicesPage() {
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.includedTitle}
           </h2>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
             {t.includedItems.map((item) => (
               <div
                 key={item}
-                className="flex gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
+                className="flex gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
               >
                 <span className="text-[#6BE2FF]">✔</span>
                 <span>{item}</span>
