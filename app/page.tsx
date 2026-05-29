@@ -67,7 +67,7 @@ const content = {
     heroDescription:
       "Experiências digitais criadas para elevar sua presença online e atrair mais clientes.",
     projectsButton: "Ver projetos",
-    instagramButton: "Instagram",
+    instagramButton: "Contato",
     aboutTitle: "Sobre mim",
     aboutText: [
       "Oi, eu sou Joaquín.",
@@ -175,7 +175,7 @@ const content = {
     heroDescription:
       "Experiencias digitales creadas para elevar tu presencia online y atraer más clientes.",
     projectsButton: "Ver proyectos",
-    instagramButton: "Instagram",
+    instagramButton: "Contacto",
     aboutTitle: "Sobre mí",
     aboutText: [
       "Hola, soy Joaquín.",
@@ -283,7 +283,7 @@ const content = {
     heroDescription:
       "Digital experiences designed to elevate your online presence and attract more clients.",
     projectsButton: "View projects",
-    instagramButton: "Instagram",
+    instagramButton: "Contact",
     aboutTitle: "About me",
     aboutText: [
       "Hi, I’m Joaquín.",
@@ -995,9 +995,7 @@ export default function Home() {
               {t.projectsButton}
             </a>
             <a
-              href={instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
             >
               {t.instagramButton}
