@@ -240,7 +240,7 @@ export default function ServicesPage() {
       <Link
         href="/"
         aria-label={t.back}
-        className="fixed bottom-5 right-5 z-50 inline-flex items-center rounded-full border border-white/15 bg-[#141416]/80 px-3.5 py-2 text-sm font-medium text-white shadow-xl shadow-black/25 backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5 hover:border-[#FFB457]/30 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
+        className="fixed bottom-5 right-5 z-50 inline-flex items-center rounded-full border border-white/12 bg-[#141416]/72 px-3.5 py-2 text-sm font-medium tracking-[-0.01em] text-stone-100 shadow-[0_14px_44px_rgba(11,11,12,0.34)] backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/25 hover:bg-white/[0.075] hover:shadow-[0_18px_54px_rgba(107,226,255,0.09)] focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
       >
         ← {t.back}
       </Link>
