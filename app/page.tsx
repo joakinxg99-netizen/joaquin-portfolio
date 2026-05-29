@@ -79,16 +79,16 @@ const content = {
     ],
     services: [
       {
-        title: "Websites premium",
-        text: "Websites modernos criados para construir confiança e atrair clientes.",
+        title: "Presença Profissional",
+        text: "Websites criados para transmitir confiança e credibilidade.",
       },
       {
-        title: "Presença de marca pessoal",
-        text: "Experiências digitais claras e elegantes para profissionais e criadores.",
+        title: "Mais Clientes",
+        text: "Experiências digitais claras e modernas que ajudam pessoas a conhecer seu trabalho.",
       },
       {
-        title: "Experiência responsiva",
-        text: "Websites rápidos e polidos, otimizados para todos os dispositivos.",
+        title: "Adaptado para Todos os Dispositivos",
+        text: "Seu website funciona perfeitamente em celular, tablet e computador.",
       },
     ],
     projectsTitle: "Projetos",
@@ -131,16 +131,16 @@ const content = {
       "Uma peça sonora que conecta atmosfera, ritmo e identidade editorial.",
     listenOnSpotify: "Ouvir no Spotify",
     fullSpotifyProfile: "Ver perfil completo no Spotify",
-    testimonialsTitle: "Feedback selecionado",
+    testimonialsTitle: "Feedback de Clientes",
     testimonials: [
       {
         quote:
-          "Trabalhar com Joaquín elevou completamente minha presença online. O website ficou moderno, claro e altamente profissional.",
+          "O website ficou moderno, claro e profissional.",
         author: "Victoria Gómez",
       },
       {
         quote:
-          "Toda a experiência foi cuidadosa e premium do início ao fim. O resultado final comunica confiança e profissionalismo perfeitamente.",
+          "O resultado final comunica confiança e profissionalismo perfeitamente.",
         author: "Eduardo Leal",
       },
     ],
@@ -186,16 +186,16 @@ const content = {
     ],
     services: [
       {
-        title: "Sitios web premium",
-        text: "Sitios modernos diseñados para construir confianza y atraer clientes.",
+        title: "Presencia Profesional",
+        text: "Sitios diseñados para transmitir confianza y credibilidad.",
       },
       {
-        title: "Presencia de marca personal",
-        text: "Experiencias digitales claras y elegantes para profesionales y creadores.",
+        title: "Más Oportunidades",
+        text: "Experiencias digitales claras y modernas que ayudan a que más personas conozcan tu trabajo.",
       },
       {
-        title: "Experiencia responsiva",
-        text: "Sitios rápidos y pulidos, optimizados para todos los dispositivos.",
+        title: "Optimizado para Todos los Dispositivos",
+        text: "Funciona perfectamente en celular, tablet y computadora.",
       },
     ],
     projectsTitle: "Proyectos",
@@ -238,16 +238,16 @@ const content = {
       "Una pieza sonora que conecta atmósfera, ritmo e identidad editorial.",
     listenOnSpotify: "Escuchar en Spotify",
     fullSpotifyProfile: "Ver perfil completo en Spotify",
-    testimonialsTitle: "Comentarios seleccionados",
+    testimonialsTitle: "Comentarios de Clientes",
     testimonials: [
       {
         quote:
-          "Trabajar con Joaquín elevó completamente mi presencia online. El sitio se siente moderno, claro y altamente profesional.",
+          "El sitio se siente moderno, claro y profesional.",
         author: "Victoria Gómez",
       },
       {
         quote:
-          "Toda la experiencia se sintió cuidada y premium de principio a fin. El resultado final comunica confianza y profesionalismo perfectamente.",
+          "El resultado final comunica confianza y profesionalismo perfectamente.",
         author: "Eduardo Leal",
       },
     ],
@@ -293,16 +293,16 @@ const content = {
     ],
     services: [
       {
-        title: "Premium Websites",
-        text: "Modern websites designed to build trust and attract clients.",
+        title: "Professional Presence",
+        text: "Websites designed to communicate trust and credibility.",
       },
       {
-        title: "Personal Brand Presence",
-        text: "Clear and elegant digital experiences for professionals and creators.",
+        title: "More Client Opportunities",
+        text: "Clear and modern digital experiences that help people discover your work.",
       },
       {
-        title: "Responsive Experience",
-        text: "Fast and polished websites optimized for every device.",
+        title: "Optimized Everywhere",
+        text: "Built to perform beautifully across mobile, tablet and desktop.",
       },
     ],
     projectsTitle: "Projects",
@@ -344,16 +344,16 @@ const content = {
       "A sonic piece connecting atmosphere, rhythm and editorial identity.",
     listenOnSpotify: "Listen on Spotify",
     fullSpotifyProfile: "View full Spotify profile",
-    testimonialsTitle: "Selected feedback",
+    testimonialsTitle: "Client Feedback",
     testimonials: [
       {
         quote:
-          "Working with Joaquín completely elevated my online presence. The website feels modern, clear and highly professional.",
+          "The website feels modern, clear and professional.",
         author: "Victoria Gómez",
       },
       {
         quote:
-          "The entire experience felt thoughtful and premium from start to finish. The final result communicates trust and professionalism perfectly.",
+          "The final result communicates trust and professionalism perfectly.",
         author: "Eduardo Leal",
       },
     ],
