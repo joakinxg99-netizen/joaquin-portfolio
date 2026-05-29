@@ -354,13 +354,12 @@ export default function ServicesPage() {
               {t.idealText}
             </p>
           ) : null}
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-6 flex flex-wrap gap-2.5">
             {t.idealItems.map((item) => (
               <span
                 key={item}
-                className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
+                className="rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
               >
-                <span className="mr-2 text-[#6BE2FF]">✔</span>
                 {item}
               </span>
             ))}
