@@ -11,8 +11,41 @@ const spotifyUrl =
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
 const eduardoProjectUrl = "https://www.eduardolealpsicologia.com.br/";
-const projectInquiryUrl =
-  "mailto:joakinxg100@gmail.com?subject=Project%20Inquiry&body=Hi%20Joaqu%C3%ADn%2C%0A%0AI%E2%80%99m%20interested%20in%20building%20a%20premium%20website%20for%20my%20business%2Fbrand.%0A%0AName%3A%0ABusiness%3A%0AProject%20goals%3A%0ATimeline%3A";
+const projectInquiryContent = {
+  en: {
+    subject: "Project Inquiry",
+    body: `Hi Joaquín,
+
+I’m interested in building a premium website for my business/brand.
+
+Name:
+Business:
+Project goals:
+Timeline:`,
+  },
+  pt: {
+    subject: "Novo Projeto",
+    body: `Olá Joaquín,
+
+Tenho interesse em criar um website premium para meu negócio/marca.
+
+Nome:
+Negócio:
+Objetivos do projeto:
+Prazo:`,
+  },
+  es: {
+    subject: "Nuevo Proyecto",
+    body: `Hola Joaquín,
+
+Estoy interesado en crear un sitio web premium para mi negocio/marca.
+
+Nombre:
+Negocio:
+Objetivos del proyecto:
+Plazo:`,
+  },
+};
 
 const content = {
   pt: {
@@ -392,7 +425,7 @@ function Reveal({
 }
 
 export default function Home() {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("pt");
   const [scrollProgress, setScrollProgress] = useState(0);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -725,7 +758,7 @@ export default function Home() {
               </nav>
 
               <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
-                {(["en", "pt", "es"] as Lang[]).map((item) => (
+                {(["pt", "en", "es"] as Lang[]).map((item) => (
                   <button
                     key={item}
                     type="button"
@@ -744,7 +777,7 @@ export default function Home() {
 
             <div className="flex items-center gap-2 lg:hidden">
               <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
-                {(["en", "pt", "es"] as Lang[]).map((item) => (
+                {(["pt", "en", "es"] as Lang[]).map((item) => (
                   <button
                     key={item}
                     type="button"
@@ -1365,7 +1398,9 @@ export default function Home() {
 
           <Reveal delay={120} className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <a
-              href={projectInquiryUrl}
+              href={`mailto:joakinxg100@gmail.com?subject=${encodeURIComponent(
+                projectInquiryContent[lang].subject,
+              )}&body=${encodeURIComponent(projectInquiryContent[lang].body)}`}
               className="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
             >
               {t.startProject}
