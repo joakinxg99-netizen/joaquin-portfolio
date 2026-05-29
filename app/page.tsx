@@ -691,10 +691,10 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="Joaquín G. Bravo"
-                width={138}
-                height={92}
+                width={162}
+                height={108}
                 priority
-                className="h-[3.25rem] w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-[3.65rem] lg:h-[4.25rem]"
+                className="h-[3.65rem] w-auto object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.16)] sm:h-[4.1rem] lg:h-[4.9rem]"
               />
             </a>
 
