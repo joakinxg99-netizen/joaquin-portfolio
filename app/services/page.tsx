@@ -46,7 +46,7 @@ Plazo:`,
 
 const content = {
   pt: {
-    back: "← Voltar para Início",
+    back: "Início",
     eyebrow: "Serviços Digitais Premium",
     title: "Websites premium para profissionais e marcas pessoais.",
     subtitle: "Experiências digitais claras, modernas e orientadas à confiança.",
@@ -54,15 +54,15 @@ const content = {
     services: [
       {
         title: "Presença Profissional",
-        text: "Websites criados para transmitir confiança e credibilidade.",
+        text: "Confiança, clareza e credibilidade online.",
       },
       {
         title: "Mais Oportunidades",
-        text: "Experiências digitais claras que ajudam mais pessoas a conhecer seu trabalho e entrar em contato.",
+        text: "Ajude mais pessoas a conhecer seu trabalho.",
       },
       {
-        title: "Rápido e Adaptado para Celular",
-        text: "Otimizado para funcionar perfeitamente em qualquer dispositivo.",
+        title: "Celular, Tablet e Computador",
+        text: "Experiência rápida e adaptada para todos os dispositivos.",
       },
     ],
     processTitle: "Processo",
@@ -86,7 +86,7 @@ const content = {
     instagram: "Instagram",
   },
   en: {
-    back: "← Back to Home",
+    back: "Home",
     eyebrow: "Premium Digital Services",
     title: "Premium websites for professionals and personal brands.",
     subtitle: "Clear, modern and trust-driven digital experiences.",
@@ -94,15 +94,15 @@ const content = {
     services: [
       {
         title: "Professional Presence",
-        text: "Websites designed to communicate trust and credibility.",
+        text: "Trust, clarity and credibility online.",
       },
       {
-        title: "More Client Opportunities",
-        text: "Clear digital experiences that help more people discover your work and get in touch.",
+        title: "More Opportunities",
+        text: "Help more people discover your work.",
       },
       {
-        title: "Fast & Mobile Friendly",
-        text: "Optimized to perform beautifully across every device.",
+        title: "Mobile, Tablet & Desktop",
+        text: "A fast experience adapted to every device.",
       },
     ],
     processTitle: "Process",
@@ -126,7 +126,7 @@ const content = {
     instagram: "Instagram",
   },
   es: {
-    back: "← Volver al Inicio",
+    back: "Inicio",
     eyebrow: "Servicios Digitales Premium",
     title: "Sitios web premium para profesionales y marcas personales.",
     subtitle: "Experiencias digitales claras, modernas y orientadas a la confianza.",
@@ -134,15 +134,15 @@ const content = {
     services: [
       {
         title: "Presencia Profesional",
-        text: "Sitios diseñados para transmitir confianza y credibilidad.",
+        text: "Confianza, claridad y credibilidad online.",
       },
       {
         title: "Más Oportunidades",
-        text: "Experiencias digitales claras que ayudan a que más personas conozcan tu trabajo y se contacten contigo.",
+        text: "Ayudá a que más personas conozcan tu trabajo.",
       },
       {
-        title: "Rápido y Adaptado al Celular",
-        text: "Optimizado para funcionar perfectamente en cualquier dispositivo.",
+        title: "Celular, Tablet y Computadora",
+        text: "Experiencia rápida y adaptada a todos los dispositivos.",
       },
     ],
     processTitle: "Proceso",
@@ -177,6 +177,13 @@ export default function ServicesPage() {
   return (
     <main className="min-h-dvh overflow-x-clip bg-[#0B0B0C] text-stone-100 antialiased">
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_18%_10%,rgba(109,94,247,0.2),transparent_30%),radial-gradient(circle_at_88%_18%,rgba(107,226,255,0.13),transparent_28%),radial-gradient(circle_at_48%_90%,rgba(255,180,87,0.1),transparent_34%),linear-gradient(180deg,#0B0B0C_0%,#141416_48%,#0B0B0C_100%)]" />
+      <Link
+        href="/"
+        aria-label={t.back}
+        className="fixed bottom-5 left-5 z-50 inline-flex items-center rounded-full border border-white/15 bg-[#141416]/80 px-3.5 py-2 text-sm font-medium text-white shadow-xl shadow-black/25 backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5 hover:border-[#FFB457]/30 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98] sm:bottom-6 sm:left-6"
+      >
+        ← {t.back}
+      </Link>
 
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0B0B0C]/78 shadow-[0_1px_44px_rgba(11,11,12,0.42)] backdrop-blur-2xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
@@ -212,13 +219,7 @@ export default function ServicesPage() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-5 pb-14 pt-14 sm:px-6 sm:pb-20 sm:pt-20">
-        <Link
-          href="/"
-          className="mb-8 inline-flex w-fit rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-medium text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/10 hover:shadow-[#FFB457]/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
-        >
-          {t.back}
-        </Link>
+      <section className="mx-auto max-w-6xl px-5 pb-12 pt-11 sm:px-6 sm:pb-16 sm:pt-16">
         <p className="inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-300 shadow-lg shadow-black/20 backdrop-blur sm:text-xs sm:tracking-[0.22em]">
           {t.eyebrow}
         </p>
@@ -247,7 +248,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-y border-white/10 bg-white/[0.018]">
-        <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
+        <div className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14">
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.servicesTitle}
           </h2>
@@ -257,7 +258,7 @@ export default function ServicesPage() {
                 key={service.title}
                 className="group relative overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(145deg,rgba(255,255,255,0.05),rgba(255,255,255,0.022))] p-6 shadow-xl shadow-black/20 backdrop-blur transition duration-500 hover:-translate-y-1 hover:border-cyan-200/30 hover:shadow-[0_20px_58px_rgba(107,226,255,0.1)]"
               >
-                <div className="mb-8 flex items-center justify-between">
+                <div className="mb-6 flex items-center justify-between">
                   <span className="flex h-10 min-w-10 items-center justify-center whitespace-nowrap rounded-lg border border-white/10 bg-[#0B0B0C]/55 px-2 text-[0.8125rem] font-medium leading-none text-stone-300 shadow-inner shadow-white/5 transition duration-300 group-hover:border-cyan-200/30 group-hover:text-cyan-100">
                     0{index + 1}
                   </span>
@@ -266,14 +267,14 @@ export default function ServicesPage() {
                 <h3 className="text-xl font-medium text-white">
                   {service.title}
                 </h3>
-                <p className="mt-5 leading-7 text-stone-300">{service.text}</p>
+                <p className="mt-4 leading-7 text-stone-300">{service.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-16">
+      <section className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14">
         <h2 className="text-2xl font-semibold text-white sm:text-4xl">
           {t.processTitle}
         </h2>
@@ -296,7 +297,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-t border-white/10 bg-white/[0.018]">
-        <div className="relative mx-auto max-w-6xl px-5 py-16 text-center sm:px-6 sm:py-20">
+        <div className="relative mx-auto max-w-6xl px-5 py-14 text-center sm:px-6 sm:py-16">
           <div className="pointer-events-none absolute inset-x-6 bottom-16 -z-10 h-48 bg-[radial-gradient(circle_at_50%_50%,rgba(255,180,87,0.09),transparent_62%)] blur-2xl" />
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.ctaTitle}
