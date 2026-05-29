@@ -67,6 +67,7 @@ const content = {
     heroDescription:
       "Experiências digitais criadas para elevar sua presença online e atrair mais clientes.",
     projectsButton: "Ver projetos",
+    servicesButton: "Serviços",
     instagramButton: "Contato",
     aboutTitle: "Sobre mim",
     aboutText: [
@@ -175,6 +176,7 @@ const content = {
     heroDescription:
       "Experiencias digitales creadas para elevar tu presencia online y atraer más clientes.",
     projectsButton: "Ver proyectos",
+    servicesButton: "Servicios",
     instagramButton: "Contacto",
     aboutTitle: "Sobre mí",
     aboutText: [
@@ -283,6 +285,7 @@ const content = {
     heroDescription:
       "Digital experiences designed to elevate your online presence and attract more clients.",
     projectsButton: "View projects",
+    servicesButton: "Services",
     instagramButton: "Contact",
     aboutTitle: "About me",
     aboutText: [
@@ -993,6 +996,12 @@ export default function Home() {
               className="rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-white/20 focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.98]"
             >
               {t.projectsButton}
+            </a>
+            <a
+              href="/services"
+              className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
+            >
+              {t.servicesButton}
             </a>
             <a
               href="#contact"
