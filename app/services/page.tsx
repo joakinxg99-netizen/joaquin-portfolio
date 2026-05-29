@@ -46,23 +46,23 @@ Plazo:`,
 
 const content = {
   pt: {
-    back: "Voltar ao início",
+    back: "← Voltar para Início",
     eyebrow: "Serviços Digitais Premium",
     title: "Websites premium para profissionais e marcas pessoais.",
     subtitle: "Experiências digitais claras, modernas e orientadas à confiança.",
     servicesTitle: "Serviços",
     services: [
       {
-        title: "Essential Website",
-        text: "Uma presença profissional, clara e elegante para apresentar seu trabalho com confiança.",
+        title: "Presença Profissional",
+        text: "Websites criados para transmitir confiança e credibilidade.",
       },
       {
-        title: "Premium Presence",
-        text: "Um website mais completo para fortalecer sua marca, seus serviços e sua credibilidade.",
+        title: "Mais Oportunidades",
+        text: "Experiências digitais claras que ajudam mais pessoas a conhecer seu trabalho e entrar em contato.",
       },
       {
-        title: "Custom Project",
-        text: "Uma experiência sob medida para objetivos específicos, lançamentos ou marcas em crescimento.",
+        title: "Rápido e Adaptado para Celular",
+        text: "Otimizado para funcionar perfeitamente em qualquer dispositivo.",
       },
     ],
     processTitle: "Processo",
@@ -86,23 +86,23 @@ const content = {
     instagram: "Instagram",
   },
   en: {
-    back: "Back home",
+    back: "← Back to Home",
     eyebrow: "Premium Digital Services",
     title: "Premium websites for professionals and personal brands.",
     subtitle: "Clear, modern and trust-driven digital experiences.",
     servicesTitle: "Services",
     services: [
       {
-        title: "Essential Website",
-        text: "A clear and elegant professional presence to present your work with confidence.",
+        title: "Professional Presence",
+        text: "Websites designed to communicate trust and credibility.",
       },
       {
-        title: "Premium Presence",
-        text: "A more complete website to strengthen your brand, services and credibility.",
+        title: "More Client Opportunities",
+        text: "Clear digital experiences that help more people discover your work and get in touch.",
       },
       {
-        title: "Custom Project",
-        text: "A tailored digital experience for specific goals, launches or growing brands.",
+        title: "Fast & Mobile Friendly",
+        text: "Optimized to perform beautifully across every device.",
       },
     ],
     processTitle: "Process",
@@ -126,23 +126,23 @@ const content = {
     instagram: "Instagram",
   },
   es: {
-    back: "Volver al inicio",
+    back: "← Volver al Inicio",
     eyebrow: "Servicios Digitales Premium",
     title: "Sitios web premium para profesionales y marcas personales.",
     subtitle: "Experiencias digitales claras, modernas y orientadas a la confianza.",
     servicesTitle: "Servicios",
     services: [
       {
-        title: "Essential Website",
-        text: "Una presencia profesional, clara y elegante para presentar tu trabajo con confianza.",
+        title: "Presencia Profesional",
+        text: "Sitios diseñados para transmitir confianza y credibilidad.",
       },
       {
-        title: "Premium Presence",
-        text: "Un sitio más completo para fortalecer tu marca, tus servicios y tu credibilidad.",
+        title: "Más Oportunidades",
+        text: "Experiencias digitales claras que ayudan a que más personas conozcan tu trabajo y se contacten contigo.",
       },
       {
-        title: "Custom Project",
-        text: "Una experiencia a medida para objetivos específicos, lanzamientos o marcas en crecimiento.",
+        title: "Rápido y Adaptado al Celular",
+        text: "Optimizado para funcionar perfectamente en cualquier dispositivo.",
       },
     ],
     processTitle: "Proceso",
@@ -192,12 +192,6 @@ export default function ServicesPage() {
           </Link>
 
           <div className="flex items-center gap-3">
-            <Link
-              href="/"
-              className="hidden rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-0.5 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white sm:inline-flex"
-            >
-              {t.back}
-            </Link>
             <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
               {(["pt", "en", "es"] as Lang[]).map((item) => (
                 <button
@@ -219,6 +213,12 @@ export default function ServicesPage() {
       </header>
 
       <section className="mx-auto max-w-6xl px-5 pb-14 pt-14 sm:px-6 sm:pb-20 sm:pt-20">
+        <Link
+          href="/"
+          className="mb-8 inline-flex w-fit rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-medium text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/10 hover:shadow-[#FFB457]/10 focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
+        >
+          {t.back}
+        </Link>
         <p className="inline-flex rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.18em] text-stone-300 shadow-lg shadow-black/20 backdrop-blur sm:text-xs sm:tracking-[0.22em]">
           {t.eyebrow}
         </p>
