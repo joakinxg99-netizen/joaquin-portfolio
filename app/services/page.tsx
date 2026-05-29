@@ -87,10 +87,9 @@ const content = {
         includes: [],
       },
     ],
-    idealTitle: "É para você?",
-    idealText:
-      "Se trabalha com pessoas e quer transmitir mais confiança online, provavelmente sim.",
-    idealItems: ["Profissionais da saúde", "Consultores", "Marcas pessoais", "Criadores", "Pequenos negócios"],
+    idealTitle: "Este serviço é ideal para:",
+    idealText: "",
+    idealItems: ["Profissionais da saúde", "Consultores", "Marcas pessoais", "Criadores", "Negócios"],
     processTitle: "Como funciona",
     process: [
       {
@@ -136,10 +135,9 @@ const content = {
         includes: [],
       },
     ],
-    idealTitle: "Is it for you?",
-    idealText:
-      "If you work with people and want to build more trust online, probably yes.",
-    idealItems: ["Health Professionals", "Consultants", "Personal Brands", "Creators", "Small Businesses"],
+    idealTitle: "This service is ideal for:",
+    idealText: "",
+    idealItems: ["Health Professionals", "Consultants", "Personal Brands", "Creators", "Businesses"],
     processTitle: "How it works",
     process: [
       {
@@ -185,10 +183,9 @@ const content = {
         includes: [],
       },
     ],
-    idealTitle: "¿Es para ti?",
-    idealText:
-      "Si trabajas con personas y quieres transmitir más confianza online, probablemente sí.",
-    idealItems: ["Profesionales de la salud", "Consultores", "Marcas personales", "Creadores", "Pequeños negocios"],
+    idealTitle: "Este servicio es ideal para:",
+    idealText: "",
+    idealItems: ["Profesionales de la salud", "Consultores", "Marcas personales", "Creadores", "Negocios"],
     processTitle: "Cómo funciona",
     process: [
       {
@@ -373,9 +370,11 @@ export default function ServicesPage() {
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.idealTitle}
           </h2>
-          <p className="mt-4 max-w-2xl leading-7 text-stone-300">
-            {t.idealText}
-          </p>
+          {t.idealText ? (
+            <p className="mt-4 max-w-2xl leading-7 text-stone-300">
+              {t.idealText}
+            </p>
+          ) : null}
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {t.idealItems.map((item) => (
               <span
