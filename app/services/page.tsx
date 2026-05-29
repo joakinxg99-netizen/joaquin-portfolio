@@ -66,7 +66,7 @@ const content = {
   pt: {
     back: "Início",
     eyebrow: "Serviços Digitais Premium",
-    title: "Websites que transmitem confiança.",
+    title: "Gere confiança desde o primeiro olhar.",
     subtitle: "Presença online clara, moderna e profissional para atrair mais clientes.",
     servicesTitle: "O que você recebe",
     includesLabel: "Inclui",
@@ -78,30 +78,32 @@ const content = {
       },
       {
         title: "Mais Contatos",
-        text: "Estrutura pensada para facilitar o contato de novos clientes.",
+        text: "Um caminho claro para novos clientes entrarem em contato.",
         includes: [],
       },
       {
         title: "Funciona em Qualquer Dispositivo",
-        text: "Experiência otimizada para celular, tablet e computador.",
+        text: "Seu site funciona bem no celular, tablet e computador.",
         includes: [],
       },
     ],
-    idealTitle: "Ideal para:",
+    idealTitle: "É para você?",
+    idealText:
+      "Se trabalha com pessoas e quer transmitir mais confiança online, provavelmente sim.",
     idealItems: ["Profissionais da saúde", "Consultores", "Marcas pessoais", "Criadores", "Pequenos negócios"],
     processTitle: "Como funciona",
     process: [
       {
-        title: "Descoberta",
-        text: "Entendemos objetivo, público e mensagem.",
+        title: "Entendemos seu projeto",
+        text: "Conversamos sobre seus objetivos, público e mensagem.",
       },
       {
-        title: "Design",
-        text: "Transformo isso em uma presença visual clara.",
+        title: "Criamos sua presença online",
+        text: "Desenvolvemos uma experiência clara, profissional e alinhada à sua marca.",
       },
       {
-        title: "Lançamento",
-        text: "Publico o site pronto para compartilhar.",
+        title: "Publicamos e lançamos",
+        text: "Seu site fica pronto para compartilhar, receber visitas e transmitir confiança.",
       },
     ],
     ctaTitle: "Vamos conversar sobre seu projeto.",
@@ -113,7 +115,7 @@ const content = {
   en: {
     back: "Home",
     eyebrow: "Premium Digital Services",
-    title: "Websites that build trust.",
+    title: "Build trust from the first impression.",
     subtitle: "Clear, modern and professional online presence designed to attract more clients.",
     servicesTitle: "What You Receive",
     includesLabel: "Includes",
@@ -125,30 +127,32 @@ const content = {
       },
       {
         title: "More Contacts",
-        text: "A structure designed to make it easier for new clients to reach you.",
+        text: "A clear path for new clients to get in touch.",
         includes: [],
       },
       {
         title: "Works Everywhere",
-        text: "An experience optimized for mobile, tablet and desktop.",
+        text: "Your website works well on mobile, tablet and desktop.",
         includes: [],
       },
     ],
-    idealTitle: "Ideal for:",
+    idealTitle: "Is it for you?",
+    idealText:
+      "If you work with people and want to build more trust online, probably yes.",
     idealItems: ["Health Professionals", "Consultants", "Personal Brands", "Creators", "Small Businesses"],
     processTitle: "How it works",
     process: [
       {
-        title: "Discovery",
-        text: "We define the goal, audience and message.",
+        title: "We Understand Your Project",
+        text: "We discuss your goals, audience and message.",
       },
       {
-        title: "Design",
-        text: "I shape that into a clear visual presence.",
+        title: "We Build Your Online Presence",
+        text: "We create a clear, professional experience aligned with your brand.",
       },
       {
-        title: "Launch",
-        text: "The website goes live, ready to share.",
+        title: "We Launch",
+        text: "Your website is ready to share, receive visitors and build trust.",
       },
     ],
     ctaTitle: "Let’s talk about your project.",
@@ -160,7 +164,7 @@ const content = {
   es: {
     back: "Inicio",
     eyebrow: "Servicios Digitales Premium",
-    title: "Sitios que transmiten confianza.",
+    title: "Genera confianza desde la primera impresión.",
     subtitle: "Presencia online clara, moderna y profesional para atraer más clientes.",
     servicesTitle: "Lo que recibes",
     includesLabel: "Incluye",
@@ -172,30 +176,32 @@ const content = {
       },
       {
         title: "Más Contactos",
-        text: "Una estructura diseñada para facilitar el contacto de nuevos clientes.",
+        text: "Un camino claro para que nuevos clientes se contacten contigo.",
         includes: [],
       },
       {
         title: "Funciona en Cualquier Dispositivo",
-        text: "Experiencia optimizada para celular, tablet y computadora.",
+        text: "Tu sitio funciona bien en celular, tablet y computadora.",
         includes: [],
       },
     ],
-    idealTitle: "Ideal para:",
+    idealTitle: "¿Es para ti?",
+    idealText:
+      "Si trabajas con personas y quieres transmitir más confianza online, probablemente sí.",
     idealItems: ["Profesionales de la salud", "Consultores", "Marcas personales", "Creadores", "Pequeños negocios"],
     processTitle: "Cómo funciona",
     process: [
       {
-        title: "Descubrimiento",
-        text: "Definimos objetivo, audiencia y mensaje.",
+        title: "Entendemos tu proyecto",
+        text: "Conversamos sobre tus objetivos, público y mensaje.",
       },
       {
-        title: "Diseño",
-        text: "Lo transformo en una presencia visual clara.",
+        title: "Creamos tu presencia online",
+        text: "Desarrollamos una experiencia clara, profesional y alineada con tu marca.",
       },
       {
-        title: "Lanzamiento",
-        text: "El sitio queda publicado y listo para compartir.",
+        title: "Publicamos y lanzamos",
+        text: "Tu sitio queda listo para compartir, recibir visitas y transmitir confianza.",
       },
     ],
     ctaTitle: "Hablemos sobre tu proyecto.",
@@ -318,7 +324,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-y border-white/10 bg-white/[0.018]">
-        <div className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14">
+        <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12">
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.servicesTitle}
           </h2>
@@ -362,17 +368,21 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14">
+      <section className="mx-auto max-w-6xl px-5 py-8 sm:px-6 sm:py-10">
         <div className="rounded-xl border border-white/10 bg-[#141416]/70 p-5 shadow-xl shadow-black/20 sm:p-6">
           <h2 className="text-2xl font-semibold text-white sm:text-4xl">
             {t.idealTitle}
           </h2>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <p className="mt-4 max-w-2xl leading-7 text-stone-300">
+            {t.idealText}
+          </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {t.idealItems.map((item) => (
               <span
                 key={item}
-                className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
+                className="rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
               >
+                <span className="mr-2 text-[#6BE2FF]">✔</span>
                 {item}
               </span>
             ))}
@@ -380,7 +390,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14">
+      <section className="mx-auto max-w-6xl px-5 pb-12 pt-8 sm:px-6 sm:pb-14 sm:pt-10">
         <h2 className="text-2xl font-semibold text-white sm:text-4xl">
           {t.processTitle}
         </h2>

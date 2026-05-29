@@ -165,7 +165,7 @@ const content = {
     ],
     finalCtaTitle: "Vamos construir sua presença online.",
     finalCtaText:
-      "Experiências digitais claras, modernas e premium criadas para comunicar profissionalismo e confiança.",
+      "Tem uma ideia ou projeto em mente? Vamos conversar e transformar sua presença online em algo claro, profissional e memorável.",
     startProject: "Iniciar projeto",
     whatsapp: "WhatsApp",
     openMenu: "Abrir menu",
@@ -274,7 +274,7 @@ const content = {
     ],
     finalCtaTitle: "Construyamos tu presencia online.",
     finalCtaText:
-      "Experiencias digitales claras, modernas y premium diseñadas para comunicar profesionalismo y confianza.",
+      "¿Tienes una idea o proyecto en mente? Hablemos y transformemos tu presencia online en algo claro, profesional y memorable.",
     startProject: "Iniciar proyecto",
     whatsapp: "WhatsApp",
     openMenu: "Abrir menú",
@@ -382,7 +382,7 @@ const content = {
     ],
     finalCtaTitle: "Let’s build your online presence.",
     finalCtaText:
-      "Clear, modern and premium digital experiences designed to communicate professionalism and trust.",
+      "Have an idea or project in mind? Let’s talk and turn your online presence into something clear, professional and memorable.",
     startProject: "Start a Project",
     whatsapp: "WhatsApp",
     openMenu: "Open menu",
