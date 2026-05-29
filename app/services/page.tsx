@@ -90,20 +90,13 @@ const content = {
     idealTitle: "Este serviço é ideal para:",
     idealText: "",
     idealItems: ["Profissionais da saúde", "Consultores", "Marcas pessoais", "Criadores", "Negócios"],
-    processTitle: "Como funciona",
-    process: [
-      {
-        title: "Entendemos seu projeto",
-        text: "Conversamos sobre seus objetivos, público e mensagem.",
-      },
-      {
-        title: "Criamos sua presença online",
-        text: "Desenvolvemos uma experiência clara, profissional e alinhada à sua marca.",
-      },
-      {
-        title: "Publicamos e lançamos",
-        text: "Seu site fica pronto para compartilhar, receber visitas e transmitir confiança.",
-      },
+    includedTitle: "O que está incluído",
+    includedItems: [
+      "Design personalizado",
+      "Adaptado para celular, tablet e computador",
+      "Links para WhatsApp e redes sociais",
+      "Estrutura preparada para Google",
+      "Ajuda para publicação do site",
     ],
     ctaTitle: "Vamos conversar sobre seu projeto.",
     ctaText: "",
@@ -138,20 +131,13 @@ const content = {
     idealTitle: "This service is ideal for:",
     idealText: "",
     idealItems: ["Health Professionals", "Consultants", "Personal Brands", "Creators", "Businesses"],
-    processTitle: "How it works",
-    process: [
-      {
-        title: "We Understand Your Project",
-        text: "We discuss your goals, audience and message.",
-      },
-      {
-        title: "We Build Your Online Presence",
-        text: "We create a clear, professional experience aligned with your brand.",
-      },
-      {
-        title: "We Launch",
-        text: "Your website is ready to share, receive visitors and build trust.",
-      },
+    includedTitle: "What’s Included",
+    includedItems: [
+      "Custom design",
+      "Mobile, tablet and desktop friendly",
+      "WhatsApp and social media links",
+      "Structure prepared for Google",
+      "Website publishing support",
     ],
     ctaTitle: "Let’s talk about your project.",
     ctaText: "",
@@ -186,20 +172,13 @@ const content = {
     idealTitle: "Este servicio es ideal para:",
     idealText: "",
     idealItems: ["Profesionales de la salud", "Consultores", "Marcas personales", "Creadores", "Negocios"],
-    processTitle: "Cómo funciona",
-    process: [
-      {
-        title: "Entendemos tu proyecto",
-        text: "Conversamos sobre tus objetivos, público y mensaje.",
-      },
-      {
-        title: "Creamos tu presencia online",
-        text: "Desarrollamos una experiencia clara, profesional y alineada con tu marca.",
-      },
-      {
-        title: "Publicamos y lanzamos",
-        text: "Tu sitio queda listo para compartir, recibir visitas y transmitir confianza.",
-      },
+    includedTitle: "Qué está incluido",
+    includedItems: [
+      "Diseño personalizado",
+      "Adaptado para celular, tablet y computadora",
+      "Links para WhatsApp y redes sociales",
+      "Estructura preparada para Google",
+      "Ayuda para publicar el sitio",
     ],
     ctaTitle: "Hablemos sobre tu proyecto.",
     ctaText: "",
@@ -390,24 +369,21 @@ export default function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-12 pt-8 sm:px-6 sm:pb-14 sm:pt-10">
-        <h2 className="text-2xl font-semibold text-white sm:text-4xl">
-          {t.processTitle}
-        </h2>
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {t.process.map((step, index) => (
-            <article
-              key={step.title}
-              className="rounded-xl border border-white/10 bg-[#141416]/70 p-5 shadow-xl shadow-black/20 transition duration-500 hover:-translate-y-1 hover:border-[#FFB457]/25 sm:p-6"
-            >
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-stone-400">
-                0{index + 1}
-              </p>
-              <h3 className="mt-4 text-xl font-medium text-white">
-                {step.title}
-              </h3>
-              <p className="mt-4 leading-7 text-stone-300">{step.text}</p>
-            </article>
-          ))}
+        <div className="rounded-xl border border-white/10 bg-[#141416]/70 p-5 shadow-xl shadow-black/20 sm:p-6">
+          <h2 className="text-2xl font-semibold text-white sm:text-4xl">
+            {t.includedTitle}
+          </h2>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {t.includedItems.map((item) => (
+              <div
+                key={item}
+                className="flex gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-medium text-stone-300 shadow-inner shadow-white/5 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/30 hover:text-white"
+              >
+                <span className="text-[#6BE2FF]">✔</span>
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
