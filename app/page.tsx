@@ -49,7 +49,7 @@ Plazo:`,
 
 const content = {
   pt: {
-    nav: ["Início", "Sobre", "Projetos", "Música", "Contato"],
+    nav: ["Início", "Sobre", "Serviços", "Projetos", "Música", "Contato"],
     heroEyebrow: "Desenvolvedor Criativo • Experiências Digitais Premium",
     heroSubtitle: "Websites premium para profissionais e marcas pessoais",
     heroDescription:
@@ -156,7 +156,7 @@ const content = {
     footer: "© 2026 Joaquín G. Bravo. Todos os direitos reservados.",
   },
   es: {
-    nav: ["Inicio", "Sobre mí", "Proyectos", "Música", "Contacto"],
+    nav: ["Inicio", "Sobre mí", "Servicios", "Proyectos", "Música", "Contacto"],
     heroEyebrow: "Desarrollador Creativo • Experiencias Digitales Premium",
     heroSubtitle: "Sitios web premium para profesionales y marcas personales",
     heroDescription:
@@ -263,7 +263,7 @@ const content = {
     footer: "© 2026 Joaquín G. Bravo. Todos los derechos reservados.",
   },
   en: {
-    nav: ["Home", "About", "Projects", "Music", "Contact"],
+    nav: ["Home", "About", "Services", "Projects", "Music", "Contact"],
     heroEyebrow: "Creative Developer • Premium Digital Experiences",
     heroSubtitle: "Premium websites for professionals and personal brands",
     heroDescription:
@@ -436,11 +436,12 @@ export default function Home() {
   const t = content[lang];
 
   const navItems = [
-    { label: t.nav[0], href: "#home" },
-    { label: t.nav[1], href: "#about" },
-    { label: t.nav[2], href: "#projects" },
-    { label: t.nav[3], href: "#music" },
-    { label: t.nav[4], href: "#contact" },
+    { label: t.nav[0], href: "#home", sectionId: "home" },
+    { label: t.nav[1], href: "#about", sectionId: "about" },
+    { label: t.nav[2], href: "/services" },
+    { label: t.nav[3], href: "#projects", sectionId: "projects" },
+    { label: t.nav[4], href: "#music", sectionId: "music" },
+    { label: t.nav[5], href: "#contact", sectionId: "contact" },
   ];
 
   const projectCards = [
@@ -740,7 +741,7 @@ export default function Home() {
                     key={item.href}
                     href={item.href}
                     className={`group relative rounded-md px-1 py-1 transition duration-300 hover:-translate-y-0.5 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
-                      activeSection === item.href.slice(1)
+                      item.sectionId && activeSection === item.sectionId
                         ? "text-white shadow-[0_8px_24px_rgba(255,255,255,0.08)]"
                         : ""
                     }`}
@@ -748,7 +749,7 @@ export default function Home() {
                     <span>{item.label}</span>
                     <span
                     className={`absolute -bottom-1 left-1/2 h-px rounded-full bg-gradient-to-r from-[#6BE2FF] via-white to-[#FFB457] transition-all duration-500 ${
-                        activeSection === item.href.slice(1)
+                        item.sectionId && activeSection === item.sectionId
                           ? "w-full -translate-x-1/2 opacity-100"
                           : "w-0 -translate-x-1/2 opacity-0 group-hover:w-full group-hover:opacity-60"
                       }`}
@@ -840,7 +841,7 @@ export default function Home() {
                   href={item.href}
                     onClick={() => setIsMenuOpen(false)}
                     className={`group relative flex items-center justify-between rounded-xl px-4 py-3 text-sm transition duration-300 hover:bg-white/[0.04] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/25 ${
-                    activeSection === item.href.slice(1)
+                    item.sectionId && activeSection === item.sectionId
                       ? "text-white shadow-[0_8px_24px_rgba(255,255,255,0.08)]"
                         : "text-stone-300"
                   }`}
@@ -848,7 +849,7 @@ export default function Home() {
                   <span>{item.label}</span>
                   <span
                       className={`h-px rounded-full bg-gradient-to-r from-[#6BE2FF] via-white to-[#FFB457] transition-all duration-500 ${
-                      activeSection === item.href.slice(1)
+                      item.sectionId && activeSection === item.sectionId
                           ? "w-10 opacity-100"
                           : "w-0 opacity-0 group-hover:w-8 group-hover:opacity-60"
                     }`}
