@@ -6,6 +6,12 @@ import type { CSSProperties, MouseEvent as ReactMouseEvent, ReactNode } from "re
 
 type Lang = "pt" | "es" | "en";
 
+const languageStorageKey = "joabrav-lang";
+const supportedLanguages: Lang[] = ["pt", "en", "es"];
+
+const isLang = (value: string | null): value is Lang =>
+  value === "pt" || value === "en" || value === "es";
+
 const spotifyUrl =
   "https://open.spotify.com/intl-es/artist/25JUXI8MfGUhSKUdAatSzt";
 const instagramUrl = "https://instagram.com/joa.brv";
@@ -455,11 +461,17 @@ export default function Home() {
   const whatsappHref = `https://wa.me/5561991673293?text=${encodeURIComponent(
     whatsappMessages[lang],
   )}`;
+  const servicesHref = `/services?lang=${lang}`;
+
+  const updateLanguage = (nextLang: Lang) => {
+    setLang(nextLang);
+    window.localStorage.setItem(languageStorageKey, nextLang);
+  };
 
   const navItems = [
     { label: t.nav[0], href: "#home", sectionId: "home" },
     { label: t.nav[1], href: "#about", sectionId: "about" },
-    { label: t.nav[2], href: "/services" },
+    { label: t.nav[2], href: servicesHref },
     { label: t.nav[3], href: "#projects", sectionId: "projects" },
     { label: t.nav[4], href: "#music", sectionId: "music" },
     { label: t.nav[5], href: "#contact", sectionId: "contact" },
@@ -495,6 +507,19 @@ export default function Home() {
       },
     },
   ];
+
+  useEffect(() => {
+    const queryLang = new URLSearchParams(window.location.search).get("lang");
+    const savedLang = window.localStorage.getItem(languageStorageKey);
+    const nextLang = isLang(queryLang)
+      ? queryLang
+      : isLang(savedLang)
+        ? savedLang
+        : "pt";
+
+    setLang(nextLang);
+    window.localStorage.setItem(languageStorageKey, nextLang);
+  }, []);
 
   useEffect(() => {
     const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -780,11 +805,11 @@ export default function Home() {
               </nav>
 
               <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
-                {(["pt", "en", "es"] as Lang[]).map((item) => (
+                {supportedLanguages.map((item) => (
                   <button
                     key={item}
                     type="button"
-                    onClick={() => setLang(item)}
+                    onClick={() => updateLanguage(item)}
                     className={`rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 ${
                       lang === item
                         ? "bg-white text-stone-950 shadow-lg shadow-white/10"
@@ -799,12 +824,12 @@ export default function Home() {
 
             <div className="flex items-center gap-2 lg:hidden">
               <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
-                {(["pt", "en", "es"] as Lang[]).map((item) => (
+                {supportedLanguages.map((item) => (
                   <button
                     key={item}
                     type="button"
                     onClick={() => {
-                      setLang(item);
+                      updateLanguage(item);
                       setIsMenuOpen(false);
                     }}
                     className={`rounded-md px-2.5 py-1.5 text-[0.68rem] font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 ${
@@ -998,7 +1023,7 @@ export default function Home() {
               {t.projectsButton}
             </a>
             <a
-              href="/services"
+              href={servicesHref}
               className="rounded-lg border border-white/15 px-5 py-3 text-center text-sm font-medium text-stone-300 transition duration-300 hover:-translate-y-1 hover:border-[#FFB457]/30 hover:bg-white/[0.03] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB457]/35 active:scale-[0.98]"
             >
               {t.servicesButton}

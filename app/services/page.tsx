@@ -2,9 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Lang = "pt" | "en" | "es";
+
+const languageStorageKey = "joabrav-lang";
+const supportedLanguages: Lang[] = ["pt", "en", "es"];
+
+const isLang = (value: string | null): value is Lang =>
+  value === "pt" || value === "en" || value === "es";
 
 const instagramUrl = "https://instagram.com/joa.brv";
 
@@ -251,12 +257,31 @@ export default function ServicesPage() {
   const whatsappHref = `https://wa.me/5561991673293?text=${encodeURIComponent(
     whatsappMessages[lang],
   )}`;
+  const homeHref = `/?lang=${lang}`;
+
+  const updateLanguage = (nextLang: Lang) => {
+    setLang(nextLang);
+    window.localStorage.setItem(languageStorageKey, nextLang);
+  };
+
+  useEffect(() => {
+    const queryLang = new URLSearchParams(window.location.search).get("lang");
+    const savedLang = window.localStorage.getItem(languageStorageKey);
+    const nextLang = isLang(queryLang)
+      ? queryLang
+      : isLang(savedLang)
+        ? savedLang
+        : "pt";
+
+    setLang(nextLang);
+    window.localStorage.setItem(languageStorageKey, nextLang);
+  }, []);
 
   return (
     <main className="min-h-dvh overflow-x-clip bg-[#0B0B0C] text-stone-100 antialiased">
       <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_18%_10%,rgba(109,94,247,0.2),transparent_30%),radial-gradient(circle_at_88%_18%,rgba(107,226,255,0.13),transparent_28%),radial-gradient(circle_at_48%_90%,rgba(255,180,87,0.1),transparent_34%),linear-gradient(180deg,#0B0B0C_0%,#141416_48%,#0B0B0C_100%)]" />
       <Link
-        href="/"
+        href={homeHref}
         aria-label={t.back}
         className="fixed bottom-[18px] right-4 z-50 inline-flex items-center gap-2 rounded-full border border-[rgba(107,226,255,0.35)] bg-[rgba(107,226,255,0.12)] px-3.5 py-2 text-sm font-medium tracking-[-0.01em] text-[#EAFBFF] shadow-[0_0_20px_rgba(107,226,255,0.18)] backdrop-blur-[18px] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(107,226,255,0.48)] hover:shadow-[0_0_35px_rgba(107,226,255,0.35)] focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
       >
@@ -266,7 +291,7 @@ export default function ServicesPage() {
 
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0B0B0C]/78 shadow-[0_1px_44px_rgba(11,11,12,0.42)] backdrop-blur-2xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-6">
-          <Link href="/" className="flex items-center focus:outline-none focus:ring-2 focus:ring-cyan-200/50">
+          <Link href={homeHref} className="flex items-center focus:outline-none focus:ring-2 focus:ring-cyan-200/50">
             <Image
               src="/logo.png"
               alt="Joaquín G. Bravo"
@@ -279,11 +304,11 @@ export default function ServicesPage() {
 
           <div className="flex items-center gap-3">
             <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
-              {(["pt", "en", "es"] as Lang[]).map((item) => (
+              {supportedLanguages.map((item) => (
                 <button
                   key={item}
                   type="button"
-                  onClick={() => setLang(item)}
+                  onClick={() => updateLanguage(item)}
                   className={`rounded-md px-2.5 py-1.5 text-[0.68rem] font-medium transition duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-cyan-200/50 active:scale-95 sm:px-3 sm:text-xs ${
                     lang === item
                       ? "bg-white text-stone-950 shadow-lg shadow-white/10"
