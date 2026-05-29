@@ -240,9 +240,10 @@ export default function ServicesPage() {
       <Link
         href="/"
         aria-label={t.back}
-        className="fixed bottom-5 right-5 z-50 inline-flex items-center rounded-full border border-white/12 bg-[#141416]/72 px-3.5 py-2 text-sm font-medium tracking-[-0.01em] text-stone-100 shadow-[0_14px_44px_rgba(11,11,12,0.34)] backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5 hover:border-cyan-200/25 hover:bg-white/[0.075] hover:shadow-[0_18px_54px_rgba(107,226,255,0.09)] focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
+        className="fixed bottom-[18px] right-4 z-50 inline-flex items-center gap-2 rounded-full border border-[rgba(107,226,255,0.35)] bg-[rgba(107,226,255,0.12)] px-3.5 py-2 text-sm font-medium tracking-[-0.01em] text-[#EAFBFF] shadow-[0_0_20px_rgba(107,226,255,0.18)] backdrop-blur-[18px] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(107,226,255,0.48)] hover:shadow-[0_0_35px_rgba(107,226,255,0.35)] focus:outline-none focus:ring-2 focus:ring-cyan-200/35 active:scale-[0.98] sm:bottom-6 sm:right-6"
       >
-        ← {t.back}
+        <span className="h-1.5 w-1.5 rounded-full bg-[#6BE2FF] shadow-[0_0_12px_rgba(107,226,255,0.8)]" />
+        <span>← {t.back}</span>
       </Link>
 
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0B0B0C]/78 shadow-[0_1px_44px_rgba(11,11,12,0.42)] backdrop-blur-2xl">
