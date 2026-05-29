@@ -47,6 +47,18 @@ Plazo:`,
   },
 };
 
+const whatsappMessages = {
+  pt: `Olá Joaquín,
+
+Gostaria de conversar sobre um website para meu negócio.`,
+  es: `Hola Joaquín,
+
+Me gustaría conversar sobre un sitio web para mi negocio.`,
+  en: `Hi Joaquín,
+
+I would like to discuss a website for my business.`,
+};
+
 const content = {
   pt: {
     nav: ["Início", "Sobre", "Serviços", "Projetos", "Música", "Contato"],
@@ -148,6 +160,7 @@ const content = {
     finalCtaText:
       "Experiências digitais claras, modernas e premium criadas para comunicar profissionalismo e confiança.",
     startProject: "Iniciar projeto",
+    whatsapp: "WhatsApp",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
     contactTitle: "Contato",
@@ -255,6 +268,7 @@ const content = {
     finalCtaText:
       "Experiencias digitales claras, modernas y premium diseñadas para comunicar profesionalismo y confianza.",
     startProject: "Iniciar proyecto",
+    whatsapp: "WhatsApp",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     contactTitle: "Contacto",
@@ -361,6 +375,7 @@ const content = {
     finalCtaText:
       "Clear, modern and premium digital experiences designed to communicate professionalism and trust.",
     startProject: "Start a Project",
+    whatsapp: "WhatsApp",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     contactTitle: "Contact",
@@ -434,6 +449,9 @@ export default function Home() {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = content[lang];
+  const whatsappHref = `https://wa.me/5561991673293?text=${encodeURIComponent(
+    whatsappMessages[lang],
+  )}`;
 
   const navItems = [
     { label: t.nav[0], href: "#home", sectionId: "home" },
@@ -1405,6 +1423,14 @@ export default function Home() {
               className="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
             >
               {t.startProject}
+            </a>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-[#6BE2FF]/25 bg-[#6BE2FF]/10 px-5 py-3 text-sm font-medium text-[#EAFBFF] shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#6BE2FF]/45 hover:bg-[#6BE2FF]/15 hover:shadow-[0_14px_34px_rgba(107,226,255,0.12)] focus:outline-none focus:ring-2 focus:ring-cyan-200/40 active:scale-[0.98]"
+            >
+              {t.whatsapp}
             </a>
             <a
               href={instagramUrl}

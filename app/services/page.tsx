@@ -44,6 +44,18 @@ Plazo:`,
   },
 };
 
+const whatsappMessages = {
+  pt: `Olá Joaquín,
+
+Gostaria de conversar sobre um website para meu negócio.`,
+  en: `Hi Joaquín,
+
+I would like to discuss a website for my business.`,
+  es: `Hola Joaquín,
+
+Me gustaría conversar sobre un sitio web para mi negocio.`,
+};
+
 const content = {
   pt: {
     back: "Início",
@@ -103,6 +115,7 @@ const content = {
     ctaTitle: "Pronto para construir uma presença online mais forte?",
     ctaText: "Vamos criar uma experiência digital clara, premium e orientada à confiança.",
     start: "Iniciar projeto",
+    whatsapp: "WhatsApp",
     instagram: "Instagram",
   },
   en: {
@@ -163,6 +176,7 @@ const content = {
     ctaTitle: "Ready to build a stronger online presence?",
     ctaText: "Let’s create a clear, premium digital experience designed to build trust.",
     start: "Start a Project",
+    whatsapp: "WhatsApp",
     instagram: "Instagram",
   },
   es: {
@@ -223,6 +237,7 @@ const content = {
     ctaTitle: "¿Listo para construir una presencia online más fuerte?",
     ctaText: "Creemos una experiencia digital clara, premium y orientada a la confianza.",
     start: "Iniciar proyecto",
+    whatsapp: "WhatsApp",
     instagram: "Instagram",
   },
 };
@@ -233,6 +248,9 @@ export default function ServicesPage() {
   const inquiryHref = `mailto:joakinxg100@gmail.com?subject=${encodeURIComponent(
     projectInquiryContent[lang].subject,
   )}&body=${encodeURIComponent(projectInquiryContent[lang].body)}`;
+  const whatsappHref = `https://wa.me/5561991673293?text=${encodeURIComponent(
+    whatsappMessages[lang],
+  )}`;
 
   return (
     <main className="min-h-dvh overflow-x-clip bg-[#0B0B0C] text-stone-100 antialiased">
@@ -296,6 +314,14 @@ export default function ServicesPage() {
             className="rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
           >
             {t.start}
+          </a>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg border border-[#6BE2FF]/25 bg-[#6BE2FF]/10 px-5 py-3 text-center text-sm font-medium text-[#EAFBFF] shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#6BE2FF]/45 hover:bg-[#6BE2FF]/15 hover:shadow-[0_14px_34px_rgba(107,226,255,0.12)] focus:outline-none focus:ring-2 focus:ring-cyan-200/40 active:scale-[0.98]"
+          >
+            {t.whatsapp}
           </a>
           <a
             href={instagramUrl}
@@ -387,6 +413,14 @@ export default function ServicesPage() {
             className="mt-8 inline-flex rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:-translate-y-1 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97]"
           >
             {t.start}
+          </a>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex rounded-lg border border-[#6BE2FF]/25 bg-[#6BE2FF]/10 px-5 py-3 text-sm font-medium text-[#EAFBFF] shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#6BE2FF]/45 hover:bg-[#6BE2FF]/15 hover:shadow-[0_14px_34px_rgba(107,226,255,0.12)] focus:outline-none focus:ring-2 focus:ring-cyan-200/40 active:scale-[0.98] sm:ml-3 sm:mt-8"
+          >
+            {t.whatsapp}
           </a>
         </div>
       </section>
