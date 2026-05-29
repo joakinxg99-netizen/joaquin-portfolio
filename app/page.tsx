@@ -99,15 +99,15 @@ const content = {
     services: [
       {
         title: "Presença Profissional",
-        text: "Websites criados para transmitir confiança e credibilidade.",
+        text: "Sites criados para transmitir confiança e credibilidade.",
       },
       {
-        title: "Mais Clientes",
-        text: "Experiências digitais claras e modernas que ajudam pessoas a conhecer seu trabalho.",
+        title: "Mais Visibilidade",
+        text: "Ajuda mais pessoas a descobrir seu trabalho e entrar em contato.",
       },
       {
-        title: "Adaptado para Todos os Dispositivos",
-        text: "Seu website funciona perfeitamente em celular, tablet e computador.",
+        title: "Experiência Moderna",
+        text: "Rápido, profissional e adaptado para qualquer dispositivo.",
       },
     ],
     projectsTitle: "Projetos",
@@ -211,12 +211,12 @@ const content = {
         text: "Sitios diseñados para transmitir confianza y credibilidad.",
       },
       {
-        title: "Más Oportunidades",
-        text: "Experiencias digitales claras y modernas que ayudan a que más personas conozcan tu trabajo.",
+        title: "Más Visibilidad",
+        text: "Ayuda a que más personas descubran tu trabajo y se pongan en contacto contigo.",
       },
       {
-        title: "Optimizado para Todos los Dispositivos",
-        text: "Funciona perfectamente en celular, tablet y computadora.",
+        title: "Experiencia Moderna",
+        text: "Rápido, profesional y adaptado a cualquier dispositivo.",
       },
     ],
     projectsTitle: "Proyectos",
@@ -320,12 +320,12 @@ const content = {
         text: "Websites designed to communicate trust and credibility.",
       },
       {
-        title: "More Client Opportunities",
-        text: "Clear and modern digital experiences that help people discover your work.",
+        title: "More Visibility",
+        text: "Help more people discover your work and get in touch.",
       },
       {
-        title: "Optimized Everywhere",
-        text: "Built to perform beautifully across mobile, tablet and desktop.",
+        title: "Modern Experience",
+        text: "Fast, professional and adapted to every device.",
       },
     ],
     projectsTitle: "Projects",
@@ -1135,10 +1135,6 @@ export default function Home() {
                   {service.title}
                 </h3>
                 <p className="mt-5 leading-7 text-stone-300">{service.text}</p>
-                <div className="mt-8 flex items-center gap-2 text-[0.68rem] uppercase tracking-[0.18em] text-stone-400 transition duration-300 group-hover:text-cyan-100/75">
-                  <span className="h-1.5 w-1.5 rounded-full bg-white/25 transition duration-300 group-hover:bg-[#6BE2FF] group-hover:shadow-[0_0_18px_rgba(107,226,255,0.6)]" />
-                  <span>Joaquín G. Bravo</span>
-                </div>
               </article>
             </Reveal>
           ))}
