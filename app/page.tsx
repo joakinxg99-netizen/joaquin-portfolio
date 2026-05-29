@@ -80,7 +80,7 @@ const content = {
       "Oi, eu sou Joaquín.",
       "Crio experiências digitais premium para profissionais, marcas pessoais e negócios que precisam de uma presença online clara, elegante e orientada a resultados.",
     ],
-    servicesTitle: "O que eu faço",
+    servicesTitle: "Como trabalho",
     whyTitle: "Por que trabalhar comigo",
     whyCards: [
       {
@@ -189,7 +189,7 @@ const content = {
       "Hola, soy Joaquín.",
       "Creo experiencias digitales premium para profesionales, marcas personales y negocios que necesitan una presencia online clara, elegante y orientada a resultados.",
     ],
-    servicesTitle: "Qué hago",
+    servicesTitle: "Cómo trabajo",
     whyTitle: "Por qué trabajar conmigo",
     whyCards: [
       {
@@ -298,7 +298,7 @@ const content = {
       "Hi, I’m Joaquín.",
       "I build premium digital experiences for professionals, personal brands and businesses that need a clear, elegant and results-driven online presence.",
     ],
-    servicesTitle: "What I do",
+    servicesTitle: "How I Work",
     whyTitle: "Why work with me",
     whyCards: [
       {
