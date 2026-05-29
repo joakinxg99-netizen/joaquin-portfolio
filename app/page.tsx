@@ -418,6 +418,7 @@ export default function Home() {
       description: t.projectDescription,
       previewTitle: t.projectPreviewTitle,
       previewDescription: t.projectPreviewDescription,
+      imageSrc: "/victoria-preview.jpg",
       tags: t.projectTags,
       caseStudy: {
         goal: t.projectGoal,
@@ -431,6 +432,7 @@ export default function Home() {
       description: t.eduardoProjectDescription,
       previewTitle: t.eduardoProjectPreviewTitle,
       previewDescription: t.eduardoProjectPreviewDescription,
+      imageSrc: "/eduardo-preview.jpg",
       tags: t.eduardoProjectTags,
       caseStudy: {
         goal: t.eduardoProjectGoal,
@@ -1118,28 +1120,16 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div className="flex aspect-[1.16/1] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(107,226,255,0.18),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.1),transparent_32%),linear-gradient(135deg,#141416,#0B0B0C)] p-3 sm:aspect-[5/4] sm:p-4 md:aspect-[16/10] md:p-6">
-                        <div className="w-full max-w-[15.8rem] overflow-hidden rounded-xl border border-white/14 bg-white/[0.04] shadow-2xl shadow-black/35 backdrop-blur-2xl sm:max-w-sm md:max-w-md md:rounded-2xl">
-                          <div className="flex h-14 items-end border-b border-white/10 bg-[radial-gradient(circle_at_18%_30%,rgba(255,255,255,0.2),transparent_28%),radial-gradient(circle_at_80%_52%,rgba(107,226,255,0.2),transparent_34%),linear-gradient(135deg,rgba(20,20,22,0.84),rgba(27,27,30,0.86)_48%,rgba(109,94,247,0.36))] p-3 sm:h-20 md:h-28 md:p-5">
-                            <div className="flex items-center gap-1.5 md:gap-2">
-                              <span className="h-1.5 w-1.5 rounded-full bg-teal-100 shadow-[0_0_18px_rgba(153,246,228,0.7)] md:h-2 md:w-2" />
-                              <span className="text-[0.52rem] font-medium uppercase tracking-[0.14em] text-white/70 md:text-[0.65rem] md:tracking-[0.2em]">
-                                {project.domain}
-                              </span>
-                            </div>
-                          </div>
-
-                          <div className="p-2.5 sm:p-3 md:p-5">
-                            <p className="truncate text-[0.64rem] text-stone-300 md:text-xs">
-                              {project.domain}
-                            </p>
-                            <h4 className="mt-1 text-[0.82rem] font-semibold leading-tight text-white sm:text-base md:mt-2 md:text-xl">
-                              {project.previewTitle}
-                            </h4>
-                            <p className="mt-1.5 line-clamp-2 text-[0.66rem] leading-4 text-stone-300/85 sm:text-xs sm:leading-5 md:mt-3 md:line-clamp-3 md:text-sm md:leading-6">
-                              {project.previewDescription}
-                            </p>
-                          </div>
+                      <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_24%_16%,rgba(107,226,255,0.18),transparent_34%),radial-gradient(circle_at_78%_78%,rgba(255,180,87,0.1),transparent_32%),linear-gradient(135deg,#141416,#0B0B0C)] p-2.5 sm:p-3 md:p-4">
+                        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg border border-white/14 bg-[#0B0B0C]/60 shadow-2xl shadow-black/35 sm:rounded-xl md:rounded-2xl">
+                          <Image
+                            src={project.imageSrc}
+                            alt={project.previewTitle}
+                            fill
+                            sizes="(min-width: 1024px) 520px, (min-width: 640px) 90vw, 100vw"
+                            className="object-cover object-top transition duration-700 group-hover:scale-[1.035]"
+                          />
+                          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),transparent_18%,rgba(11,11,12,0.08)_100%)]" />
                         </div>
                       </div>
                     </div>
