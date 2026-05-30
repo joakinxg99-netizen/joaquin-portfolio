@@ -13,6 +13,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Joaquín G. Bravo",
+  alternateName: [
+    "Joa Brav",
+    "Joaquín Bravo",
+    "Joaquín Gómez Bravo",
+    "Joaquín Emiliano Gómez Bravo",
+  ],
+  url: "https://www.joabrav.com",
+  image: "https://www.joabrav.com/joaquin.jpg",
+  jobTitle: "Creative Developer",
+  description:
+    "Creative developer creating premium digital experiences for professionals and personal brands.",
+  sameAs: [
+    "https://instagram.com/joa.brv",
+    "https://open.spotify.com/intl-es/artist/25JUXI8MfGUhSKUdAatSzt",
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://joabrav.com"),
   title: "Joaquín G. Bravo — Creative Developer",
@@ -69,6 +90,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <Analytics />
       </body>
     </html>
