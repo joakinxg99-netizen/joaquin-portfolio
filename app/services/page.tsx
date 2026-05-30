@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 type Lang = "pt" | "en" | "es";
 
 const languageStorageKey = "joabrav-lang";
+const languageAttentionKey = "joabrav-lang-attention-seen";
 const supportedLanguages: Lang[] = ["pt", "en", "es"];
 
 const isLang = (value: string | null): value is Lang =>
@@ -190,6 +191,7 @@ const content = {
 
 export default function ServicesPage() {
   const [lang, setLang] = useState<Lang>("pt");
+  const [showLanguageAttention, setShowLanguageAttention] = useState(true);
   const t = content[lang];
   const inquiryHref = `mailto:joakinxg100@gmail.com?subject=${encodeURIComponent(
     projectInquiryContent[lang].subject,
@@ -202,6 +204,8 @@ export default function ServicesPage() {
   const updateLanguage = (nextLang: Lang) => {
     setLang(nextLang);
     window.localStorage.setItem(languageStorageKey, nextLang);
+    window.localStorage.setItem(languageAttentionKey, "true");
+    setShowLanguageAttention(false);
   };
 
   useEffect(() => {
@@ -215,6 +219,9 @@ export default function ServicesPage() {
 
     setLang(nextLang);
     window.localStorage.setItem(languageStorageKey, nextLang);
+    setShowLanguageAttention(
+      window.localStorage.getItem(languageAttentionKey) !== "true",
+    );
   }, []);
 
   return (
@@ -243,7 +250,7 @@ export default function ServicesPage() {
           </Link>
 
           <div className="flex items-center gap-3">
-            <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
+            <div className={`flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur ${showLanguageAttention ? "language-switcher-attention" : ""}`}>
               {supportedLanguages.map((item) => (
                 <button
                   key={item}

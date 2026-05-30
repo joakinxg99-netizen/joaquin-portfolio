@@ -7,6 +7,7 @@ import type { CSSProperties, MouseEvent as ReactMouseEvent, ReactNode } from "re
 type Lang = "pt" | "es" | "en";
 
 const languageStorageKey = "joabrav-lang";
+const languageAttentionKey = "joabrav-lang-attention-seen";
 const supportedLanguages: Lang[] = ["pt", "en", "es"];
 
 const isLang = (value: string | null): value is Lang =>
@@ -457,6 +458,7 @@ export default function Home() {
   const [parallax, setParallax] = useState({ x: 0, y: 0 });
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showLanguageAttention, setShowLanguageAttention] = useState(true);
   const t = content[lang];
   const whatsappHref = `https://wa.me/5561991673293?text=${encodeURIComponent(
     whatsappMessages[lang],
@@ -466,6 +468,8 @@ export default function Home() {
   const updateLanguage = (nextLang: Lang) => {
     setLang(nextLang);
     window.localStorage.setItem(languageStorageKey, nextLang);
+    window.localStorage.setItem(languageAttentionKey, "true");
+    setShowLanguageAttention(false);
   };
 
   const navItems = [
@@ -519,6 +523,9 @@ export default function Home() {
 
     setLang(nextLang);
     window.localStorage.setItem(languageStorageKey, nextLang);
+    setShowLanguageAttention(
+      window.localStorage.getItem(languageAttentionKey) !== "true",
+    );
   }, []);
 
   useEffect(() => {
@@ -804,7 +811,7 @@ export default function Home() {
                 ))}
               </nav>
 
-              <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
+              <div className={`flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur ${showLanguageAttention ? "language-switcher-attention" : ""}`}>
                 {supportedLanguages.map((item) => (
                   <button
                     key={item}
@@ -823,7 +830,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-2 lg:hidden">
-              <div className="flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur">
+              <div className={`flex w-fit items-center rounded-lg border border-white/10 bg-white/5 p-1 shadow-inner shadow-white/5 backdrop-blur ${showLanguageAttention ? "language-switcher-attention" : ""}`}>
                 {supportedLanguages.map((item) => (
                   <button
                     key={item}
