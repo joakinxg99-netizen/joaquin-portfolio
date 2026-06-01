@@ -18,6 +18,7 @@ const spotifyUrl =
 const instagramUrl = "https://instagram.com/joa.brv";
 const projectUrl = "https://dravictoriagomez.com.br";
 const eduardoProjectUrl = "https://www.eduardolealpsicologia.com.br/";
+const socialDataProjectUrl = "https://demo-lime-kappa.vercel.app/";
 const projectInquiryContent = {
   en: {
     subject: "Project Inquiry",
@@ -126,6 +127,23 @@ const content = {
     eduardoProjectPreviewDescription:
       "Presença digital profissional para psicologia, com navegação clara, visual premium e foco em credibilidade.",
     eduardoProjectTags: ["Adaptado para celulares", "Experiência clara", "SEO", "Marca profissional"],
+    socialDataProjectTitle: "Social Data Explorer",
+    socialDataProjectDescription:
+      "Plataforma de inteligência para pesquisas e questionários. Aplicação web interativa para explorar bases sociais, demográficas e econômicas.",
+    socialDataProjectPreviewTitle: "Social Data Explorer",
+    socialDataProjectPreviewDescription:
+      "Exploração de dados, relatórios de pesquisa e visualizações interativas.",
+    socialDataProjectTags: [
+      "Detecção automática de variáveis",
+      "Perfil de bases de dados",
+      "Qualidade dos dados",
+      "Análise populacional",
+      "Análise de renda",
+      "Análise de trabalho",
+      "Relatórios de pesquisa",
+      "Principais descobertas",
+      "Visualizações interativas",
+    ],
     caseGoalLabel: "Objetivo",
     caseFocusLabel: "Foco",
     projectGoal:
@@ -135,7 +153,12 @@ const content = {
       "Construir uma presença online profissional focada em confiança e acessibilidade.",
     eduardoProjectFocus:
       "Design elegante, clareza e experiência adaptada para celulares.",
+    socialDataProjectGoal:
+      "Explorar bases sociais, demográficas e econômicas com clareza.",
+    socialDataProjectFocus:
+      "Inteligência de pesquisa, avaliação de dados e relatórios interativos.",
     projectButton: "Ver projeto",
+    liveDemoButton: "Ver demo",
     featuredProject: "Projeto em destaque",
     comingSoon: "Em breve",
     moreProjectsComingSoon: "Mais trabalhos selecionados em breve.",
@@ -235,6 +258,23 @@ const content = {
     eduardoProjectPreviewDescription:
       "Presencia digital profesional para psicología, con navegación clara, visual premium y foco en credibilidad.",
     eduardoProjectTags: ["Adaptado a celulares", "Experiencia clara", "SEO", "Marca profesional"],
+    socialDataProjectTitle: "Social Data Explorer",
+    socialDataProjectDescription:
+      "Plataforma de inteligencia para investigación y encuestas. Aplicación web interactiva para explorar datos sociales, demográficos y económicos.",
+    socialDataProjectPreviewTitle: "Social Data Explorer",
+    socialDataProjectPreviewDescription:
+      "Exploración de datos, reportes de investigación y visualizaciones interactivas.",
+    socialDataProjectTags: [
+      "Detección automática de variables",
+      "Perfilado de datasets",
+      "Evaluación de calidad de datos",
+      "Análisis poblacional",
+      "Análisis de ingresos",
+      "Análisis laboral",
+      "Generación de reportes",
+      "Hallazgos clave",
+      "Visualizaciones interactivas",
+    ],
     caseGoalLabel: "Objetivo",
     caseFocusLabel: "Enfoque",
     projectGoal:
@@ -244,7 +284,12 @@ const content = {
       "Construir una presencia online profesional enfocada en confianza y accesibilidad.",
     eduardoProjectFocus:
       "Diseño elegante, claridad y experiencia adaptada a celulares.",
+    socialDataProjectGoal:
+      "Explorar datos sociales, demográficos y económicos con claridad.",
+    socialDataProjectFocus:
+      "Inteligencia de investigación, evaluación de datos y reportes interactivos.",
     projectButton: "Ver proyecto",
+    liveDemoButton: "Ver demo",
     featuredProject: "Proyecto destacado",
     comingSoon: "Próximamente",
     moreProjectsComingSoon: "Más trabajos seleccionados próximamente.",
@@ -344,6 +389,23 @@ const content = {
     eduardoProjectPreviewDescription:
       "Professional digital presence for psychology, with clear navigation, premium visuals and credibility-focused structure.",
     eduardoProjectTags: ["Mobile-friendly", "Clear experience", "SEO", "Professional brand"],
+    socialDataProjectTitle: "Social Data Explorer",
+    socialDataProjectDescription:
+      "Research & Survey Intelligence Platform. Interactive web application for exploring social, demographic and economic datasets.",
+    socialDataProjectPreviewTitle: "Social Data Explorer",
+    socialDataProjectPreviewDescription:
+      "Dataset exploration, research reports and interactive visualizations.",
+    socialDataProjectTags: [
+      "Automatic survey variable detection",
+      "Dataset profiling",
+      "Data quality assessment",
+      "Population analysis",
+      "Income analysis",
+      "Labour analysis",
+      "Research report generation",
+      "Key Findings",
+      "Interactive visualizations",
+    ],
     caseGoalLabel: "Goal",
     caseFocusLabel: "Focus",
     projectGoal:
@@ -352,7 +414,12 @@ const content = {
     eduardoProjectGoal:
       "Build a professional online presence focused on trust and accessibility.",
     eduardoProjectFocus: "Elegant design, clarity and responsive experience.",
+    socialDataProjectGoal:
+      "Explore social, demographic and economic datasets with clarity.",
+    socialDataProjectFocus:
+      "Research intelligence, data quality assessment and interactive reports.",
     projectButton: "View project",
+    liveDemoButton: "Live Demo",
     featuredProject: "Featured Project",
     comingSoon: "Coming soon",
     moreProjectsComingSoon: "More selected work coming soon.",
@@ -508,6 +575,21 @@ export default function Home() {
       caseStudy: {
         goal: t.eduardoProjectGoal,
         focus: t.eduardoProjectFocus,
+      },
+    },
+    {
+      url: socialDataProjectUrl,
+      domain: "demo-lime-kappa.vercel.app",
+      title: t.socialDataProjectTitle,
+      description: t.socialDataProjectDescription,
+      previewTitle: t.socialDataProjectPreviewTitle,
+      previewDescription: t.socialDataProjectPreviewDescription,
+      imageSrc: "/social-data-explorer.jpg",
+      tags: t.socialDataProjectTags,
+      primaryLabel: t.liveDemoButton,
+      caseStudy: {
+        goal: t.socialDataProjectGoal,
+        focus: t.socialDataProjectFocus,
       },
     },
   ];
@@ -1260,14 +1342,16 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-7 inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:mt-8 sm:w-fit"
-                    >
-                      {t.projectButton}
-                    </a>
+                    <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex w-full justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-white/10 transition duration-300 hover:bg-stone-200 hover:shadow-[0_14px_34px_rgba(255,255,255,0.18)] focus:outline-none focus:ring-2 focus:ring-white/50 active:scale-[0.97] sm:w-fit"
+                      >
+                        {project.primaryLabel ?? t.projectButton}
+                      </a>
+                    </div>
                   </div>
                 </article>
               </Reveal>
